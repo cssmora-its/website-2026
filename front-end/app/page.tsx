@@ -5,9 +5,10 @@ import About from '@/components/About';
 import VisiMisi from '@/components/VisiMisi';
 import Sejarah from '@/components/Sejarah';
 import RenjanaCita from '@/components/RenjanaCita';
+import Prestasi from '@/components/Prestasi'; // 1. Import komponen baru
 import Gallery from '@/components/Gallery';
-import Statistik from '@/components/Statistik'; // 1. Import Statistik
-import Footer from '@/components/Footer';       // 2. Import Footer
+import Statistik from '@/components/Statistik';
+import Footer from '@/components/Footer';
 
 export default function LandingPage() {
   return (
@@ -18,9 +19,10 @@ export default function LandingPage() {
       <VisiMisi />
       <Sejarah />
       <RenjanaCita />
+      <Prestasi /> {/* 2. Letakkan di sini persis */}
       <Gallery />
-      <Statistik /> {/* 3. Panggil Statistik */}
-      <Footer />    {/* 4. Panggil Footer sebagai penutup */}
+      <Statistik />
+      <Footer />
     </main>
   );
 }

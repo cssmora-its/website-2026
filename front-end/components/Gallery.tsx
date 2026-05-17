@@ -28,7 +28,7 @@ export default function Gallery() {
             HEADING "Gallery"
         ========================================= */}
         <h2 className={`text-4xl md:text-5xl font-bold text-[#0082c6] mb-12 ${notoSerif.className}`}>
-          Gallery
+          Capturing the Essense of Renjana
         </h2>
 
         {/* =========================================
