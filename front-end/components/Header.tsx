@@ -32,14 +32,20 @@ const ChevronDown = () => (
 interface NavItem {
   label: string;
   href: string;
+  /** Submenu dropdown opsional. */
+  children?: NavItem[];
 }
 
-// Hanya Gallery yang punya subpage; sisanya anchor di landing page.
 // Prefix "/" memastikan link tetap jalan saat Header dipakai di subpage.
+// "Kabinet" kini menjadi submenu di dalam "Overview Renjana Cita".
 const NAV_ITEMS: NavItem[] = [
   { label: 'About CSSMoRA', href: '/#about' },
-  { label: 'Overview Renjana Cita', href: '/#renjana-cita' },
-  { label: 'Kabinet', href: '/renjana-cita' },
+  {
+    label: 'Overview Renjana Cita',
+    href: '/#renjana-cita',
+    children: [{ label: 'Kabinet', href: '/renjana-cita' }],
+  },
+  { label: 'Awardee', href: '/awardee' },
   { label: 'Prestasi', href: '/#prestasi' },
   { label: 'Gallery', href: '/#gallery' },
   { label: 'Statistik', href: '/#statistik' },
@@ -90,7 +96,7 @@ export default function Header() {
           }`}
         >
           {NAV_ITEMS.map((item) => (
-            <li key={item.href}>
+            <li key={item.href} className={item.children ? 'relative group' : undefined}>
               <Link
                 href={item.href}
                 className={`flex items-center transition-colors ${
@@ -100,6 +106,23 @@ export default function Header() {
                 {item.label}
                 <ChevronDown />
               </Link>
+
+              {item.children && (
+                <ul className="absolute left-0 top-full pt-3 min-w-[200px] invisible opacity-0 translate-y-1 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-200">
+                  <div className="bg-white rounded-xl shadow-lg border border-gray-100 py-2 overflow-hidden">
+                    {item.children.map((child) => (
+                      <li key={child.href}>
+                        <Link
+                          href={child.href}
+                          className="block px-5 py-2.5 text-[15px] text-gray-700 hover:text-[#0082c6] hover:bg-gray-50 transition-colors"
+                        >
+                          {child.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </div>
+                </ul>
+              )}
             </li>
           ))}
         </ul>
