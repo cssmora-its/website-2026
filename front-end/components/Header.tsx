@@ -39,6 +39,7 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   { label: 'About CSSMoRA', href: '/#about' },
   { label: 'Overview Renjana Cita', href: '/#renjana-cita' },
+  { label: 'Kabinet', href: '/renjana-cita' },
   { label: 'Prestasi', href: '/#prestasi' },
   { label: 'Gallery', href: '/#gallery' },
   { label: 'Statistik', href: '/#statistik' },

@@ -3,7 +3,15 @@
     "allow": [
       "Bash(npx eslint *)",
       "Bash(npx tsc *)",
-      "Bash(npx next *)"
+      "Bash(npx next *)",
+      "Bash(rtk ls *)",
+      "Bash(rtk find *)",
+      "Bash(rtk npx *)",
+      "Bash(rtk lint *)",
+      "Bash(rtk tsc *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(rtk proxy *)",
+      "Bash(rtk read *)"
     ]
   }
 }

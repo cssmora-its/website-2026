@@ -1,5 +1,6 @@
 // components/RenjanaCita.tsx
 import Image from 'next/image';
+import Link from 'next/link';
 import { Noto_Serif, Poppins } from 'next/font/google';
 
 const notoSerif = Noto_Serif({ subsets: ['latin'], weight: ['400', '700'] });
@@ -90,10 +91,10 @@ export default function RenjanaCita() {
                1/8
              </span>
 
-             {/* Tombol Lihat Detail */}
-             <button className={`bg-[#a8f070] text-[#2a411b] font-bold text-[16px] md:text-[17px] px-8 py-3 rounded-lg shadow-lg hover:scale-105 transition-transform ${poppins.className}`}>
+             {/* Tombol Lihat Detail → subpage Kabinet */}
+             <Link href="/renjana-cita" className={`inline-block bg-[#a8f070] text-[#2a411b] font-bold text-[16px] md:text-[17px] px-8 py-3 rounded-lg shadow-lg hover:scale-105 transition-transform ${poppins.className}`}>
                Lihat Detail
-             </button>
+             </Link>
 
              {/* Tombol Navigasi Panah */}
              <div className="flex gap-4 md:gap-6">
