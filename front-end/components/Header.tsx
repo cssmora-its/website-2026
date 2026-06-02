@@ -39,20 +39,29 @@ interface NavItem {
 // Prefix "/" memastikan link tetap jalan saat Header dipakai di subpage.
 // "Kabinet" kini menjadi submenu di dalam "Overview Renjana Cita".
 const NAV_ITEMS: NavItem[] = [
-  { label: 'About CSSMoRA', href: '/#about' },
   {
-    label: 'Overview Renjana Cita',
-    href: '/#renjana-cita',
-    children: [{ label: 'Kabinet', href: '/renjana-cita' }],
+    label: 'CSSMoRA ITS',
+    href: '/#home',
+    children: [
+      { label: 'About', href: '/#about' },
+      { label: 'National Vision', href: '/#visi-misi' },
+      { label: 'History', href: '/#sejarah' },
+      { label: 'Overview Renjana', href: '/#renjana-cita' },
+      { label: 'Achievement', href: '/#prestasi' },
+      { label: 'Gallery', href: '/#gallery' },
+      { label: 'Awardee', href: '/#statistik' },
+    ],
   },
-  { label: 'Awardee', href: '/awardee' },
+  { label: 'Renjana Cita', href: '/renjana-cita' },
   { label: 'Prestasi', href: '/#prestasi' },
-  { label: 'Gallery', href: '/#gallery' },
-  { label: 'Statistik', href: '/#statistik' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'Awardee', href: '/awardee' },
 ];
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -61,10 +70,15 @@ export default function Header() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  // Fungsi untuk buka/tutup submenu di mobile
+  const toggleMobileDropdown = (label: string) => {
+    setMobileDropdownOpen((prev) => (prev === label ? null : label));
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || isMobileMenuOpen
           ? 'bg-white/95 backdrop-blur-md shadow-md py-3 md:py-4'
           : 'bg-transparent py-6 md:py-8'
       } px-6 md:px-12 lg:px-20 ${poppins.className}`}
@@ -73,14 +87,14 @@ export default function Header() {
         {/* Logo: versi warna saat scrolled agar tetap terbaca di background putih */}
         <div
           className={`relative transition-all duration-300 ${
-            scrolled
+            scrolled || isMobileMenuOpen
               ? 'w-[150px] h-[40px] md:w-[200px] md:h-[52px]'
               : 'w-[180px] h-[50px] md:w-[240px] md:h-[60px]'
           }`}
         >
-          <Link href="/">
+          <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
             <Image
-              src={scrolled ? '/logo-color.png' : '/logo.png'}
+              src={scrolled || isMobileMenuOpen ? '/logo-color.png' : '/logo.png'}
               alt="Logo CSSMoRA ITS"
               fill
               className="object-contain object-left"
@@ -104,7 +118,7 @@ export default function Header() {
                 }`}
               >
                 {item.label}
-                <ChevronDown />
+                {item.children && <ChevronDown />}
               </Link>
 
               {item.children && (
@@ -127,29 +141,100 @@ export default function Header() {
           ))}
         </ul>
 
-        {/* Hamburger menu mobile (placeholder) */}
-        <div
-          className={`lg:hidden cursor-pointer transition-colors duration-300 ${
-            scrolled ? 'text-gray-800' : 'text-white drop-shadow-md'
+        {/* Tombol Hamburger menu mobile */}
+        <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className={`lg:hidden cursor-pointer p-1 transition-colors duration-300 outline-none ${
+            scrolled || isMobileMenuOpen ? 'text-gray-800' : 'text-white drop-shadow-md'
           }`}
+          aria-label="Toggle menu"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="28"
-            height="28"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </div>
+          {isMobileMenuOpen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          )}
+        </button>
       </nav>
+
+      {/* Mobile Menu Dropdown */}
+      <div
+        className={`absolute top-full left-0 w-full bg-white shadow-2xl transition-all duration-300 ease-in-out overflow-hidden lg:hidden ${
+          isMobileMenuOpen ? 'max-h-[600px] opacity-100 py-4 border-t border-gray-100' : 'max-h-0 opacity-0 py-0'
+        }`}
+      >
+        <ul className="flex flex-col px-8 space-y-2 font-medium text-gray-700">
+          {NAV_ITEMS.map((item) => {
+            const isDropdownOpen = mobileDropdownOpen === item.label;
+            return (
+              <li key={item.href} className="flex flex-col">
+                <div className="flex items-center justify-between w-full">
+                  <Link
+                    href={item.href}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="py-2.5 text-[16px] hover:text-[#0082c6] transition-colors flex-1"
+                  >
+                    {item.label}
+                  </Link>
+                  {/* Tombol Panah Buka/Tutup Submenu */}
+                  {item.children && (
+                    <button
+                      onClick={() => toggleMobileDropdown(item.label)}
+                      className="p-2 -mr-2 text-gray-500 hover:text-[#0082c6] transition-colors"
+                      aria-label="Toggle submenu"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className={`transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : ''}`}
+                      >
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg>
+                    </button>
+                  )}
+                </div>
+                
+                {/* Area Dropdown Sub-menu yang bisa Expand/Collapse */}
+                {item.children && (
+                  <div
+                    className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                      isDropdownOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'
+                    }`}
+                  >
+                    <ul className="flex flex-col pl-4 border-l-2 border-gray-100 mt-1 mb-2 space-y-1">
+                      {item.children.map((child) => (
+                        <li key={child.href}>
+                          <Link
+                            href={child.href}
+                            onClick={() => setIsMobileMenuOpen(false)}
+                            className="block py-2 text-[14px] text-gray-500 hover:text-[#0082c6] transition-colors"
+                          >
+                            {child.label}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </header>
   );
 }
