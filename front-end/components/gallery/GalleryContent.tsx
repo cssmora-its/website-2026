@@ -6,11 +6,11 @@ import { Noto_Serif, Poppins } from 'next/font/google';
 import GalleryCard from './GalleryCard';
 import ProkerDetailModal from './ProkerDetailModal';
 import {
-  CATEGORY_ORDER,
+  PELAKSANA_ORDER,
   galleryData,
-  groupByCategory,
+  groupByPelaksana,
+  type Pelaksana,
   type Proker,
-  type ProkerCategory,
 } from './galleryData';
 
 const notoSerif = Noto_Serif({ subsets: ['latin'], weight: ['400', '700'] });
@@ -73,17 +73,17 @@ function CategorySections({
   items: Proker[];
   onCardClick: (p: Proker) => void;
 }) {
-  const grouped = groupByCategory(items);
+  const grouped = groupByPelaksana(items);
 
   return (
     <div className="flex flex-col gap-16 md:gap-20">
-      {CATEGORY_ORDER.map((cat) => {
-        const list = grouped[cat];
+      {PELAKSANA_ORDER.map((pelaksana) => {
+        const list = grouped[pelaksana];
         if (list.length === 0) return null;
         return (
-          <div key={cat} className="flex flex-col items-center">
-            <CategoryHeading title={cat} />
-            <div className="w-full mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+          <div key={pelaksana} className="flex flex-col items-center">
+            <CategoryHeading title={pelaksana} />
+            <div className="w-full mt-8 flex flex-wrap justify-center gap-6">
               {list.map((proker) => (
                 <GalleryCard key={proker.id} proker={proker} onClick={onCardClick} />
               ))}
@@ -95,7 +95,7 @@ function CategorySections({
   );
 }
 
-function CategoryHeading({ title }: { title: ProkerCategory }) {
+function CategoryHeading({ title }: { title: Pelaksana }) {
   return (
     <div
       className={`bg-[#a8f070] px-6 md:px-8 py-2 md:py-2.5 rounded-xl shadow-md ${poppins.className}`}
@@ -115,13 +115,13 @@ function LoadingState() {
       {Array.from({ length: 2 }).map((_, sectionIdx) => (
         <div key={sectionIdx} className="flex flex-col items-center">
           <div className="h-9 w-56 bg-[#a8f070]/60 rounded-xl animate-pulse" />
-          <div className="w-full mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+          <div className="w-full mt-8 flex flex-wrap justify-center gap-6">
             {Array.from({ length: 6 }).map((__, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100"
+                className="w-full sm:w-[calc(50%_-_0.75rem)] lg:w-[calc(33.333%_-_1rem)] bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100"
               >
-                <div className="w-full aspect-[4/3] bg-gray-200 animate-pulse" />
+                <div className="w-full aspect-[16/9] bg-gray-200 animate-pulse" />
                 <div className="px-4 py-4 flex flex-col items-center gap-2">
                   <div className="h-4 w-32 bg-gray-200 rounded animate-pulse" />
                   <div className="h-3 w-20 bg-gray-100 rounded animate-pulse" />

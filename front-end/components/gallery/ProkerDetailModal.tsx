@@ -105,7 +105,7 @@ export default function ProkerDetailModal({ proker, onClose }: Props) {
             <span
               className={`inline-block bg-[#a8f070] text-[#2a411b] font-bold px-5 py-2 rounded-full text-sm md:text-base shadow-md whitespace-nowrap ${poppins.className}`}
             >
-              {proker.departemen}
+              {proker.kategori}
             </span>
           </div>
 

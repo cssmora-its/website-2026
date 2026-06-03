@@ -1,0 +1,292 @@
+[
+  {
+    "id": 1,
+    "nama_proker": "Musyker",
+    "pelaksana": "BPH",
+    "kategori": "Tata Kelola",
+    "waktu_pelaksanaan": "2025-08-12T09:00:00",
+    "thumbnail": "/gallery/BPH_Musyker.JPG",
+    "images": ["/gallery/BPH_Musyker2.JPG"],
+    "deskripsi": "Kegiatan organisasi yang bertujuan untuk membahas, menetapkan, dan menyepakati program kerja serta arah kebijakan organisasi selama satu periode kepengurusan."
+  },
+  {
+    "id": 2,
+    "nama_proker": "KOMPAS",
+    "pelaksana": "BPH",
+    "kategori": "Tata Kelola",
+    "waktu_pelaksanaan": "2025-09-05T08:00:00",
+    "thumbnail": "/gallery/BPH_Kompas.jpg",
+    "images": ["/gallery/BPH_Kompas.jpg"],
+    "deskripsi": "Kegiatan organisasi yang bertujuan untuk membahas dan mengevaluasi jalannya kepengurusan. Kompas akan dilaksanakan dalam 4 rundown utama yakni sesi departemen internal, sesi departemen eksternal, sesi biro, dan sesi bersama."
+  },
+  {
+    "id": 3,
+    "nama_proker": "Hall of Fame",
+    "pelaksana": "BPH",
+    "kategori": "Tata Kelola",
+    "waktu_pelaksanaan": "2025-09-05T19:00:00",
+    "thumbnail": "/gallery/BPH_HoF.jpg",
+    "images": ["/gallery/BPH_HoF.jpg"],
+    "deskripsi": "Hall of Fame adalah kegiatan apresiasi untuk staff. Kegiatan ini dilaksanakan bersamaan dengan KOMPAS, sehingga setelah dipaparkan seluruh evaluasi dan aspirasi, terlihatlah siapa saja staff terbaik yang akan diapresiasi melalui Hall of Fame."
+  },
+  {
+    "id": 4,
+    "nama_proker": "Eid Greeting",
+    "pelaksana": "BPH",
+    "kategori": "Internalisasi",
+    "waktu_pelaksanaan": "2025-04-02T10:00:00",
+    "thumbnail": "/gallery/BPH - Eid Greeting.jpg",
+    "images": ["/gallery/BPH - Eid Greeting.jpg"],
+    "deskripsi": "Eid Greeting merupakan kegiatan yang bertujuan untuk mempererat hubungan sosial antara CSSMoRA ITS dengan para pembina serta pihak birokrasi yang berperan dalam pengelolaan CSSMoRA ITS."
+  },
+  {
+    "id": 5,
+    "nama_proker": "Suksesi Harlah CSSMoRA ITS",
+    "pelaksana": "BPH",
+    "kategori": "Tata Kelola",
+    "waktu_pelaksanaan": "2025-10-01T08:00:00",
+    "thumbnail": "/gallery/BPH_Suksesi Harlah.jpeg",
+    "images": ["/gallery/BPH_Suksesi Harlah.jpeg"],
+    "deskripsi": "Sebuah wadah untuk membentuk dan menetapkan panitia harlah CSSMoRA ITS. Suksesi ini memiliki 2 tahap, yakni penunjukan ketua dan wakil ketua harlah CSSMoRA ITS, dan monitoring ketua serta wakil ketua harlah CSSMoRA ITS untuk membentuk panitia harlah CSSMoRA ITS."
+  },
+  {
+    "id": 6,
+    "nama_proker": "Fi-Trans",
+    "pelaksana": "BPH",
+    "kategori": "Tata Kelola",
+    "waktu_pelaksanaan": "2025-12-15T13:00:00",
+    "thumbnail": "/gallery/BPH_Fi Trans.jpg",
+    "images": ["/gallery/BPH_Fi Trans.jpg"],
+    "deskripsi": "Fi-Trans adalah program transparansi dan pengelolaan keuangan CSSMoRA ITS, yang dilakukan bendahara untuk seluruh pengurus dan anggota dengan harapan dapat mendukung terciptanya keuangan CSSMoRA ITS yang transparan."
+  },
+  {
+    "id": 7,
+    "nama_proker": "Upgrading Pengurus",
+    "pelaksana": "BPH",
+    "kategori": "Pengembangan",
+    "waktu_pelaksanaan": "2025-02-22T08:00:00",
+    "thumbnail": "/gallery/BPH_Upgrading Pengurus.jpg",
+    "images": ["/gallery/BPH_Upgrading Pengurus.jpg"],
+    "deskripsi": "Melalui kegiatan upgrading staff ini, staff dibekali pemahaman mengenai fundamental organisasi CSSMoRA, Administrasi kesekretariatan, serta tata kelola keuangan agar lebih profesional dan terarah dalam menjalankan tugas kepengurusan."
+  },
+  {
+    "id": 8,
+    "nama_proker": "CSS Connect",
+    "pelaksana": "BPH",
+    "kategori": "Tata Kelola",
+    "waktu_pelaksanaan": "2025-07-12T09:00:00",
+    "thumbnail": "/gallery/BPH_CSS Connect.jpg",
+    "images": ["/gallery/BPH_CSS Connect.jpg"],
+    "deskripsi": "CSS Connect merupakan sistem database yang diperoleh melalui form pendataan yang dikhususkan untuk anggota dan alumni CSSMoRA ITS."
+  },
+  {
+    "id": 9,
+    "nama_proker": "Station",
+    "pelaksana": "Internal Affairs",
+    "kategori": "Internalisasi",
+    "waktu_pelaksanaan": "2025-05-18T16:00:00",
+    "thumbnail": "/gallery/Dagri_Station.jpeg",
+    "images": ["/gallery/Dagri_Station.jpeg"],
+    "deskripsi": "Rangkaian acara yang diadakan sebagai bentuk internalisasi antar Anggota CSSMoRA ITS. Rangkaian acara didalamnya berupa games, sharing, dan refleksi."
+  },
+  {
+    "id": 10,
+    "nama_proker": "Iftar - Halbi",
+    "pelaksana": "Internal Affairs",
+    "kategori": "Internalisasi",
+    "waktu_pelaksanaan": "2025-03-28T17:00:00",
+    "thumbnail": "/gallery/Dagri_Halbil.jpg",
+    "images": ["/gallery/Dagri_Halbil.jpg", "/gallery/Dagri_Iftar.jpg"],
+    "deskripsi": "Ifthar merupakan kegiatan buka puasa bersama di bulan ramadhan yang diikuti oleh seluruh anggota CSSMoRA ITS. Dan Halal bi Halal merupakan kegiatan silaturahmi pasca idul fitri untuk saling bermaaf-maafan antar anggota CSSMoRA ITS. Tujuannya untuk menumbuhkan nilai kebersamaan antar anggota."
+  },
+  {
+    "id": 11,
+    "nama_proker": "Syuwid",
+    "pelaksana": "Internal Affairs",
+    "kategori": "Internalisasi",
+    "waktu_pelaksanaan": "2025-09-13T09:00:00",
+    "thumbnail": "/gallery/Dagri_Syuwid.jpg",
+    "images": ["/gallery/Dagri_Syuwid.jpg"],
+    "deskripsi": "Kegiatan tasyakuran bersama warga CSSMoRA ITS yang telah selesai melaksanakan wisuda, dimana seluruh anggota aktif dan pasif CSSMoRA ITS berkumpul dan bersama sama memberi apresiasi kepada wisudawan yang sudah lulus."
+  },
+  {
+    "id": 12,
+    "nama_proker": "CSS Community Life",
+    "pelaksana": "Internal Affairs",
+    "kategori": "Internalisasi",
+    "waktu_pelaksanaan": "2025-04-12T08:00:00",
+    "thumbnail": "/gallery/Dagri_Comlife.jpg",
+    "images": ["/gallery/Dagri_Comlife.jpg"],
+    "deskripsi": "Program ini diharapkan bisa menjadi ruang inklusif bagi seluruh anggota untuk terhubung dan meningkatkan rasa kekeluargaan, melalui kegiatan yang dirancang untuk mengakomodasi berbagai minat anggota yang akan terdiri dari kegiatan sport dan fun meet."
+  },
+  {
+    "id": 13,
+    "nama_proker": "CSS Tabah",
+    "pelaksana": "Internal Affairs",
+    "kategori": "Internalisasi",
+    "waktu_pelaksanaan": "2025-06-08T10:00:00",
+    "thumbnail": "/gallery/Dagri_CSS Tabah.jpeg",
+    "images": ["/gallery/Dagri_CSS Tabah.jpeg"],
+    "deskripsi": "CSS TABAH adalah program yang dirancang untuk memberikan dukungan dan bantuan kepada anggota CSSMoRA ITS yang mengalami situasi sulit atau musibah."
+  },
+  {
+    "id": 14,
+    "nama_proker": "Matrikulasi",
+    "pelaksana": "Mahasantri Welfare",
+    "kategori": "Pengembangan",
+    "waktu_pelaksanaan": "2025-08-25T08:00:00",
+    "thumbnail": "/gallery/Kesma_Matrikulasi.jpg",
+    "images": ["/gallery/Kesma_Matrikulasi.jpg"],
+    "deskripsi": "Program ini dirancang untuk memberikan pemahaman dasar terkait mata kuliah umum yang mungkin belum dikuasai oleh mahasantri baru yang berlatar belakang pesantren."
+  },
+  {
+    "id": 15,
+    "nama_proker": "Ta’lim",
+    "pelaksana": "Mahasantri Welfare",
+    "kategori": "Pengembangan",
+    "waktu_pelaksanaan": "2025-04-05T19:30:00",
+    "thumbnail": "/gallery/Kesma_Ta'lim.jpg",
+    "images": ["/gallery/Kesma_Ta'lim.jpg"],
+    "deskripsi": "TA'LIM merupakan program pembelajaran bersama yang mencakup materi pada bidang akademik. Program ini berfokus pada beberapa mata kuliah bersama dan departemen yang ditentukan berdasarkan JARAS kemudian dilaksanakan intensif menjelang Evaluasi Tengah Semester (ETS) dan Evaluasi Akhir Semester (EAS)."
+  },
+  {
+    "id": 16,
+    "nama_proker": "Tadrib",
+    "pelaksana": "Mahasantri Welfare",
+    "kategori": "Pengembangan",
+    "waktu_pelaksanaan": "2025-05-22T18:30:00",
+    "thumbnail": "/gallery/Kesma_Tadrib.png",
+    "images": ["/gallery/Kesma_Tadrib.png"],
+    "deskripsi": "TADRIB merupakan program pengembangan hard-skill non-akademik yang dirancang untuk meningkatkan kompetensi anggota CSSMoRA ITS di berbagai bidang keterampilan."
+  },
+  {
+    "id": 17,
+    "nama_proker": "CSS Champion",
+    "pelaksana": "Mahasantri Welfare",
+    "kategori": "Pengembangan",
+    "waktu_pelaksanaan": "2025-10-08T08:00:00",
+    "thumbnail": "/gallery/Kesma_Champion.jpg",
+    "images": ["/gallery/Kesma_Champion.jpg"],
+    "deskripsi": "Program CSS Champion merupakan inisiatif dari CSSMoRA ITS yang bertujuan untuk mengapresiasi prestasi anggota dalam bidang akademik maupun non-akademik baik berupa publikasi maupun pemberian awarding."
+  },
+  {
+    "id": 18,
+    "nama_proker": "KALAM",
+    "pelaksana": "PSDM",
+    "kategori": "Pengembangan",
+    "waktu_pelaksanaan": "2025-09-20T08:00:00",
+    "thumbnail": "/gallery/PSDM_KALAM.jpg",
+    "images": ["/gallery/PSDM_KALAM.jpg"],
+    "deskripsi": "KALAM menjadi tahap awal dalam rangkaian kaderisasi berkelanjutan di CSSMoRA ITS. Melalui KALAM, mahasantri tahun pertama dipersiapkan untuk memahami dasar organisasi sehingga siap memasuki fase pembelajaran berikutnya dan berperan sebagai staf dalam kepengurusan mendatang."
+  },
+  {
+    "id": 19,
+    "nama_proker": "Abdi Pesantren",
+    "pelaksana": "Pesantren and Social Development",
+    "kategori": "Pengabdian",
+    "waktu_pelaksanaan": "2025-06-25T08:00:00",
+    "thumbnail": "/gallery/P3M_Absen.jpg",
+    "images": ["/gallery/P3M_Absen.jpg"],
+    "deskripsi": "Abdi Pesantren merupakan kegiatan pengabdian masyarakat yang melibatkan CSSMoRA ITS dan Pondok Pesantren mitra sebagai bentuk kontribusi nyata mahasiswa ITS penerima beasiswa PBSB yang berfokus pada penyampaian materi Ilmu Pengetahuan dan Teknologi (IPTEK), sosialisasi dunia perkuliahan, serta pembahasan lain yang disesuaikan dengan kebutuhan pesantren. Melalui forum interaktif antara anggota CSSMoRA ITS dengan santri, musyrif, musyrifah, dan pengasuh pesantren."
+  },
+  {
+    "id": 20,
+    "nama_proker": "Ngaji Mahasantri",
+    "pelaksana": "Pesantren and Social Development",
+    "kategori": "Internalisasi",
+    "waktu_pelaksanaan": "2025-04-30T19:30:00",
+    "thumbnail": "/gallery/P3M_Ngaji.jpeg",
+    "images": ["/gallery/P3M_Ngaji.jpeg"],
+    "deskripsi": "Ngaji mahasantri merupakan program kerja P3M yang mengedepankan nilai kesantrian melalui budaya mengaji. Program ini dilaksanakan dalam 2 minggu sekali berupa kajian tematik."
+  },
+  {
+    "id": 21,
+    "nama_proker": "CSS Visit",
+    "pelaksana": "Pesantren and Social Development",
+    "kategori": "Tata Kelola",
+    "waktu_pelaksanaan": "2025-07-19T10:00:00",
+    "thumbnail": "/gallery/P3M_CSS Visit.png",
+    "images": ["/gallery/P3M_CSS Visit.png"],
+    "deskripsi": "Program kerja ini dirancang untuk menguatkan ukhuwah sekaligus menjalin silaturahmi antar sesama organisasi yang memiliki kesamaan visi dan tujuan."
+  },
+  {
+    "id": 22,
+    "nama_proker": "Mahasantri Mengabdi",
+    "pelaksana": "Pesantren and Social Development",
+    "kategori": "Pengabdian",
+    "waktu_pelaksanaan": "2025-08-30T07:00:00",
+    "thumbnail": "/gallery/P3M_Mahasantri Mengabdi.png",
+    "images": ["/gallery/P3M_Mahasantri Mengabdi.png", "/gallery/P3M_Mahasantri.jpeg"],
+    "deskripsi": "Kegiatan ini dilaksanakan dengan melakukan kegiatan belajar mengajar materi agama islam sesuai dengan kurikulum mitra kepada masyarakat di sekitar Surabaya, terutama di sekitar ITS. Dalam penyelenggaraannya, program ini akan bermitra dengan TPQ/Musholla di lingkungan sekitar. Adapun mahasantri akan menjadi pengajar, agar dapat menjadi bekal dalam masa pengabdian di pesantren."
+  },
+  {
+    "id": 23,
+    "nama_proker": "CSS Mubarak",
+    "pelaksana": "Media and Information",
+    "kategori": "Internalisasi",
+    "waktu_pelaksanaan": "2025-03-15T08:00:00",
+    "thumbnail": "/gallery/Medfo_CSS Mubarak.png",
+    "images": ["/gallery/Medfo_CSS Mubarak.png"],
+    "deskripsi": "CSS Mubarak merupakan salah satu program kerja yang berfokus pada perayaan hari ulang tahun anggota, organisasi CSSMoRA ITS, serta momentum penyampaian ucapan dalam rangka memperingati hari-hari besar Islam dan peristiwa bersejarah nasional."
+  },
+  {
+    "id": 24,
+    "nama_proker": "Media Hub",
+    "pelaksana": "Media and Information",
+    "kategori": "Tata Kelola",
+    "waktu_pelaksanaan": "2025-05-10T13:00:00",
+    "thumbnail": "/gallery/Medfo_Media Hub.jpeg",
+    "images": ["/gallery/Medfo_Media Hub.jpeg"],
+    "deskripsi": "Media Sosial adalah suatu program kerja yang menyampaikan dan memuat semua informasi yang berkaitan dengan kegiatan CSSMoRA ITS dan informasi penting lainnya melalui akun media sosial yaitu Tiktok, Youtube, dan Instagram. Dan menampung segala aspirasi dari masyarakat umum."
+  },
+  {
+    "id": 25,
+    "nama_proker": "GDB",
+    "pelaksana": "Media and Information",
+    "kategori": "Tata Kelola",
+    "waktu_pelaksanaan": "2025-02-10T09:00:00",
+    "thumbnail": "/gallery/Medfo_GSM.png",
+    "images": ["/gallery/Medfo_GSM.png"],
+    "deskripsi": "Grand Design & Branding merupakan program yang berfokus pada perencanaan identitas visual awal Kabinet Renjana Cita sebagai dasar dari seluruh kebutuhan publikasi dan komunikasi visual organisasi."
+  },
+  {
+    "id": 26,
+    "nama_proker": "Media Leveling",
+    "pelaksana": "Media and Information",
+    "kategori": "Pengembangan",
+    "waktu_pelaksanaan": "2025-04-18T15:00:00",
+    "thumbnail": "/gallery/Medfo_Media Leveling.jpeg",
+    "images": ["/gallery/Medfo_Media Leveling.jpeg"],
+    "deskripsi": "Media Leveling merupakan program pengembangan keterampilan desain grafis khusus untuk staf MEDFO CSSMoRA ITS. Kegiatan ini difokuskan pada pelatihan penggunaan aplikasi Figma dan aplikasi lainya serta penguatan pemahaman terhadap prinsip desain dan identitas visual organisasi. Melalui Media Leveling, staff MEDFO diharapkan dapat meningkatkan kemampuan dalam menciptakan desain yang estetis, komunikatif, dan konsisten dengan branding CSSMoRA ITS."
+  },
+  {
+    "id": 27,
+    "nama_proker": "Request",
+    "pelaksana": "Media and Information",
+    "kategori": "Tata Kelola",
+    "waktu_pelaksanaan": "2025-06-01T09:00:00",
+    "thumbnail": "/gallery/Medfo_Request.png",
+    "images": ["/gallery/Medfo_Request.png"],
+    "deskripsi": "Program ini melayani permintaan departemen-departemen lain terkait kebutuhan desain grafis, dokumentasi kegiatan, live report, serta publikasi. Melalui program ini, setiap departemen dapat mengajukan permintaan media sesuai kebutuhan dengan prosedur yang telah ditentukan oleh Departemen Media Informasi, sehingga proses penyebaran informasi dapat berjalan dengan baik, terkoordinasi, dan berkualitas."
+  },
+  {
+    "id": 28,
+    "nama_proker": "ICU",
+    "pelaksana": "Personalia",
+    "kategori": "Internalisasi",
+    "waktu_pelaksanaan": "2025-03-08T09:00:00",
+    "thumbnail": "/gallery/Person_ICU.png",
+    "images": ["/gallery/Person_ICU.png"],
+    "deskripsi": "ICU merupakan media penampung dan penyalur aspirasi permasalahan akademik maupun non-akademik setiap Anggota CSSMoRA ITS. Kerja ICU adalah memastikan aspirasi mahasantri CSSMoRA ITS dapat ditampung dan disalurkan dengan baik. Selain itu, cakupan kerja ICU juga meliputi penyelesaian faktor yang mempengaruhi permasalahan akademik mahasantri CSSMoRA ITS."
+  },
+  {
+    "id": 29,
+    "nama_proker": "SARAPAN",
+    "pelaksana": "Personalia",
+    "kategori": "Internalisasi",
+    "waktu_pelaksanaan": "2025-07-04T08:00:00",
+    "thumbnail": "/gallery/Person_Sarapan.png",
+    "images": ["/gallery/Person_Sarapan.png"],
+    "deskripsi": "Saran dan Harapan merupakan program kerja yang berfungsi sebagai wadah penampung serta penyalur aspirasi, saran dan keluhan dari Seluruh Anggota CSSMoRA ITS terhadap kepengurusan."
+  }
+]

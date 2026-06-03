@@ -1,0 +1,34 @@
+{
+  "visi": "CSSMoRA ITS sebagai wadah pengembangan mahasantri yang harmonis dan progresif guna menghadirkan dampak positif bagi anggota dan masyarakat.",
+  "misi": [
+    {
+      "judul": "Harmonious",
+      "deskripsi": "Mewujudkan lingkungan internal yang inklusif dan kolaboratif."
+    },
+    {
+      "judul": "Professional",
+      "deskripsi": "Membangun etos kerja dan manajerial organisasi yang unggul."
+    },
+    {
+      "judul": "Optimal",
+      "deskripsi": "Memaksimalkan potensi mahasantri di bidang akademik dan non-akademik."
+    },
+    {
+      "judul": "Actualize Values",
+      "deskripsi": "Mengamalkan nilai-nilai kepesantrenan dalam kehidupan bermasyarakat."
+    }
+  ],
+  "topBoard": {
+    "chairman": { "id": 1, "nama": "Nabiel Nizar Anwari", "jabatan": "Chairman", "nia": "12345001", "foto": "" },
+    "viceChairmen": [
+      { "id": 2, "nama": "Barrul", "jabatan": "Vice Chairman 1", "nia": "12345002", "foto": "" },
+      { "id": 3, "nama": "Lilis", "jabatan": "Vice Chairman 2", "nia": "12345003", "foto": "" }
+    ]
+  },
+  "directors": [
+    { "id": 4, "nama": "Sinta", "jabatan": "General Secretary", "nia": "12345004", "foto": "" },
+    { "id": 5, "nama": "Rara", "jabatan": "Vice General Secretary", "nia": "12345005", "foto": "" },
+    { "id": 6, "nama": "Jacinda", "jabatan": "General Treasurer", "nia": "12345006", "foto": "" },
+    { "id": 7, "nama": "Khasna", "jabatan": "Vice General Treasurer", "nia": "12345007", "foto": "" }
+  ]
+}

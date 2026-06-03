@@ -18,11 +18,11 @@ export default function GalleryCard({ proker, onClick }: Props) {
     <button
       type="button"
       onClick={() => onClick(proker)}
-      className={`group text-left bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 hover:border-[#a8f070] overflow-hidden transition-all duration-300 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-[#79ba4e] focus:ring-offset-2 ${poppins.className}`}
+      className={`group text-left w-full sm:w-[calc(50%_-_0.75rem)] lg:w-[calc(33.333%_-_1rem)] bg-white rounded-2xl shadow-sm hover:shadow-[0_10px_18px_-10px_rgba(0,130,198,0.55)] border border-gray-100 overflow-hidden transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-[#0082c6] focus:ring-offset-2 ${poppins.className}`}
       aria-label={`Lihat detail proker ${proker.nama_proker}`}
     >
       {/* Thumbnail */}
-      <div className="relative w-full aspect-[4/3] bg-gray-100 overflow-hidden">
+      <div className="relative w-full aspect-[16/9] bg-gray-100 overflow-hidden">
         {hasThumb ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -55,7 +55,7 @@ export default function GalleryCard({ proker, onClick }: Props) {
         <h3 className="text-base md:text-lg font-bold text-gray-800 group-hover:text-[#0082c6] transition-colors line-clamp-1">
           {proker.nama_proker}
         </h3>
-        <p className="text-xs md:text-sm text-gray-500 mt-1 line-clamp-1">{proker.departemen}</p>
+        <p className="text-xs md:text-sm text-gray-500 mt-1 line-clamp-1">{proker.kategori}</p>
       </div>
     </button>
   );
