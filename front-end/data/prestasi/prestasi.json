@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Juara 1 Nasional Freshmen Talent",
+    "date": "2024-03-15",
+    "thumbnail": "",
+    "image": "",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages."
+  },
+  {
+    "id": 2,
+    "title": "Juara 2 Nasional ITS Expo",
+    "date": "2024-05-22",
+    "thumbnail": "",
+    "image": "",
+    "description": "Mahasantri CSSMoRA ITS meraih Juara 2 Nasional pada ajang ITS Expo dengan inovasi berbasis teknologi tepat guna untuk masyarakat pesantren. Karya ini menggabungkan riset akademik dengan pengabdian sosial sebagai cermin nilai mahasantri."
+  },
+  {
+    "id": 3,
+    "title": "Juara 1 Lomba Karya Tulis Ilmiah",
+    "date": "2024-07-09",
+    "thumbnail": "",
+    "image": "",
+    "description": "Penghargaan Juara 1 Lomba Karya Tulis Ilmiah tingkat nasional diraih atas riset interdisipliner mengenai literasi pesantren di era digital. Karya ini menjadi rujukan diskusi di forum mahasantri se-Indonesia."
+  },
+  {
+    "id": 4,
+    "title": "Juara 3 Hackathon CSS Nasional",
+    "date": "2024-09-01",
+    "thumbnail": "",
+    "image": "",
+    "description": "Tim CSSMoRA ITS berhasil membawa pulang Juara 3 Hackathon CSS Nasional dengan prototipe aplikasi pendukung kegiatan mahasantri. Solusi yang dikembangkan menekankan pada kolaborasi, kebermanfaatan, dan keberlanjutan."
+  },
+  {
+    "id": 5,
+    "title": "Best Paper Konferensi Internasional",
+    "date": "2024-10-18",
+    "thumbnail": "",
+    "image": "",
+    "description": "Mahasantri CSSMoRA ITS menerima penghargaan Best Paper pada konferensi internasional yang membahas integrasi sains dan nilai keagamaan. Penghargaan ini menegaskan komitmen mahasantri pada riset bermutu tinggi."
+  },
+  {
+    "id": 6,
+    "title": "Juara Umum Olimpiade Santri",
+    "date": "2024-11-25",
+    "thumbnail": "",
+    "image": "",
+    "description": "Delegasi CSSMoRA ITS menyabet gelar Juara Umum pada Olimpiade Santri tingkat nasional. Capaian ini mengukuhkan posisi mahasantri sebagai komunitas akademik yang berdaya saing dan berakhlak mulia."
+  }
+]
