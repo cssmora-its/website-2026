@@ -53,7 +53,7 @@ const NAV_ITEMS: NavItem[] = [
     ],
   },
   { label: 'Renjana Cita', href: '/renjana-cita' },
-  { label: 'Prestasi', href: '/#prestasi' },
+  { label: 'Prestasi', href: '/prestasi' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Awardee', href: '/awardee' },
 ];
