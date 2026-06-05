@@ -1,88 +1,5 @@
 [
-  {
-    "id": "s-001",
-    "name": "Elara Nadhira",
-    "nia": "12321005",
-    "department": "Statistika",
-    "generation": "2021",
-    "city": "Lamongan",
-    "pesantren": "PP. Matholi'ul Anwar",
-    "instagram": "@elara.nadhira",
-    "linkedin": "in/elara-nadhira",
-    "photo": ""
-  },
-  {
-    "id": "s-002",
-    "name": "Fauzi Rahman",
-    "nia": "12321006",
-    "department": "Teknik Lingkungan",
-    "generation": "2021",
-    "city": "Bojonegoro",
-    "pesantren": "PP. Langitan",
-    "instagram": "@fauzi.rahman",
-    "linkedin": "in/fauzi-rahman",
-    "photo": ""
-  },
-  {
-    "id": "s-003",
-    "name": "Gita Permata",
-    "nia": "12320007",
-    "department": "Teknik Kimia",
-    "generation": "2020",
-    "city": "Kediri",
-    "pesantren": "PP. Lirboyo",
-    "instagram": "@gita.permata",
-    "linkedin": "in/gita-permata",
-    "photo": ""
-  },
-  {
-    "id": "s-004",
-    "name": "Hafiz Ramadhan",
-    "nia": "12320008",
-    "department": "Teknik Elektro",
-    "generation": "2020",
-    "city": "Jombang",
-    "pesantren": "PP. Tebuireng",
-    "instagram": "@hafiz.ramadhan",
-    "linkedin": "in/hafiz-ramadhan",
-    "photo": ""
-  },
-  {
-    "id": "s-005",
-    "name": "Kemal Pasha",
-    "nia": "12321011",
-    "department": "Teknik Mesin",
-    "generation": "2021",
-    "city": "Madiun",
-    "pesantren": "PP. Al-Falah",
-    "instagram": "@kemal.pasha",
-    "linkedin": "in/kemal-pasha",
-    "photo": ""
-  },
-  {
-    "id": "s-006",
-    "name": "Miftah Farid",
-    "nia": "12320013",
-    "department": "Teknik Sipil",
-    "generation": "2020",
-    "city": "Banyuwangi",
-    "pesantren": "PP. Blokagung",
-    "instagram": "@miftah.farid",
-    "linkedin": "in/miftah-farid",
-    "photo": ""
-  },
-  {
-    "id": "s-007",
-    "name": "Omar Faruq",
-    "nia": "12321015",
-    "department": "Fisika",
-    "generation": "2021",
-    "city": "Nganjuk",
-    "pesantren": "PP. Lirboyo",
-    "instagram": "@omar.faruq",
-    "linkedin": "in/omar-faruq",
-    "photo": ""
-  },
+  
   {
     "id": "s-008",
     "name": "Abid Ubaidillah A",
@@ -139,7 +56,7 @@
     "generation": "2023",
     "city": "",
     "pesantren": "",
-    "instagram": "",
+    "instagram": "alyarmtilh",
     "linkedin": "",
     "photo": "/awardee/2023/ALYA RAHMATILLAH MACHMUD.JPG"
   },
@@ -225,7 +142,7 @@
     "pesantren": "",
     "instagram": "",
     "linkedin": "",
-    "photo": "/awardee/2023/Dhea Ary_C0423012"
+    "photo": "/awardee/2023/Dhea Ary_C0423012.jpg"
   },
   {
     "id": "s-020",
@@ -261,7 +178,7 @@
     "pesantren": "",
     "instagram": "",
     "linkedin": "",
-    "photo": "/awardee/2023/Faiz Hazmi Maulana_C0423015.HEIC"
+    "photo": "/awardee/2023/Faiz Hazmi Maulana_C0423015.jpg"
   },
   {
     "id": "s-023",
@@ -273,7 +190,7 @@
     "pesantren": "",
     "instagram": "",
     "linkedin": "",
-    "photo": "/awardee/2023/Hayya Hilwa_C0423016"
+    "photo": "/awardee/2023/Hayya Fastawa.jpeg"
   },
   {
     "id": "s-024",
@@ -309,7 +226,7 @@
     "pesantren": "",
     "instagram": "",
     "linkedin": "",
-    "photo": "/awardee/2023/Intan Nirwani_ C0423019.HEIC"
+    "photo": "/awardee/2023/Intan Nirwani_ C0423019.jpg"
   },
   {
     "id": "s-027",
@@ -381,7 +298,7 @@
     "pesantren": "",
     "instagram": "",
     "linkedin": "",
-    "photo": "/awardee/2023/Lilis Rahmawati_C0423025"
+    "photo": "/awardee/2023/lilis achpanadam.jpeg"
   },
   {
     "id": "s-033",
@@ -453,7 +370,7 @@
     "pesantren": "",
     "instagram": "",
     "linkedin": "",
-    "photo": "/awardee/2023/Muhammad Fakhri.HEIC"
+    "photo": "/awardee/2023/Muhammad Fakhri.jpg"
   },
   {
     "id": "s-039",
@@ -501,7 +418,7 @@
     "pesantren": "",
     "instagram": "",
     "linkedin": "",
-    "photo": "/awardee/2023/Muhammad Syahmi Ash Shidqi_C0423038.HEIC"
+    "photo": "/awardee/2023/Muhammad Syahmi Ash Shidqi_C0423038.jpg"
   },
   {
     "id": "s-043",
@@ -525,7 +442,7 @@
     "pesantren": "",
     "instagram": "",
     "linkedin": "",
-    "photo": "/awardee/2023/Nadiarista Yustiaputri_ C0423040.HEIC"
+    "photo": "/awardee/2023/Nadiarista Yustiaputri_ C0423040.jpg"
   },
   {
     "id": "s-045",
@@ -561,7 +478,7 @@
     "pesantren": "",
     "instagram": "",
     "linkedin": "",
-    "photo": "/awardee/2023/Sinta Dewi Rahmawati_C0423043"
+    "photo": "/awardee/2023/Sinta Dewi Rahmawati.jpeg"
   },
   {
     "id": "s-048",

@@ -1,50 +1,146 @@
 [
   {
-    "id": "c-2019",
-    "name": "Hasan Albanna",
-    "department": "Teknik Informatika",
-    "generation": "2019",
-    "totalScholars": 68,
-    "photo": ""
+    "id": "c-2006",
+    "name": "Helvea Rezano",
+    "department": "Sistem Informasi",
+    "generation": "2006",
+    "totalScholars": 40,
+    "photo": "/awardee/cowo.png"
   },
   {
-    "id": "c-2020",
-    "name": "Lukman Hakim",
+    "id": "c-2007",
+    "name": "Imam Trio U",
+    "department": "Teknik Mesin",
+    "generation": "2007",
+    "totalScholars": 60,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2008",
+    "name": "Andi Kurnia F",
+    "department": "Sistem Informasi",
+    "generation": "2008",
+    "totalScholars": 60,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2009",
+    "name": "Adam",
+    "department": "Informatika",
+    "generation": "2009",
+    "totalScholars": 70,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2010",
+    "name": "Masbar Salim M",
+    "department": "Informatika",
+    "generation": "2010",
+    "totalScholars": 60,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2011",
+    "name": "Didik Purwanto",
+    "department": "Informatika",
+    "generation": "2011",
+    "totalScholars": 39,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2012",
+    "name": "M Abdurrahman D",
+    "department": "Informatika",
+    "generation": "2012",
+    "totalScholars": 35,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2014",
+    "name": "Ali Fikri",
     "department": "Teknik Elektro",
-    "generation": "2020",
-    "totalScholars": 71,
-    "photo": ""
+    "generation": "2014",
+    "totalScholars": 20,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2015",
+    "name": "Fattah Al Alim",
+    "department": "Teknik Elektro",
+    "generation": "2015",
+    "totalScholars": 25,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2016",
+    "name": "M Nizar Z",
+    "department": "Informatika",
+    "generation": "2016",
+    "totalScholars": 15,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2017",
+    "name": "Afrizal Aulia",
+    "department": "Sistem Informasi",
+    "generation": "2017",
+    "totalScholars": 20,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2018",
+    "name": "M Hamzah H",
+    "department": "Matematika",
+    "generation": "2018",
+    "totalScholars": 15,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2019",
+    "name": "Afdhal Ma'ruf Lukman",
+    "department": "Informatika",
+    "generation": "2019",
+    "totalScholars": 8,
+    "photo": "/awardee/cowo.png"
   },
   {
     "id": "c-2021",
-    "name": "Arif Rahman",
-    "department": "Statistika",
+    "name": "Muhammad Ahyun Irsyada",
+    "department": "Informatika",
     "generation": "2021",
-    "totalScholars": 75,
-    "photo": ""
+    "totalScholars": 5,
+    "photo": "/awardee/cowo.png"
   },
   {
     "id": "c-2022",
-    "name": "Fajar Hidayat",
-    "department": "Teknik Mesin",
+    "name": "T. Ahyaul Kamal",
+    "department": "Statistika",
     "generation": "2022",
-    "totalScholars": 92,
-    "photo": ""
+    "totalScholars": 20,
+    "photo": "/awardee/2022/Ahyaul Kamal.JPG"
   },
   {
     "id": "c-2023",
-    "name": "Rizky Maulana",
-    "department": "Teknik Kelautan",
+    "name": "M. Alif Nasrullah",
+    "department": "Informatika",
     "generation": "2023",
-    "totalScholars": 87,
-    "photo": ""
+    "totalScholars": 47,
+    "photo": "/awardee/2023/Mochammad Alif Nasrullah _ C0423027.jpg"
   },
   {
     "id": "c-2024",
-    "name": "Naufal Akbar",
-    "department": "Sistem Informasi",
+    "name": "Andi Waldan Danish Savaraz Palinrungi",
+    "department": "Teknik Sipil",
     "generation": "2024",
-    "totalScholars": 95,
-    "photo": ""
+    "totalScholars": 40,
+    "photo": "/awardee/2024/Andi Waldan Danish Savaraz Palinrungi_C0424007.jpg"
+  },
+  {
+    "id": "c-2025",
+    "name": "Naufal Abid Ramadhan",
+    "department": "Teknik Perkapalan",
+    "generation": "2025",
+    "totalScholars": 12,
+    "photo": "/awardee/2025/Naufal Abid Ramadhan_C0425009.jpg"
   }
 ]
