@@ -76,16 +76,29 @@ export default function Sejarah() {
         />
 
         <div className="container mx-auto px-6 relative z-10 flex flex-col items-center">
+          
+          {/* Dekorasi Polaroid Kiri Atas */}
           <div className="hidden lg:block absolute top-10 left-10 transform -rotate-12 bg-white p-3 shadow-xl w-64 h-72 rounded-sm">
-             <div className="w-full h-5/6 bg-gray-100 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                <span className="text-gray-400 text-sm">Foto Kiri</span>
+             <div className="relative w-full h-5/6 bg-gray-200 overflow-hidden">
+                <Image 
+                  src="/station1.jpeg" 
+                  alt="Foto Station 1" 
+                  fill 
+                  className="object-cover" 
+                />
              </div>
              <div className="absolute -top-3 left-4 w-5 h-5 bg-gray-300 rounded-full shadow-sm" />
           </div>
 
+          {/* Dekorasi Polaroid Kanan Bawah */}
           <div className="hidden lg:block absolute bottom-0 right-10 transform rotate-12 bg-white p-3 shadow-xl w-64 h-72 rounded-sm">
-             <div className="w-full h-5/6 bg-gray-100 border-2 border-dashed border-gray-300 flex items-center justify-center">
-                <span className="text-gray-400 text-sm">Foto Kanan</span>
+             <div className="relative w-full h-5/6 bg-gray-200 overflow-hidden">
+                <Image 
+                  src="/station2.jpeg" 
+                  alt="Foto Station 2" 
+                  fill 
+                  className="object-cover" 
+                />
              </div>
           </div>
 
