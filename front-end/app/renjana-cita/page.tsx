@@ -3,6 +3,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import RenjanaHero from '@/components/renjana-cita/RenjanaHero';
 import KabinetSection from '@/components/renjana-cita/KabinetSection';
+import { HeaderVisibilityProvider } from '@/components/HeaderVisibilityContext';
 
 export const metadata = {
   title: 'Renjana Cita — Kabinet CSSMoRA ITS',
@@ -12,11 +13,13 @@ export const metadata = {
 
 export default function RenjanaCitaPage() {
   return (
-    <main className="min-h-screen relative flex flex-col">
-      <Header />
-      <RenjanaHero />
-      <KabinetSection />
-      <Footer />
-    </main>
+    <HeaderVisibilityProvider>
+      <main className="min-h-screen relative flex flex-col">
+        <Header />
+        <RenjanaHero />
+        <KabinetSection />
+        <Footer />
+      </main>
+    </HeaderVisibilityProvider>
   );
 }

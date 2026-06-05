@@ -12,15 +12,15 @@ export default function Footer() {
       <div className="container mx-auto px-6 max-w-7xl">
         
         {/* Top Section Footer (Grid) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
-          
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8 mb-16">
+
           {/* Kolom 1: Logo & Deskripsi (Lebih Lebar) */}
-          <div className="lg:col-span-5 pr-0 lg:pr-12">
-            <div className="relative w-[350px] h-[90px] md:w-[420px] md:h-[110px] mb-8 -ml-4">
-              <Image 
-                src="/logo-color.png" 
-                alt="Logo CSSMoRA ITS Color" 
-                fill 
+          <div className="sm:col-span-2 lg:col-span-6 pr-0 lg:pr-12">
+            <div className="relative w-[180px] h-[29px] md:w-[240px] md:h-[39px] mb-8">
+              <Image
+                src="/logo-color-clean.png"
+                alt="Logo CSSMoRA ITS Color"
+                fill
                 className="object-contain object-left"
                 priority // Menambahkan priority agar logo dimuat lebih cepat
               />
@@ -30,7 +30,7 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Kolom 2: Menu 1 */}
+          {/* Kolom 2: Menu Home Page */}
           <div className={`lg:col-span-3 ${poppins.className}`}>
             <h4 className={`text-[#0082c6] font-bold text-lg mb-6 ${notoSerif.className}`}>Home Page</h4>
             <ul className="flex flex-col space-y-4 text-gray-600 text-[15px]">
@@ -44,22 +44,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Kolom 3: Menu 2 (Sama persis dengan UI) */}
-          <div className={`lg:col-span-2 ${poppins.className}`}>
-            <h4 className={`text-[#0082c6] font-bold text-lg mb-6 ${notoSerif.className}`}>Home Page</h4>
-            <ul className="flex flex-col space-y-4 text-gray-600 text-[15px]">
-              <li><Link href="#about" className="hover:text-[#0082c6] transition-colors">About CSSMoRA</Link></li>
-              <li><Link href="#visi-misi" className="hover:text-[#0082c6] transition-colors">Visi Misi</Link></li>
-              <li><Link href="#sejarah" className="hover:text-[#0082c6] transition-colors">Sejarah</Link></li>
-              <li><Link href="#renjana-cita" className="hover:text-[#0082c6] transition-colors">Overview Renjana Cita</Link></li>
-              <li><Link href="#prestasi" className="hover:text-[#0082c6] transition-colors">Prestasi</Link></li>
-              <li><Link href="#gallery" className="hover:text-[#0082c6] transition-colors">Gallery</Link></li>
-              <li><Link href="#statistik" className="hover:text-[#0082c6] transition-colors">Statistik</Link></li>
-            </ul>
-          </div>
-
-          {/* Kolom 4: Social Media */}
-          <div className={`lg:col-span-2 ${poppins.className}`}>
+          {/* Kolom 3: Social Media */}
+          <div className={`lg:col-span-3 ${poppins.className}`}>
             <h4 className={`text-[#0082c6] font-bold text-lg mb-6 ${notoSerif.className}`}>Follow Us</h4>
             <ul className="flex flex-col space-y-5 text-gray-600 text-[15px]">
               <li>

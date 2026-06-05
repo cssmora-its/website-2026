@@ -27,7 +27,7 @@ export default function ScholarCard({ scholar, onClick }: Props) {
       type="button"
       onClick={() => onClick(scholar)}
       aria-label={`Lihat profil ${scholar.name}`}
-      className={`group text-left bg-white rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 hover:border-[#a8f070] overflow-hidden transition-all duration-300 hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-[#79ba4e] focus:ring-offset-2 flex flex-col ${poppins.className}`}
+      className={`group text-left bg-white rounded-2xl shadow-sm hover:shadow-[0_10px_18px_-10px_rgba(0,130,198,0.55)] border border-gray-100 overflow-hidden transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#0082c6] focus:ring-offset-2 flex flex-col ${poppins.className}`}
     >
       {/* Foto + badge angkatan */}
       <div className="relative w-full aspect-[4/3] bg-gradient-to-br from-[#e6f3fb] to-[#cfe7f6] overflow-hidden">
@@ -57,7 +57,7 @@ export default function ScholarCard({ scholar, onClick }: Props) {
           {scholar.name}
         </h3>
         <p className="text-xs md:text-sm text-[#0082c6] line-clamp-1">{scholar.department}</p>
-        <span className="mt-2 inline-block text-xs font-semibold text-gray-500 border border-gray-200 rounded-full px-3 py-1 group-hover:border-[#79ba4e] group-hover:text-[#79ba4e] transition-colors">
+        <span className="mt-2 inline-block text-xs font-semibold text-gray-500 border border-gray-200 rounded-full px-3 py-1 group-hover:border-[#0082c6] group-hover:text-[#0082c6] transition-colors">
           View Profile
         </span>
       </div>

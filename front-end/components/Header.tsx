@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { Poppins } from 'next/font/google';
+import { useHeaderVisibility } from './HeaderVisibilityContext';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -62,6 +63,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState<string | null>(null);
+  const { hidden } = useHeaderVisibility();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -78,6 +80,10 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        hidden && !isMobileMenuOpen
+          ? '-translate-y-full opacity-0 pointer-events-none'
+          : 'translate-y-0 opacity-100'
+      } ${
         scrolled || isMobileMenuOpen
           ? 'bg-white/95 backdrop-blur-md shadow-md py-3 md:py-4'
           : 'bg-transparent py-6 md:py-8'
@@ -88,13 +94,13 @@ export default function Header() {
         <div
           className={`relative transition-all duration-300 ${
             scrolled || isMobileMenuOpen
-              ? 'w-[150px] h-[40px] md:w-[200px] md:h-[52px]'
+              ? 'w-[180px] h-[40px] md:w-[240px] md:h-[52px]'
               : 'w-[180px] h-[50px] md:w-[240px] md:h-[60px]'
           }`}
         >
           <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
             <Image
-              src={scrolled || isMobileMenuOpen ? '/logo-color.png' : '/logo.png'}
+              src={scrolled || isMobileMenuOpen ? '/logo-color-clean.png' : '/logo.png'}
               alt="Logo CSSMoRA ITS"
               fill
               className="object-contain object-left"

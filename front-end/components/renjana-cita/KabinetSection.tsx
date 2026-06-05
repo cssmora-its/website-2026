@@ -1,10 +1,11 @@
 // components/renjana-cita/KabinetSection.tsx
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Noto_Serif, Poppins } from 'next/font/google';
 import MemberCard from './MemberCard';
 import MemberCarousel from './MemberCarousel';
+import { useHeaderVisibility } from '@/components/HeaderVisibilityContext';
 import {
   departments,
   executiveBoard,
@@ -18,14 +19,48 @@ const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700
 
 export default function KabinetSection() {
   const [activeSlug, setActiveSlug] = useState<string>(EXECUTIVE_SLUG);
+  const { setHidden } = useHeaderVisibility();
+  const sentinelRef = useRef<HTMLDivElement>(null);
+  const [collapsed, setCollapsed] = useState(false);
 
   const activeDept = departments.find((d) => d.slug === activeSlug);
 
+  // Pantau posisi sentinel (tepat di atas tab). Saat tab mulai menempel ke
+  // bawah Header global, tandai `collapsed` → Header diminta slide-up keluar
+  // dan tab naik ke paling atas (top-0) mengisi ruangnya.
+  useEffect(() => {
+    const onScroll = () => {
+      const el = sentinelRef.current;
+      if (!el) return;
+      const headerOffset = window.innerWidth >= 768 ? 80 : 64;
+      setCollapsed(el.getBoundingClientRect().top <= headerOffset);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    setHidden(collapsed);
+  }, [collapsed, setHidden]);
+
+  // Saat meninggalkan halaman ini, pastikan Header tampil kembali.
+  useEffect(() => () => setHidden(false), [setHidden]);
+
   return (
     <>
+      {/* Sentinel: penanda kapan tab mulai menempel ke atas (tinggi 0, di flow). */}
+      <div ref={sentinelRef} aria-hidden className="h-0" />
+
       {/* ===== Tab Pills (sticky) ===== */}
       <section
-        className={`sticky top-[64px] md:top-[80px] z-30 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm ${poppins.className}`}
+        className={`sticky ${
+          collapsed ? 'top-0' : 'top-[64px] md:top-[80px]'
+        } z-30 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm transition-[top] duration-300 ${poppins.className}`}
       >
         <div className="container mx-auto px-4 md:px-6 max-w-6xl py-4">
           <div

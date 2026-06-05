@@ -7,12 +7,15 @@ import { totalScholarsLabel } from './awardeeData';
 const notoSerif = Noto_Serif({ subsets: ['latin'], weight: ['400', '700'] });
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 
-// Foto komunal untuk collage — pakai aset yang sudah ada di /public.
-// Ganti path & caption di sini bila tersedia foto angkatan yang lebih sesuai.
-const COLLAGE = [
-  { src: '/us-1.png', caption: 'National Seminar', rotate: '-rotate-6', extra: 'md:-translate-x-6 md:translate-y-4' },
-  { src: '/anak.png', caption: 'Graduation Day', rotate: 'rotate-3', extra: 'md:translate-x-10 md:translate-y-12' },
-  { src: '/us-2.png', caption: 'Community Day', rotate: 'rotate-6', extra: 'md:translate-x-24 md:-translate-y-2' },
+// Empat foto komunal untuk collage hero — tata letak rapi 2x2 dengan kemiringan
+// halus (selaras desain Figma), bukan tumpukan berantakan. Kolom kanan digeser
+// turun sedikit agar dinamis namun tetap teratur. Ganti path bila ada foto yang
+// lebih sesuai di /public.
+const PHOTOS = [
+  { src: '/us-1.png', alt: 'Kebersamaan mahasantri CSSMoRA ITS', tilt: '-rotate-3', offset: '' },
+  { src: '/us-2.png', alt: 'Kegiatan komunitas CSSMoRA ITS', tilt: 'rotate-3', offset: 'sm:translate-y-6' },
+  { src: '/gallery/BPH_Welpar.jpg', alt: 'Wisuda mahasantri CSSMoRA ITS', tilt: 'rotate-2', offset: '' },
+  { src: '/gallery/Dagri_CSS Tabah.jpeg', alt: 'Anggota CSSMoRA ITS', tilt: '-rotate-2', offset: 'sm:translate-y-6' },
 ];
 
 const ArrowRight = () => (
@@ -38,7 +41,7 @@ export default function AwardeeHero() {
   return (
     <section
       className="relative w-full overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: 'url(/hero-bg.png)' }}
+      style={{ backgroundImage: 'url(/hero4.jpg)' }}
     >
       {/* Overlay gradient biru CSSMoRA — selaras dengan hero subpage lainnya */}
       <div className="absolute inset-0 z-10 bg-gradient-to-br from-black/55 via-[#0082c6]/75 to-[#0082c6]" />
@@ -85,25 +88,17 @@ export default function AwardeeHero() {
             </button>
           </div>
 
-          {/* Kanan: collage foto komunal (polaroid stacked) */}
-          <div className="relative h-[340px] sm:h-[400px] lg:h-[460px] hidden sm:block">
-            {COLLAGE.map((item, i) => (
+          {/* Kanan: collage 4 foto, tata letak 2x2 rapi dengan kemiringan halus */}
+          <div className="hidden sm:grid grid-cols-2 gap-4 md:gap-5 w-full max-w-md mx-auto lg:ml-auto lg:mr-0">
+            {PHOTOS.map((item) => (
               <figure
                 key={item.src}
-                className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ${item.rotate} ${item.extra} bg-white p-2.5 pb-8 rounded-md shadow-2xl transition-transform duration-300 hover:scale-[1.03] hover:rotate-0 hover:z-30`}
-                style={{ zIndex: 10 + i }}
+                className={`bg-white p-2 rounded-xl shadow-2xl ${item.tilt} ${item.offset} hover:rotate-0 hover:scale-[1.04] hover:z-10 transition-transform duration-300`}
               >
-                <div className="relative w-44 h-52 md:w-52 md:h-60 overflow-hidden rounded-sm bg-gray-100">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-gray-100">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={item.src}
-                    alt={item.caption}
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={item.src} alt={item.alt} className="w-full h-full object-cover" />
                 </div>
-                <figcaption className="absolute bottom-2 left-0 right-0 text-center text-[11px] md:text-xs font-medium text-gray-600">
-                  {item.caption}
-                </figcaption>
               </figure>
             ))}
           </div>

@@ -4,6 +4,7 @@
 import { useEffect } from 'react';
 import { Noto_Serif, Poppins } from 'next/font/google';
 import type { Scholar } from './awardeeData';
+import { InstagramIcon, LinkedInIcon, igHref, liHref } from './social';
 
 const notoSerif = Noto_Serif({ subsets: ['latin'], weight: ['400', '700'] });
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
@@ -16,20 +17,6 @@ function getInitials(name: string): string {
     .map((w) => w[0]?.toUpperCase() ?? '')
     .join('');
 }
-
-const InstagramIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
-    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-  </svg>
-);
-
-const LinkedInIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18.34V9.93H5.56v8.41h2.78zM6.95 8.78a1.61 1.61 0 1 0 0-3.22 1.61 1.61 0 0 0 0 3.22zm11.39 9.56v-4.61c0-2.47-1.32-3.62-3.08-3.62a2.66 2.66 0 0 0-2.41 1.33h-.04V9.93H9.99v8.41h2.78v-4.16c0-1.1.21-2.16 1.57-2.16s1.36 1.25 1.36 2.23v4.09h2.64z" />
-  </svg>
-);
 
 interface Props {
   scholar: Scholar | null;
@@ -68,8 +55,6 @@ export default function ScholarDetailModal({ scholar, onClose }: Props) {
   }, [scholar]);
 
   if (!scholar) return null;
-
-  const firstName = scholar.name.split(/\s+/)[0];
 
   return (
     <div
@@ -113,6 +98,34 @@ export default function ScholarDetailModal({ scholar, onClose }: Props) {
             <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-[#a8f070] text-[#2a411b] text-xs font-bold shadow-sm">
               Angkatan {scholar.generation}
             </span>
+
+            {/* Logo sosial — pojok kanan bawah foto, hanya logo, link ke profil */}
+            {(scholar.instagram || scholar.linkedin) && (
+              <div className="absolute bottom-3 right-3 flex items-center gap-2">
+                {scholar.instagram && (
+                  <a
+                    href={igHref(scholar.instagram)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Instagram ${scholar.name}`}
+                    className="w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm text-gray-600 hover:bg-[#0082c6] hover:text-white shadow-md flex items-center justify-center transition-colors"
+                  >
+                    <InstagramIcon className="w-5 h-5" />
+                  </a>
+                )}
+                {scholar.linkedin && (
+                  <a
+                    href={liHref(scholar.linkedin)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`LinkedIn ${scholar.name}`}
+                    className="w-9 h-9 rounded-full bg-white/90 backdrop-blur-sm text-gray-600 hover:bg-[#0082c6] hover:text-white shadow-md flex items-center justify-center transition-colors"
+                  >
+                    <LinkedInIcon className="w-5 h-5" />
+                  </a>
+                )}
+              </div>
+            )}
           </div>
 
           {/* Detail */}
@@ -130,39 +143,6 @@ export default function ScholarDetailModal({ scholar, onClose }: Props) {
               <InfoRow label="Kota Asal" value={scholar.city} />
               <InfoRow label="Asal Pesantren" value={scholar.pesantren} />
             </div>
-
-            {/* Connect with */}
-            {(scholar.instagram || scholar.linkedin) && (
-              <div className="mt-6 pt-5 border-t border-gray-100">
-                <p className="text-sm text-gray-500 mb-3">
-                  Connect with <span className="font-semibold text-gray-700">{firstName}</span> at:
-                </p>
-                <div className="flex flex-col sm:flex-row gap-3">
-                  {scholar.instagram && (
-                    <a
-                      href={igHref(scholar.instagram)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 hover:bg-[#0082c6] hover:text-white text-gray-700 text-sm font-medium transition-colors"
-                    >
-                      <InstagramIcon />
-                      <span className="truncate">{scholar.instagram}</span>
-                    </a>
-                  )}
-                  {scholar.linkedin && (
-                    <a
-                      href={liHref(scholar.linkedin)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 hover:bg-[#0082c6] hover:text-white text-gray-700 text-sm font-medium transition-colors"
-                    >
-                      <LinkedInIcon />
-                      <span className="truncate">LinkedIn</span>
-                    </a>
-                  )}
-                </div>
-              </div>
-            )}
 
             {/* Tombol close utama — aksen lime GSM */}
             <button
@@ -188,16 +168,4 @@ export default function ScholarDetailModal({ scholar, onClose }: Props) {
       `}</style>
     </div>
   );
-}
-
-/** Normalisasi username menjadi URL Instagram. */
-function igHref(value: string): string {
-  if (value.startsWith('http')) return value;
-  return `https://instagram.com/${value.replace(/^@/, '')}`;
-}
-
-/** Normalisasi handle menjadi URL LinkedIn. */
-function liHref(value: string): string {
-  if (value.startsWith('http')) return value;
-  return `https://linkedin.com/${value.replace(/^\//, '')}`;
 }

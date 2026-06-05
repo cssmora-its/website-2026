@@ -8,7 +8,7 @@ export default function GalleryHero() {
   return (
     <section
       className="relative w-full min-h-[80vh] md:min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: 'url(/hero-bg.png)' }}
+      style={{ backgroundImage: 'url(/hero4.jpg)' }}
     >
       {/* Gradient overlay — terang di atas, biru di bawah agar konten tetap kontras */}
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-[#0082c6]/55 to-[#0082c6]" />

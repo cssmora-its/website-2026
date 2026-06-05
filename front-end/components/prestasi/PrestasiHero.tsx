@@ -8,7 +8,7 @@ export default function PrestasiHero() {
   return (
     <section
       className="relative w-full min-h-[80vh] md:min-h-screen flex items-end overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: 'url(/hero-bg.png)' }}
+      style={{ backgroundImage: 'url(/hero4.jpg)' }}
     >
       {/* Overlay gradient biru CSSMoRA — selaras dengan hero subpage lainnya */}
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/40 via-[#0082c6]/65 to-[#0082c6]" />

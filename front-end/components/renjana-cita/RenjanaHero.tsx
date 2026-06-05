@@ -25,7 +25,7 @@ export default function RenjanaHero() {
   return (
     <section
       className="relative w-full min-h-[78vh] md:min-h-[88vh] flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: 'url(/hero-bg.png)' }}
+      style={{ backgroundImage: 'url(/hero4.jpg)' }}
     >
       {/* Overlay gradient: gelap di atas → biru CSSMoRA di bawah agar menyatu
           dengan section pills berwarna terang di bawahnya */}

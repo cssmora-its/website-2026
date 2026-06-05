@@ -1,4 +1,6 @@
 // components/awardee/CaptainCard.tsx
+'use client';
+
 import { Noto_Serif, Poppins } from 'next/font/google';
 import type { Captain } from './awardeeData';
 
@@ -16,64 +18,53 @@ function getInitials(name: string): string {
 
 interface Props {
   captain: Captain;
-  /** Kartu yang sedang menjadi fokus tampil penuh & dengan aksen biru. */
+  /** Kartu fokus (tengah carousel) — diberi border lime & shadow lebih kuat. */
   active?: boolean;
 }
 
 export default function CaptainCard({ captain, active = false }: Props) {
   return (
     <article
-      className={`h-full w-full rounded-2xl border transition-all duration-300 overflow-hidden flex flex-col ${poppins.className} ${
-        active
-          ? 'bg-[#0082c6] border-[#0082c6] shadow-xl text-white'
-          : 'bg-white border-gray-100 shadow-sm text-gray-800'
-      }`}
+      className={`h-full w-full bg-white rounded-2xl overflow-hidden flex flex-col border border-gray-100 transition-all duration-300 ${
+        active ? 'shadow-[0_14px_28px_-12px_rgba(0,130,198,0.6)]' : 'shadow-sm'
+      } ${poppins.className}`}
     >
-      {/* Header: avatar + nama + jabatan */}
-      <div className="flex items-center gap-3 p-5">
-        <div
-          className={`relative w-12 h-12 shrink-0 rounded-full overflow-hidden ring-2 ${
-            active ? 'ring-[#a8f070]' : 'ring-[#0082c6]/30'
-          } bg-gradient-to-br from-[#e6f3fb] to-[#cfe7f6]`}
-        >
-          {captain.photo ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              src={captain.photo}
-              alt={`Foto ${captain.name}`}
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-          ) : (
-            <span className="absolute inset-0 flex items-center justify-center text-sm font-bold text-[#0082c6]">
+      {/* Foto / inisial */}
+      <div className="relative flex-grow bg-gradient-to-b from-gray-300 to-white overflow-hidden">
+        {captain.photo ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={captain.photo}
+            alt={captain.name}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <span
+              className={`select-none text-6xl md:text-7xl font-bold text-white/90 drop-shadow-[0_2px_6px_rgba(0,0,0,0.12)] ${notoSerif.className}`}
+            >
               {getInitials(captain.name)}
             </span>
-          )}
-        </div>
-        <div className="min-w-0">
-          <h4 className={`font-bold text-lg leading-tight truncate ${notoSerif.className}`}>
-            {captain.name}
-          </h4>
-          <p className={`text-xs truncate ${active ? 'text-white/80' : 'text-gray-400'}`}>
-            Ketua Angkatan {captain.generation}
-          </p>
-        </div>
+          </div>
+        )}
       </div>
 
-      {/* Detail rows */}
-      <div
-        className={`mt-auto border-t text-sm ${active ? 'border-white/20' : 'border-gray-100'}`}
-      >
-        <div className="flex items-center justify-between px-5 py-3">
-          <span className={active ? 'text-white/70' : 'text-gray-400'}>Departemen</span>
-          <span className="font-semibold text-right truncate ml-3">{captain.department}</span>
-        </div>
-        <div
-          className={`flex items-center justify-between px-5 py-3 border-t ${
-            active ? 'border-white/20' : 'border-gray-100'
-          }`}
-        >
-          <span className={active ? 'text-white/70' : 'text-gray-400'}>Memimpin</span>
-          <span className="font-semibold">{captain.totalScholars} Scholars</span>
+      {/* Info */}
+      <div className="px-5 py-5 text-center">
+        <h4 className={`text-lg md:text-xl font-bold text-gray-800 truncate ${notoSerif.className}`}>
+          {captain.name}
+        </h4>
+        <p className="text-sm font-medium text-[#0082c6] mt-0.5 truncate">{captain.department}</p>
+
+        <div className="border-t border-gray-100 my-4" />
+
+        <div className="flex items-center justify-between gap-2">
+          <span className="px-3 py-1 rounded-full bg-gray-100 text-gray-500 text-xs font-semibold whitespace-nowrap">
+            Angkatan {captain.generation}
+          </span>
+          <span className="text-sm font-bold text-gray-700 whitespace-nowrap">
+            {captain.totalScholars} Orang
+          </span>
         </div>
       </div>
     </article>

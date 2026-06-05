@@ -22,7 +22,7 @@ export default function Hero() {
   return (
     <section 
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: 'url(/hero-bg.png)' }} 
+      style={{ backgroundImage: 'url(/hero4.jpg)' }} 
     >
       
       {/* 2. PERBAIKAN GRADIENT: Transparan di atas, Biru di bawah */}

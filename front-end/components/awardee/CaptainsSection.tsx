@@ -1,13 +1,18 @@
 // components/awardee/CaptainsSection.tsx
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import { Noto_Serif, Poppins } from 'next/font/google';
 import CaptainCard from './CaptainCard';
 import { captains } from './awardeeData';
 
 const notoSerif = Noto_Serif({ subsets: ['latin'], weight: ['400', '700'] });
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
+
+// Lebar kartu & jarak antar-kartu (px) — dipakai untuk menghitung geseran track
+// agar kartu aktif selalu tepat di tengah viewport.
+const CARD_W = 280;
+const GAP = 24;
 
 const ArrowIcon = ({ dir }: { dir: 'left' | 'right' }) => (
   <svg
@@ -26,58 +31,21 @@ const ArrowIcon = ({ dir }: { dir: 'left' | 'right' }) => (
 
 export default function CaptainsSection() {
   const [active, setActive] = useState(0);
-  const trackRef = useRef<HTMLDivElement>(null);
-  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
   const total = captains.length;
 
-  const goTo = useCallback(
-    (index: number) => {
-      const clamped = Math.max(0, Math.min(total - 1, index));
-      setActive(clamped);
-      itemRefs.current[clamped]?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'nearest',
-        inline: 'center',
-      });
-    },
-    [total],
-  );
+  const canPrev = active > 0;
+  const canNext = active < total - 1;
+  const go = (delta: number) =>
+    setActive((cur) => Math.max(0, Math.min(total - 1, cur + delta)));
 
-  // Sinkronkan kartu aktif dengan posisi scroll (mis. saat di-swipe di mobile).
-  useEffect(() => {
-    const track = trackRef.current;
-    if (!track) return;
-    let frame = 0;
-    const onScroll = () => {
-      cancelAnimationFrame(frame);
-      frame = requestAnimationFrame(() => {
-        const center = track.scrollLeft + track.clientWidth / 2;
-        let nearest = 0;
-        let nearestDist = Infinity;
-        itemRefs.current.forEach((el, i) => {
-          if (!el) return;
-          const elCenter = el.offsetLeft + el.offsetWidth / 2;
-          const dist = Math.abs(elCenter - center);
-          if (dist < nearestDist) {
-            nearestDist = dist;
-            nearest = i;
-          }
-        });
-        setActive(nearest);
-      });
-    };
-    track.addEventListener('scroll', onScroll, { passive: true });
-    return () => {
-      track.removeEventListener('scroll', onScroll);
-      cancelAnimationFrame(frame);
-    };
-  }, []);
+  // Geser track agar pusat kartu aktif berada di titik tengah viewport.
+  const offset = active * (CARD_W + GAP) + CARD_W / 2;
 
   return (
     <section className="relative w-full bg-white py-16 md:py-24">
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Heading + quote */}
-        <div className="text-center max-w-2xl mx-auto mb-12">
+        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-14">
           <h2
             className={`text-3xl md:text-4xl lg:text-5xl font-bold text-[#0082c6] mb-4 ${notoSerif.className}`}
           >
@@ -89,78 +57,81 @@ export default function CaptainsSection() {
           </p>
         </div>
 
-        {/* Carousel */}
-        <div className="relative">
-          <div
-            ref={trackRef}
-            className="flex gap-5 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 -mx-2 px-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
-          >
-            {captains.map((captain, i) => {
-              const isActive = i === active;
-              return (
-                <div
-                  key={captain.id}
-                  ref={(el) => {
-                    itemRefs.current[i] = el;
-                  }}
-                  onClick={() => goTo(i)}
-                  className="relative shrink-0 snap-center basis-full sm:basis-[calc(50%-10px)] lg:basis-[calc(25%-15px)] h-[200px] cursor-pointer"
-                >
-                  <div
-                    className={`h-full transition-all duration-300 ${
-                      isActive ? 'scale-100' : 'scale-[0.97]'
-                    }`}
-                  >
-                    <CaptainCard captain={captain} active={isActive} />
-                  </div>
-                  {/* Layer putih tipis untuk kartu non-fokus */}
-                  <div
-                    aria-hidden="true"
-                    className={`pointer-events-none absolute inset-0 rounded-2xl bg-white transition-opacity duration-300 ${
-                      isActive ? 'opacity-0' : 'opacity-45'
-                    }`}
-                  />
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Navigasi + dots */}
-          <div className="flex items-center justify-center gap-4 mt-8">
+        {/* Carousel — track geser (slide) */}
+        <div className="relative w-full max-w-5xl mx-auto">
+          <div className="flex items-center justify-center gap-3 md:gap-6">
+            {/* Tombol Prev — disembunyikan saat di kartu pertama */}
             <button
               type="button"
-              onClick={() => goTo(active - 1)}
-              disabled={active === 0}
+              onClick={() => go(-1)}
+              disabled={!canPrev}
               aria-label="Ketua angkatan sebelumnya"
-              className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#0082c6]"
+              className={`z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white transition-colors ${
+                canPrev ? '' : 'invisible'
+              }`}
             >
               <ArrowIcon dir="left" />
             </button>
 
-            <div className="flex items-center gap-2">
-              {captains.map((c, i) => (
-                <button
-                  key={c.id}
-                  type="button"
-                  onClick={() => goTo(i)}
-                  aria-label={`Ke ketua angkatan ${c.generation}`}
-                  aria-current={i === active}
-                  className={`h-2 rounded-full transition-all ${
-                    i === active ? 'w-6 bg-[#79ba4e]' : 'w-2 bg-gray-300 hover:bg-gray-400'
-                  }`}
-                />
-              ))}
+            {/* Viewport: meng-clip kartu yang mengintip di tepi */}
+            <div className="relative grow min-w-0 overflow-hidden h-[440px]">
+              {/* Anchor di tengah viewport */}
+              <div className="absolute top-0 left-1/2 h-full">
+                {/* Track: seluruh kartu dalam satu baris, digeser dengan translateX */}
+                <div
+                  className="flex items-center h-full transition-transform duration-500 ease-out will-change-transform"
+                  style={{ gap: `${GAP}px`, transform: `translateX(-${offset}px)` }}
+                >
+                  {captains.map((captain, i) => {
+                    const isActive = i === active;
+                    return (
+                      <div
+                        key={captain.id}
+                        onClick={() => setActive(i)}
+                        style={{ width: `${CARD_W}px` }}
+                        aria-hidden={!isActive}
+                        className={`shrink-0 h-[400px] cursor-pointer transition-all duration-500 ease-out ${
+                          isActive
+                            ? 'scale-100 opacity-100 blur-0'
+                            : 'scale-90 opacity-60 blur-[2px] hover:opacity-90 hover:blur-[1px] hover:scale-[0.94]'
+                        }`}
+                      >
+                        <CaptainCard captain={captain} active={isActive} />
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
 
+            {/* Tombol Next — disembunyikan saat di kartu terakhir */}
             <button
               type="button"
-              onClick={() => goTo(active + 1)}
-              disabled={active === total - 1}
+              onClick={() => go(1)}
+              disabled={!canNext}
               aria-label="Ketua angkatan berikutnya"
-              className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#0082c6]"
+              className={`z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white transition-colors ${
+                canNext ? '' : 'invisible'
+              }`}
             >
               <ArrowIcon dir="right" />
             </button>
+          </div>
+
+          {/* Indikator dots */}
+          <div className="flex items-center justify-center gap-2 mt-8">
+            {captains.map((c, i) => (
+              <button
+                key={c.id}
+                type="button"
+                onClick={() => setActive(i)}
+                aria-label={`Ke ketua angkatan ${c.generation}`}
+                aria-current={i === active}
+                className={`h-2 rounded-full transition-all ${
+                  i === active ? 'w-6 bg-[#79ba4e]' : 'w-2 bg-gray-300 hover:bg-gray-400'
+                }`}
+              />
+            ))}
           </div>
         </div>
       </div>
