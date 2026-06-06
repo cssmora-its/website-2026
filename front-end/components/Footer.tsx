@@ -34,13 +34,11 @@ CSSMoRA ITS adalah wadah pengembangan dan pengabdian bagi mahasantri penerima be
           <div className={`lg:col-span-3 ${poppins.className}`}>
             <h4 className={`text-[#0082c6] font-bold text-lg mb-6 ${notoSerif.className}`}>Beranda</h4>
             <ul className="flex flex-col space-y-4 text-gray-600 text-[15px]">
-              <li><Link href="#about" className="hover:text-[#0082c6] transition-colors">About CSSMoRA</Link></li>
-              <li><Link href="#visi-misi" className="hover:text-[#0082c6] transition-colors">Visi Misi</Link></li>
-              <li><Link href="#sejarah" className="hover:text-[#0082c6] transition-colors">Sejarah</Link></li>
-              <li><Link href="#renjana-cita" className="hover:text-[#0082c6] transition-colors">Overview Renjana Cita</Link></li>
-              <li><Link href="#prestasi" className="hover:text-[#0082c6] transition-colors">Prestasi</Link></li>
-              <li><Link href="#gallery" className="hover:text-[#0082c6] transition-colors">Gallery</Link></li>
-              <li><Link href="#statistik" className="hover:text-[#0082c6] transition-colors">Statistik</Link></li>
+              <li><Link href="/#home" className="hover:text-[#0082c6] transition-colors">About CSSMoRA</Link></li>
+              <li><Link href="/renjana-cita" className="hover:text-[#0082c6] transition-colors">Renjana Cita</Link></li>
+              <li><Link href="/prestasi" className="hover:text-[#0082c6] transition-colors">Prestasi</Link></li>
+              <li><Link href="/gallery" className="hover:text-[#0082c6] transition-colors">Gallery</Link></li>
+              <li><Link href="/awardee" className="hover:text-[#0082c6] transition-colors">Awardee</Link></li>
             </ul>
           </div>
 
