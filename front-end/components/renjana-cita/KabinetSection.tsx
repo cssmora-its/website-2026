@@ -25,9 +25,6 @@ export default function KabinetSection() {
 
   const activeDept = departments.find((d) => d.slug === activeSlug);
 
-  // Pantau posisi sentinel (tepat di atas tab). Saat tab mulai menempel ke
-  // bawah Header global, tandai `collapsed` → Header diminta slide-up keluar
-  // dan tab naik ke paling atas (top-0) mengisi ruangnya.
   useEffect(() => {
     const onScroll = () => {
       const el = sentinelRef.current;
@@ -48,12 +45,10 @@ export default function KabinetSection() {
     setHidden(collapsed);
   }, [collapsed, setHidden]);
 
-  // Saat meninggalkan halaman ini, pastikan Header tampil kembali.
   useEffect(() => () => setHidden(false), [setHidden]);
 
   return (
     <>
-      {/* Sentinel: penanda kapan tab mulai menempel ke atas (tinggi 0, di flow). */}
       <div ref={sentinelRef} aria-hidden className="h-0" />
 
       {/* ===== Tab Pills (sticky) ===== */}
@@ -102,7 +97,7 @@ export default function KabinetSection() {
 }
 
 /* =========================================================
-   Reusable: judul section + garis lime
+   Reusable: judul section
    ========================================================= */
 function SectionHeading({
   title,
@@ -116,7 +111,7 @@ function SectionHeading({
   return (
     <div className="text-center mb-10 md:mb-12">
       <h2
-        className={`text-2xl md:text-[34px] font-bold text-[#0082c6] mb-3 ${notoSerif.className}`}
+        className={`text-3xl md:text-[38px] font-bold text-[#0082c6] mb-3 ${notoSerif.className}`}
       >
         {title}
       </h2>
@@ -137,84 +132,82 @@ function GroupHeading({ title }: { title: string }) {
 }
 
 /* =========================================================
-   EXECUTIVE BOARD VIEW
+   EXECUTIVE BOARD VIEW (DIREVISI SESUAI REFERENSI)
    ========================================================= */
 function ExecutiveBoardView() {
   const { visi, misi, topBoard, directors } = executiveBoard;
 
   return (
     <>
-      {/* Strategic Foundation */}
-      <section className="py-16 md:py-20 px-6 bg-[#f8fafc]">
-        <div className="container mx-auto max-w-6xl">
-          <SectionHeading title="Strategic Foundation" withRule />
+      {/* =====================================
+          SECTION: VISION & MISSION
+      ===================================== */}
+      <section className="py-16 md:py-24 px-6 bg-[#fcfdfc]">
+        <div className="container mx-auto max-w-6xl flex flex-col items-center">
+          
+          {/* Judul Utama Vision & Mission */}
+          <h2 className={`text-3xl md:text-5xl font-bold mb-10 md:mb-14 text-center ${notoSerif.className}`}>
+            <span className="text-[#2a411b]">Vision </span>
+            <span className="text-[#0082c6]">& Mission</span>
+          </h2>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-            {/* Visi */}
-            <div className="lg:col-span-5 bg-white rounded-2xl shadow-sm border border-gray-100 p-7 md:p-8 flex flex-col justify-center">
-              <div className={`flex items-center gap-3 mb-5 text-[#0082c6] ${poppins.className}`}>
-                <span className="w-10 h-10 rounded-full bg-[#0082c6]/10 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M2.036 12.322a1 1 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178a1 1 0 0 1 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z"
-                    />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                  </svg>
-                </span>
-                <h3 className={`text-2xl font-bold ${notoSerif.className}`}>Visi</h3>
-              </div>
-              <p className={`text-gray-600 text-base md:text-lg leading-relaxed italic ${poppins.className}`}>
+          {/* Banner VISI */}
+          <div className="relative w-full h-[250px] md:h-[320px] rounded-3xl overflow-hidden mb-20 shadow-2xl flex items-center justify-center group">
+            {/* Background Image (Gunakan gambar yang relevan, saya set default ke anggota-1.png) */}
+            <div 
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"
+              style={{ backgroundImage: 'url(/anggota-1.png)' }}
+            />
+            {/* Overlay Gradasi Hitam & Biru CSSMoRA agar teks terbaca jelas */}
+            <div className="absolute inset-0 bg-[#0082c6]/40 mix-blend-multiply" />
+            <div className="absolute inset-0 bg-black/60" />
+
+            {/* Teks Visi */}
+            <div className="relative z-10 text-center px-8 md:px-16 flex flex-col items-center">
+              <h3 className={`text-2xl md:text-3xl font-bold text-[#a8f070] mb-4 tracking-[0.2em] ${poppins.className}`}>
+                VISI
+              </h3>
+              <p className={`text-white text-base md:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto font-medium ${poppins.className}`}>
                 &ldquo;{visi}&rdquo;
               </p>
             </div>
-
-            {/* Misi grid */}
-            <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
-              {misi.map((m) => (
-                <div
-                  key={m.judul}
-                  className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 hover:shadow-lg hover:-translate-y-1 transition-all"
-                >
-                  <span className="inline-flex w-9 h-9 rounded-lg bg-[#a8f070]/40 text-[#2a411b] items-center justify-center mb-4">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth={2.5}
-                      className="w-5 h-5"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
-                    </svg>
-                  </span>
-                  <h4 className={`text-[#0082c6] font-bold text-base mb-2 ${poppins.className}`}>
-                    {m.judul}
-                  </h4>
-                  <p className={`text-gray-500 text-sm leading-relaxed ${poppins.className}`}>
-                    {m.deskripsi}
-                  </p>
-                </div>
-              ))}
-            </div>
           </div>
+
+
+          {/* Judul Core Values (Misi) */}
+          <h2 className={`text-3xl md:text-[38px] font-bold mb-10 text-center ${notoSerif.className}`}>
+            <span className="text-[#0082c6]">Core </span>
+            <span className="text-[#2a411b]">Values</span>
+          </h2>
+
+          {/* Grid MISI / Core Values */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 w-full">
+            {misi.map((m) => (
+              <div
+                key={m.judul}
+                className="bg-white rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 p-8 md:p-10 hover:shadow-xl hover:-translate-y-2 hover:border-[#a8f070]/50 transition-all duration-300 flex flex-col items-center text-center group"
+              >
+                <h4 className={`text-[#0082c6] font-bold text-xl mb-4 italic group-hover:text-[#2a411b] transition-colors ${poppins.className}`}>
+                  {m.judul}
+                </h4>
+                <p className={`text-gray-600 text-[14px] md:text-[15px] leading-relaxed ${poppins.className}`}>
+                  {m.deskripsi}
+                </p>
+              </div>
+            ))}
+          </div>
+
         </div>
       </section>
 
-      {/* Top Executive Board */}
+      {/* =====================================
+          SECTION: TOP EXECUTIVE BOARD
+      ===================================== */}
       <section className="py-16 md:py-20 px-6 bg-white">
         <div className="container mx-auto max-w-5xl">
-          <SectionHeading title="Top Executive Board" subtitle="Leading the Vision" />
+          <SectionHeading title="Top Executive Board" subtitle="Leading the Vision" withRule />
 
-          <div className="flex flex-col items-center gap-8">
+          <div className="flex flex-col items-center gap-8 mt-10">
             {/* Chairman (featured) */}
             <div className="w-full max-w-[320px] h-[440px]">
               <MemberCard member={topBoard.chairman} />
@@ -232,12 +225,14 @@ function ExecutiveBoardView() {
         </div>
       </section>
 
-      {/* Board of Director */}
+      {/* =====================================
+          SECTION: BOARD OF DIRECTOR
+      ===================================== */}
       <section className="py-16 md:py-20 px-6 bg-[#f8fafc]">
         <div className="container mx-auto max-w-6xl">
-          <SectionHeading title="Board of Director" subtitle="The Administrative & Financial Excellence" />
+          <SectionHeading title="Board of Director" subtitle="The Administrative & Financial Excellence" withRule />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
             {directors.map((d) => (
               <div key={d.id} className="h-[400px]">
                 <MemberCard member={d} />
