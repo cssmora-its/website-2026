@@ -324,18 +324,6 @@
     "photo": "/awardee/2023/Mochammad Alif Nasrullah _ C0423027.jpg"
   },
   {
-    "id": "s-035",
-    "name": "Muhajir Zaky Asa",
-    "nia": "",
-    "department": "",
-    "generation": "2023",
-    "city": "",
-    "pesantren": "",
-    "instagram": "",
-    "linkedin": "",
-    "photo": "/awardee/2023/Muhajir Zaky Asa_.jpg"
-  },
-  {
     "id": "s-036",
     "name": "Muhamad Farchan Setyadi",
     "nia": "C0423030",
@@ -478,18 +466,6 @@
     "instagram": "instagram.com/sint.adr",
     "linkedin": "https://www.linkedin.com/in/sinta-dewi-rahmawati/",
     "photo": "/awardee/2023/Sinta Dewi Rahmawati.jpeg"
-  },
-  {
-    "id": "s-048",
-    "name": "Sri Bimo Aryo Tejo",
-    "nia": "C0423044",
-    "department": "",
-    "generation": "2023",
-    "city": "",
-    "pesantren": "",
-    "instagram": "",
-    "linkedin": "",
-    "photo": "/awardee/2023/Sri Bimo Aryo Tejo_Co023044.png"
   },
   {
     "id": "s-049",
@@ -1366,5 +1342,29 @@
     "instagram": "",
     "linkedin": "",
     "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "s-122",
+    "name": "M. Husni Thamrin",
+    "nia": "",
+    "department": "Teknik Industri",
+    "generation": "2023",
+    "city": "",
+    "pesantren": "Tebuireng",
+    "instagram": "",
+    "linkedin": "",
+    "photo": "/awardee/2023/Husni.jpg"
+  },
+  {
+    "id": "s-123",
+    "name": "Muhammad Hazal Ma'aly Mahmud",
+    "nia": "",
+    "department": "Teknik Sipil",
+    "generation": "2023",
+    "city": "",
+    "pesantren": "PP Queen Al Falah",
+    "instagram": "instagram.com/hazalmuhammad",
+    "linkedin": "Muhammad Hazal Ma'aly Mahmud",
+    "photo": "/awardee/2023/hazal.png"
   }
 ]
