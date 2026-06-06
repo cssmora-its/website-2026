@@ -40,14 +40,16 @@ export default function AwardeeHero() {
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: 'url(/hero4.jpg)' }}
+      className="relative w-full min-h-screen flex items-center overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: 'url(/hero5.jpg)' }}
     >
       {/* Overlay gradient biru CSSMoRA — selaras dengan hero subpage lainnya */}
       <div className="absolute inset-0 z-10 bg-gradient-to-br from-black/55 via-[#0082c6]/75 to-[#0082c6]" />
 
-      <div className="container mx-auto px-6 max-w-7xl relative z-20 pt-32 md:pt-40 pb-16 md:pb-24">
+      {/* Container diubah padding-nya (pt-28 pb-16) agar vertikal center proporsional di layar penuh */}
+      <div className="container mx-auto px-6 max-w-7xl relative z-20 w-full pt-28 md:pt-24 pb-16 md:pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+          
           {/* Kiri: konten teks */}
           <div className={`text-white ${poppins.className}`}>
             {/* Badge jumlah awardee */}
@@ -102,6 +104,7 @@ export default function AwardeeHero() {
               </figure>
             ))}
           </div>
+
         </div>
       </div>
     </section>

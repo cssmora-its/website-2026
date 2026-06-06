@@ -5,7 +5,6 @@ import { Noto_Serif, Poppins } from 'next/font/google';
 const notoSerif = Noto_Serif({ subsets: ['latin'], weight: ['400', '700'] });
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 
-// Ikon chevron kecil untuk breadcrumb
 const ChevronRight = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -24,49 +23,38 @@ const ChevronRight = () => (
 export default function RenjanaHero() {
   return (
     <section
-      className="relative w-full min-h-[78vh] md:min-h-[88vh] flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: 'url(/hero4.jpg)' }}
+      className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: 'url(/hero5.jpg)' }}
     >
-      {/* Overlay gradient: gelap di atas → biru CSSMoRA di bawah agar menyatu
-          dengan section pills berwarna terang di bawahnya */}
-      <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/40 via-[#0082c6]/65 to-[#0082c6]" />
+      {/* Overlay gradient biru CSSMoRA */}
+      <div className="absolute inset-0 z-10 bg-gradient-to-br from-black/55 via-[#0082c6]/75 to-[#0082c6]" />
 
       <div
-        className={`container mx-auto px-6 max-w-4xl relative z-20 pt-28 md:pt-32 pb-16 md:pb-20 flex flex-col items-center text-center text-white ${poppins.className}`}
+        className={`container mx-auto px-6 max-w-4xl relative z-20 w-full pt-28 pb-16 flex flex-col items-center text-center text-white ${poppins.className}`}
       >
-        {/* Breadcrumb */}
-        <nav aria-label="Breadcrumb" className="mb-5">
-          <ol className="flex items-center justify-center text-[13px] md:text-sm text-white/80">
-            <li>
-              <Link href="/" className="hover:text-white transition-colors">
-                Home
-              </Link>
-            </li>
-            <li className="flex items-center">
-              <ChevronRight />
-              <span className="text-white font-medium">Kabinet</span>
-            </li>
-          </ol>
-        </nav>
 
+        {/* Judul Utama (Ukuran diperbesar: text-6xl md:text-8xl lg:text-[110px]) */}
         <h1
-          className={`text-4xl md:text-6xl lg:text-[64px] font-bold tracking-tight mb-5 drop-shadow-lg ${notoSerif.className}`}
+          className={`text-6xl md:text-8xl lg:text-[110px] font-bold tracking-tighter mb-8 drop-shadow-lg leading-[0.95] ${notoSerif.className}`}
         >
           Renjana Cita
         </h1>
 
         {/* Badge tagline kabinet */}
         <div
-          className={`inline-flex w-fit bg-[#a8f070] px-5 md:px-6 py-2 md:py-2.5 rounded-full mb-6 shadow-lg ${poppins.className}`}
+          className={`inline-flex w-fit bg-[#a8f070] px-6 py-2.5 rounded-full mb-8 shadow-lg ${poppins.className}`}
         >
           <span className="text-[#2a411b] font-bold text-xs md:text-sm tracking-[0.12em] uppercase">
             The Pulse of Dedication 2025/2026
           </span>
         </div>
 
+        {/* Deskripsi */}
         <p className="text-base md:text-xl text-white/95 leading-relaxed drop-shadow-md max-w-2xl">
           Mengenang inaugurasi &amp; perjalanan pengabdian Kabinet{' '}
-          <span className="font-semibold italic">Renjana Cita</span> CSSMoRA ITS.
+          <span className="whitespace-nowrap">
+            <span className="font-semibold italic">Renjana Cita</span> CSSMoRA ITS.
+          </span>
         </p>
       </div>
     </section>
