@@ -74,6 +74,6 @@ export interface TabItem {
 }
 
 export const TAB_ITEMS: TabItem[] = [
-  { slug: EXECUTIVE_SLUG, label: 'Executive Board' },
+  { slug: EXECUTIVE_SLUG, label: 'Badan Pengurus Harian' },
   ...departments.map((d) => ({ slug: d.slug, label: d.nama })),
 ];

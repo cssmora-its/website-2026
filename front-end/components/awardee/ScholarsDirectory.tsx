@@ -90,10 +90,10 @@ export default function ScholarsDirectory() {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">
           <div>
             <h2 className={`text-3xl md:text-4xl lg:text-5xl font-bold text-[#0082c6] mb-2 ${notoSerif.className}`}>
-              All Scholars
+              Mahasantri
             </h2>
             <p className={`text-gray-500 text-base md:text-lg ${poppins.className}`}>
-              Discover the brilliant minds across all generations.
+              Para Awardee dari seluruh angkatan.
             </p>
           </div>
 
@@ -127,8 +127,8 @@ export default function ScholarsDirectory() {
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                placeholder="Search by name, department, city, pesantren, or social media…"
-                aria-label="Cari scholar"
+                placeholder="Cari nama, departemen, kota, pesantren, atau media sosial…"
+                aria-label="Cari mahasantri"
                 className="w-full sm:w-80 bg-white border border-gray-200 rounded-full pl-10 pr-4 py-2.5 text-sm text-gray-700 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-[#0082c6] focus:border-transparent shadow-sm"
               />
             </div>
@@ -145,7 +145,7 @@ export default function ScholarsDirectory() {
         ) : (
           <div className={`text-center py-20 ${poppins.className}`}>
             <p className="text-gray-500 text-base">
-              Tidak ada scholar yang cocok dengan pencarian kamu.
+              Tidak ada mahasantri yang cocok dengan pencarian kamu.
             </p>
           </div>
         )}
@@ -158,7 +158,7 @@ export default function ScholarsDirectory() {
               onClick={() => setVisible((v) => v + PAGE_SIZE)}
               className={`bg-white border border-[#0082c6] text-[#0082c6] hover:bg-[#0082c6] hover:text-white font-semibold px-8 py-3 rounded-full shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-[#0082c6] focus:ring-offset-2 ${poppins.className}`}
             >
-              Load More Scholars
+              Lihat Lebih Banyak
             </button>
           </div>
         )}

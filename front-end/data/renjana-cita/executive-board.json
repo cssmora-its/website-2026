@@ -2,27 +2,27 @@
   "visi": "CSSMoRA ITS sebagai wadah pengembangan mahasantri yang harmonis dan progresif guna menghadirkan dampak positif bagi anggota dan masyarakat.",
   "misi": [
     {
-      "judul": "Harmonious",
-      "deskripsi": "Mewujudkan lingkungan internal yang inklusif dan kolaboratif."
+      "judul": "1",
+      "deskripsi": "Meningkatkan rasa kekeluargaan melalui kegiatan internalisasi yang inklusif dan inovatif."
     },
     {
-      "judul": "Professional",
-      "deskripsi": "Membangun etos kerja dan manajerial organisasi yang unggul."
+      "judul": "2",
+      "deskripsi": "Menyusun tata kelola organisasi yang profesional untuk menunjang efektivitas dan keberlanjutan."
     },
     {
-      "judul": "Optimal",
-      "deskripsi": "Memaksimalkan potensi mahasantri di bidang akademik dan non-akademik."
+      "judul": "3",
+      "deskripsi": "Mengoptimalkan program pengembangan yang relevan, berorientasi pada pemenuhan minat, bakat, serta kebutuhan anggota."
     },
     {
-      "judul": "Actualize Values",
-      "deskripsi": "Mengamalkan nilai-nilai kepesantrenan dalam kehidupan bermasyarakat."
+      "judul": "4",
+      "deskripsi": "Mengaktualisasikan nilai-nilai luhur kesantrian melalui kegiatan silaturahmi, dakwah, dan pengabdian masyarakat."
     }
   ],
   "topBoard": {
     "chairman": {
       "id": 1,
       "nama": "Nabiel Nizar Anwari",
-      "jabatan": "Chairman",
+      "jabatan": "Ketua Umum",
       "nia": "C0423039",
       "foto": "/renjana-cita/Nabiel.JPG"
     },
@@ -30,14 +30,14 @@
       {
         "id": 2,
         "nama": "Barrul Syamsa Al-Irsyad",
-        "jabatan": "Vice Chairman 1",
+        "jabatan": "Wakil Ketua 1",
         "nia": "C0423010",
         "foto": "/renjana-cita/Barrul.JPG"
       },
       {
         "id": 3,
         "nama": "Lilis Rahmawati",
-        "jabatan": "Vice Chairman 2",
+        "jabatan": "Wakil Ketua 2",
         "nia": "C0423025",
         "foto": "/renjana-cita/Lilis.jpeg"
       }
@@ -47,28 +47,28 @@
     {
       "id": 4,
       "nama": "Sinta Dewi Rahmawati",
-      "jabatan": "General Secretary",
+      "jabatan": "Sekretaris Umum",
       "nia": "C0423043",
       "foto": "/renjana-cita/Sinta.jpeg"
     },
     {
       "id": 5,
       "nama": "Zahra Hafizhah",
-      "jabatan": "Vice General Secretary",
+      "jabatan": "Wakil Sekretaris Umum",
       "nia": "C0424039",
       "foto": "/renjana-cita/Zahra.JPG"
     },
     {
       "id": 6,
       "nama": "Jacinda Safa Firjatillah",
-      "jabatan": "General Treasurer",
+      "jabatan": "Bendahara Umum",
       "nia": "C0423021",
       "foto": "/renjana-cita/Jacinda.jpeg"
     },
     {
       "id": 7,
       "nama": "Asmaul Khasna",
-      "jabatan": "Vice General Treasurer",
+      "jabatan": "Wakil Bendahara Umum",
       "nia": "C0424009",
       "foto": "/renjana-cita/Khasna.JPG"
     }

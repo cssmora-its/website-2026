@@ -64,20 +64,20 @@ export default function AwardeeHero() {
                 <path d="M3.5 9.4v3.9c0 .3.16.56.42.68l7.5 3.34c.37.16.79.16 1.16 0l7.5-3.34a.75.75 0 0 0 .42-.68V9.4l-7.92 3.52a2.25 2.25 0 0 1-1.66 0L3.5 9.4Z" />
               </svg>
               <span className="text-[#2a411b] font-bold text-sm tracking-wide">
-                {totalScholarsLabel} Scholars
+                {totalScholarsLabel} Mahasantri
               </span>
             </div>
 
             <h1
               className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6 drop-shadow-lg ${notoSerif.className}`}
             >
-              Where Every <span className="text-[#a8f070]">Chapter</span> Began
+              Tempat Setiap <span className="text-[#a8f070]"><br />Langkah</span> Bermula
             </h1>
 
             <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-xl mb-8 drop-shadow">
-              Since its inception in 2007, CSSMoRA ITS has fostered over {totalScholarsLabel}{' '}
-              mahasantri. This number reflects not just a headcount, but a network of intelligence
-              and integrity spreading across the nation.
+              Sejak berdiri pada 2007, CSSMoRA ITS telah membina lebih dari {totalScholarsLabel}{' '}
+              mahasantri. Angka ini bukan sekadar jumlah, melainkan jejaring kecerdasan dan
+              integritas yang menyebar ke seluruh penjuru negeri.
             </p>
 
             <button
@@ -85,7 +85,7 @@ export default function AwardeeHero() {
               onClick={handleScrollToScholars}
               className="group inline-flex items-center bg-[#a8f070] hover:bg-[#9be85f] text-[#2a411b] font-bold px-7 py-3.5 rounded-full shadow-lg transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0082c6]"
             >
-              See All Scholars
+              Lihat Semua Mahasantri
               <ArrowRight />
             </button>
           </div>

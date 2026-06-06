@@ -61,9 +61,9 @@ export default function PrestasiCard({ prestasi, onReadMore }: Props) {
         type="button"
         onClick={() => onReadMore(prestasi)}
         aria-label={`Baca detail prestasi ${prestasi.title}`}
-        className="self-start bg-[#a8f070] hover:bg-[#9be85f] text-[#2a411b] font-bold text-sm px-5 py-2 rounded-md shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0082c6]"
+        className="cursor-pointer self-start bg-[#a8f070] hover:bg-[#9be85f] text-[#2a411b] font-bold text-sm px-5 py-2 rounded-md shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0082c6]"
       >
-        Read More
+        Selengkapnya
       </button>
     </article>
   );

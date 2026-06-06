@@ -38,15 +38,8 @@ export default function GalleryHero() {
             
             {/* Badge Filosofi */}
             <div className="inline-flex items-center gap-2 bg-[#a8f070] px-5 py-2 rounded-full mb-6 shadow-lg">
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                viewBox="0 0 24 24" 
-                fill="currentColor" 
-                className="w-4 h-4 text-[#2a411b]"
-              >
-                <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
-              </svg>
-              <span className="text-[#2a411b] font-bold text-sm tracking-wide italic">
+
+              <span className="text-[#2a411b] font-bold text-sm tracking-wide uppercase">
                 Filosofi Kabinet Renjana Cita
               </span>
             </div>
@@ -55,7 +48,7 @@ export default function GalleryHero() {
             <h1
               className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6 drop-shadow-lg ${notoSerif.className}`}
             >
-              The Soul of <br className="hidden md:block" /> <span className="text-[#a8f070]">Renjana Cita</span>
+              Jiwa dari <br className="hidden md:block" /> <span className="text-[#a8f070]">Renjana Cita</span>
             </h1>
 
             {/* Deskripsi */}

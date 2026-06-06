@@ -49,11 +49,11 @@ export default function CaptainsSection() {
           <h2
             className={`text-3xl md:text-4xl lg:text-5xl font-bold text-[#0082c6] mb-4 ${notoSerif.className}`}
           >
-            The Lineage of Captains
+            Ketua Angkatan
           </h2>
           <p className={`text-gray-500 text-base md:text-lg italic leading-relaxed ${poppins.className}`}>
-            &ldquo;More than just names, they are the soul of every generation, ensuring our light
-            remains undimmed.&rdquo;
+            &ldquo;Lebih dari sekadar nama, mereka adalah jiwa dari setiap angkatan yang menjaga
+            cahaya kami tetap menyala.&rdquo;
           </p>
         </div>
 

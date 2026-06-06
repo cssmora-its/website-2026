@@ -8,7 +8,7 @@ import { Poppins } from 'next/font/google';
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'] });
 
 const chairmanData = [
-  { id: 1, name: 'Helvea Rezano (Mas Gori)', jurusan: 'Sistem Informasi 2006', tahun: '2007 - 2008', kabinet: '' },
+  { id: 1, name: 'Helvea Rezano', jurusan: 'Sistem Informasi 2006', tahun: '2007 - 2008', kabinet: '' },
   { id: 2, name: 'Imam Trio U', jurusan: 'Teknik Mesin 2007', tahun: '2008 - 2009', kabinet: '' },
   { id: 3, name: 'Ahmad Zahid A', jurusan: 'Teknik Industri 2007', tahun: '2009 - 2010', kabinet: '' },
   { id: 4, name: 'Darmawan Rasyid H', jurusan: 'Teknik Mesin 2008', tahun: '2010 - 2011', kabinet: '' },
@@ -18,7 +18,7 @@ const chairmanData = [
   { id: 8, name: 'Nur Ahmad Syahid', jurusan: 'Teknik Elektro 2012', tahun: '2014 - 2015', kabinet: 'Kabinet CSS Bersahabat' },
   { id: 9, name: 'M Khoirur Rokhman', jurusan: 'Teknik Lingkungan 2012', tahun: '2015 - 2016', kabinet: 'Kabinet Menyejukkan' },
   { id: 10, name: 'Ahmad Athoillah', jurusan: 'Teknik Industri 2014', tahun: '2016 - 2017', kabinet: 'Kabinet Super' },
-  { id: 11, name: 'Zishwa Muhammad Jauhar', jurusan: 'Teknik Elektro 2015', tahun: '2017 - 2018', kabinet: 'Kabinet Harmoni' },
+  { id: 11, name: 'Zishwa M Jauhar', jurusan: 'Teknik Elektro 2015', tahun: '2017 - 2018', kabinet: 'Kabinet Harmoni' },
   { id: 12, name: 'Ainul Imam', jurusan: 'Matematika 2016', tahun: '2018 - 2019', kabinet: 'Kabinet Serasi' },
   { id: 13, name: 'M Salman Aqil', jurusan: 'Teknik Industri 2017', tahun: '2019 - 2020', kabinet: 'Kabinet Gradasi' },
   { id: 14, name: 'Misbah Choirul Humam', jurusan: 'Teknik Industri 2018', tahun: '2020 - 2023', kabinet: 'Kabinet Sinergi' },
@@ -77,8 +77,8 @@ export default function Sejarah() {
 
         <div className="container mx-auto px-6 relative z-10 flex flex-col items-center">
           
-          {/* Dekorasi Polaroid Kiri Atas */}
-          <div className="hidden lg:block absolute top-10 left-10 transform -rotate-12 bg-white p-3 shadow-xl w-64 h-72 rounded-sm">
+          {/* Dekorasi Polaroid Kiri Atas (Ditambahkan z-0 agar ada di belakang) */}
+          <div className="hidden 2xl:block absolute top-10 left-10 transform -rotate-12 bg-white p-3 shadow-xl w-64 h-72 rounded-sm z-0">
              <div className="relative w-full h-5/6 bg-gray-200 overflow-hidden">
                 <Image 
                   src="/station1.jpeg" 
@@ -90,8 +90,8 @@ export default function Sejarah() {
              <div className="absolute -top-3 left-4 w-5 h-5 bg-gray-300 rounded-full shadow-sm" />
           </div>
 
-          {/* Dekorasi Polaroid Kanan Bawah */}
-          <div className="hidden lg:block absolute bottom-0 right-10 transform rotate-12 bg-white p-3 shadow-xl w-64 h-72 rounded-sm">
+          {/* Dekorasi Polaroid Kanan Bawah (Ditambahkan z-0 agar ada di belakang) */}
+          <div className="hidden 2xl:block absolute bottom-0 right-10 transform rotate-12 bg-white p-3 shadow-xl w-64 h-72 rounded-sm z-0">
              <div className="relative w-full h-5/6 bg-gray-200 overflow-hidden">
                 <Image 
                   src="/station2.jpeg" 
@@ -102,21 +102,22 @@ export default function Sejarah() {
              </div>
           </div>
 
-          <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
+          {/* KONTEN TEKS (Ditambahkan relative z-20 agar PASTI di atas foto) */}
+          <div className="relative z-20 flex flex-col items-center text-center max-w-4xl mx-auto bg-white/40 lg:bg-transparent p-4 lg:p-0 rounded-2xl backdrop-blur-sm lg:backdrop-blur-none">
             <div className="relative w-[280px] h-[70px] md:w-[450px] md:h-[110px] mb-8">
               <Image src="/logo-color-clean.png" alt="Logo CSSMoRA ITS" fill className="object-contain" />
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-bold text-[#0082c6] mb-8">
-              Where the Heart Belongs
+            <h2 className="mb-6 text-3xl md:text-4xl lg:text-[44px] font-bold text-[#0082c6] leading-[1.2] ${notoSerif.className}">
+              Menapak Jejak, Mengukir Makna
             </h2>
 
-            <div className="text-gray-600 space-y-6 text-[14px] md:text-[16px] leading-relaxed text-justify md:text-center">
+            <div className="text-gray-600 text-[15px] md:text-[16px] space-y-5 leading-relaxed text-justify ${poppins.className}">
               <p>
                 Jauh sebelum nama CSSMoRA menggema di kampus Ibu yang Luhur, harmoni mahasantri PBSB di ITS telah terpupuk sejak 19 Mei 2007 melalui komunitas HADITS (Himpunan Anak Depag ITS). Diprakarsai oleh Mas Gori (Sistem Informasi 2006), perkumpulan ini lahir sebagai rumah dan tempat berpulang yang hangat bagi para mahasantri di tengah dinamika akademis.
               </p>
               <p>
-                Moving forward with a bigger vision, organisasi ini resmi bertransformasi dan menyandang nama CSSMoRA ITS pada 13 Juli 2008. Evolusi ini menandai babak baru bagi kami untuk terus mengukuhkan peran sebagai wadah dedikasi, kolaborasi, dan tempat pulang bagi seluruh mahasantri dari masa ke masa.
+                Melangkah maju dengan visi yang lebih besar, organisasi ini resmi bertransformasi dan menyandang nama CSSMoRA ITS pada 13 Juli 2008. Evolusi ini menandai babak baru bagi kami untuk terus mengukuhkan peran sebagai wadah dedikasi, kolaborasi, dan tempat pulang bagi seluruh mahasantri dari masa ke masa.
               </p>
             </div>
           </div>
@@ -133,7 +134,7 @@ export default function Sejarah() {
           
           <div className="flex flex-col items-center relative z-20 mb-8 pt-10">
             <h2 className="text-4xl font-bold text-[#0082c6] mb-4">
-              History of the Chairman
+              Dedikasi dari Masa ke Masa
             </h2>
             <div className="bg-[#a8f070] px-8 py-3 rounded-lg shadow-md transform -rotate-2">
               <span className="text-[#2a411b] font-bold text-3xl tracking-wide">
@@ -216,7 +217,7 @@ export default function Sejarah() {
         
         <div className="flex flex-col items-center relative z-20 mb-16">
             <h2 className="text-3xl font-bold text-[#0082c6] mb-4">
-              History of the Chairman
+              Dedikasi dari Masa ke Masa
             </h2>
             <div className="bg-[#a8f070] px-6 py-2 rounded-lg shadow-md transform -rotate-2">
               <span className="text-[#2a411b] font-bold text-xl tracking-wide">

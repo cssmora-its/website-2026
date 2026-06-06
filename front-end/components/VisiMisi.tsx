@@ -39,11 +39,11 @@ export default function VisiMisi() {
         <div className={`mb-12 flex flex-col items-start lg:ml-8 ${poppins.className}`}>
           <div className="flex flex-col items-center">
             <h3 className="text-white text-2xl md:text-[28px] font-bold mb-1 tracking-wide">
-              Aligning with the
+              Selaras dengan Visi
             </h3>
-            <div className="bg-[#a8f070] px-6 py-2 transform -rotate-2 shadow-lg">
+            <div className="bg-[#a8f070] px-6 py-2 transform -rotate-2 shadow-lg rounded-xl">
               <span className="text-[#2a411b] text-2xl md:text-[28px] font-bold">
-                National Vision
+                CSSMoRA Nasional
               </span>
             </div>
           </div>

@@ -45,13 +45,13 @@ export default function RenjanaHero() {
           className={`inline-flex w-fit bg-[#a8f070] px-6 py-2.5 rounded-full mb-8 shadow-lg ${poppins.className}`}
         >
           <span className="text-[#2a411b] font-bold text-xs md:text-sm tracking-[0.12em] uppercase">
-            The Pulse of Dedication 2025/2026
+            Dedikasi Pengabdian 2025/2026
           </span>
         </div>
 
         {/* Deskripsi */}
         <p className="text-base md:text-xl text-white/95 leading-relaxed drop-shadow-md max-w-2xl">
-          Mengenang inaugurasi &amp; perjalanan pengabdian Kabinet{' '}
+          Mengenang inaugurasi &amp; perjalanan pengabdian <br />Kabinet{' '}
           <span className="whitespace-nowrap">
             <span className="font-semibold italic">Renjana Cita</span> CSSMoRA ITS.
           </span>

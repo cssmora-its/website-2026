@@ -1,81 +1,57 @@
 [
   {
-    "id": "c-2006",
-    "name": "Helvea Rezano",
-    "department": "Sistem Informasi",
-    "generation": "2006",
+    "id": "c-2025",
+    "name": "Naufal Abid Ramadhan",
+    "department": "Teknik Perkapalan",
+    "generation": "2025",
+    "totalScholars": 12,
+    "photo": "/awardee/2025/Naufal Abid Ramadhan_C0425009.jpg"
+  },
+  {
+    "id": "c-2024",
+    "name": "Andi Waldan Danish Savaraz Palinrungi",
+    "department": "Teknik Sipil",
+    "generation": "2024",
     "totalScholars": 40,
-    "photo": "/awardee/cowo.png"
+    "photo": "/awardee/2024/Andi Waldan Danish Savaraz Palinrungi_C0424007.jpg"
   },
   {
-    "id": "c-2007",
-    "name": "Imam Trio U",
-    "department": "Teknik Mesin",
-    "generation": "2007",
-    "totalScholars": 60,
-    "photo": "/awardee/cowo.png"
-  },
-  {
-    "id": "c-2008",
-    "name": "Andi Kurnia F",
-    "department": "Sistem Informasi",
-    "generation": "2008",
-    "totalScholars": 60,
-    "photo": "/awardee/cowo.png"
-  },
-  {
-    "id": "c-2009",
-    "name": "Adam",
+    "id": "c-2023",
+    "name": "M. Alif Nasrullah",
     "department": "Informatika",
-    "generation": "2009",
-    "totalScholars": 70,
-    "photo": "/awardee/cowo.png"
+    "generation": "2023",
+    "totalScholars": 47,
+    "photo": "/awardee/2023/Mochammad Alif Nasrullah _ C0423027.jpg"
   },
   {
-    "id": "c-2010",
-    "name": "Masbar Salim M",
-    "department": "Informatika",
-    "generation": "2010",
-    "totalScholars": 60,
-    "photo": "/awardee/cowo.png"
-  },
-  {
-    "id": "c-2011",
-    "name": "Didik Purwanto",
-    "department": "Informatika",
-    "generation": "2011",
-    "totalScholars": 39,
-    "photo": "/awardee/cowo.png"
-  },
-  {
-    "id": "c-2012",
-    "name": "M Abdurrahman D",
-    "department": "Informatika",
-    "generation": "2012",
-    "totalScholars": 35,
-    "photo": "/awardee/cowo.png"
-  },
-  {
-    "id": "c-2014",
-    "name": "Ali Fikri",
-    "department": "Teknik Elektro",
-    "generation": "2014",
+    "id": "c-2022",
+    "name": "T. Ahyaul Kamal",
+    "department": "Statistika",
+    "generation": "2022",
     "totalScholars": 20,
-    "photo": "/awardee/cowo.png"
+    "photo": "/awardee/2022/Ahyaul Kamal.JPG"
   },
   {
-    "id": "c-2015",
-    "name": "Fattah Al Alim",
-    "department": "Teknik Elektro",
-    "generation": "2015",
-    "totalScholars": 25,
-    "photo": "/awardee/cowo.png"
-  },
-  {
-    "id": "c-2016",
-    "name": "M Nizar Z",
+    "id": "c-2021",
+    "name": "Muhammad Ahyun Irsyada",
     "department": "Informatika",
-    "generation": "2016",
+    "generation": "2021",
+    "totalScholars": 5,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2019",
+    "name": "Afdhal Ma'ruf Lukman",
+    "department": "Informatika",
+    "generation": "2019",
+    "totalScholars": 8,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2018",
+    "name": "M Hamzah H",
+    "department": "Matematika",
+    "generation": "2018",
     "totalScholars": 15,
     "photo": "/awardee/cowo.png"
   },
@@ -88,59 +64,83 @@
     "photo": "/awardee/cowo.png"
   },
   {
-    "id": "c-2018",
-    "name": "M Hamzah H",
-    "department": "Matematika",
-    "generation": "2018",
+    "id": "c-2016",
+    "name": "M Nizar Z",
+    "department": "Informatika",
+    "generation": "2016",
     "totalScholars": 15,
     "photo": "/awardee/cowo.png"
   },
   {
-    "id": "c-2019",
-    "name": "Afdhal Ma'ruf Lukman",
-    "department": "Informatika",
-    "generation": "2019",
-    "totalScholars": 8,
+    "id": "c-2015",
+    "name": "Fattah Al Alim",
+    "department": "Teknik Elektro",
+    "generation": "2015",
+    "totalScholars": 25,
     "photo": "/awardee/cowo.png"
   },
   {
-    "id": "c-2021",
-    "name": "Muhammad Ahyun Irsyada",
-    "department": "Informatika",
-    "generation": "2021",
-    "totalScholars": 5,
-    "photo": "/awardee/cowo.png"
-  },
-  {
-    "id": "c-2022",
-    "name": "T. Ahyaul Kamal",
-    "department": "Statistika",
-    "generation": "2022",
+    "id": "c-2014",
+    "name": "Ali Fikri",
+    "department": "Teknik Elektro",
+    "generation": "2014",
     "totalScholars": 20,
-    "photo": "/awardee/2022/Ahyaul Kamal.JPG"
+    "photo": "/awardee/cowo.png"
   },
   {
-    "id": "c-2023",
-    "name": "M. Alif Nasrullah",
+    "id": "c-2012",
+    "name": "M Abdurrahman D",
     "department": "Informatika",
-    "generation": "2023",
-    "totalScholars": 47,
-    "photo": "/awardee/2023/Mochammad Alif Nasrullah _ C0423027.jpg"
+    "generation": "2012",
+    "totalScholars": 35,
+    "photo": "/awardee/cowo.png"
   },
   {
-    "id": "c-2024",
-    "name": "Andi Waldan Danish Savaraz Palinrungi",
-    "department": "Teknik Sipil",
-    "generation": "2024",
+    "id": "c-2011",
+    "name": "Didik Purwanto",
+    "department": "Informatika",
+    "generation": "2011",
+    "totalScholars": 39,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2010",
+    "name": "Masbar Salim M",
+    "department": "Informatika",
+    "generation": "2010",
+    "totalScholars": 60,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2009",
+    "name": "Adam",
+    "department": "Informatika",
+    "generation": "2009",
+    "totalScholars": 70,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2008",
+    "name": "Andi Kurnia F",
+    "department": "Sistem Informasi",
+    "generation": "2008",
+    "totalScholars": 60,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2007",
+    "name": "Imam Trio U",
+    "department": "Teknik Mesin",
+    "generation": "2007",
+    "totalScholars": 60,
+    "photo": "/awardee/cowo.png"
+  },
+  {
+    "id": "c-2006",
+    "name": "Helvea Rezano",
+    "department": "Sistem Informasi",
+    "generation": "2006",
     "totalScholars": 40,
-    "photo": "/awardee/2024/Andi Waldan Danish Savaraz Palinrungi_C0424007.jpg"
-  },
-  {
-    "id": "c-2025",
-    "name": "Naufal Abid Ramadhan",
-    "department": "Teknik Perkapalan",
-    "generation": "2025",
-    "totalScholars": 12,
-    "photo": "/awardee/2025/Naufal Abid Ramadhan_C0425009.jpg"
+    "photo": "/awardee/cowo.png"
   }
 ]

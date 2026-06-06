@@ -6,9 +6,9 @@ import CaptainsSection from '@/components/awardee/CaptainsSection';
 import ScholarsDirectory from '@/components/awardee/ScholarsDirectory';
 
 export const metadata = {
-  title: 'Awardee — Where Every Chapter Began | CSSMoRA ITS',
+  title: 'Awardee — Tempat Setiap Babak Bermula | CSSMoRA ITS',
   description:
-    'Direktori scholars CSSMoRA ITS — jejak ketua angkatan dan seluruh mahasantri lintas generasi sejak 2007.',
+    'Direktori mahasantri CSSMoRA ITS — jejak ketua angkatan dan seluruh mahasantri lintas generasi sejak 2007.',
 };
 
 export default function AwardeePage() {

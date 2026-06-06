@@ -79,7 +79,7 @@ export default function ProkerDetailModal({ proker, onClose }: Props) {
           type="button"
           onClick={onClose}
           aria-label="Tutup detail proker"
-          className="absolute top-3 right-3 z-30 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-gray-400 hover:text-gray-700 shadow-sm flex items-center justify-center transition-colors"
+          className="cursor-pointer absolute top-3 right-3 z-30 w-8 h-8 rounded-full bg-white/80 hover:bg-white text-gray-400 hover:text-gray-700 shadow-sm flex items-center justify-center transition-colors"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="w-4 h-4">
             <path strokeLinecap="round" strokeLinejoin="round" d="M6 6l12 12M18 6 6 18" />

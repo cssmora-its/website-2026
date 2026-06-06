@@ -12,6 +12,8 @@ export default function Prestasi() {
   // Daftar 5 foto prestasi (tidak boleh lebih/kurang)
   const prestasiImages = [
     "/prestasi/Arundaya Nurhasan.jpg",
+    "/prestasi/fakhri.jpeg",
+    "/prestasi/nabiel.jpeg",
     "/prestasi/Arkan Zahir.jpeg",
     "/prestasi/Farchan The Alchemist.jpg",
     "/prestasi/Naufal Mahdy.jpg",
@@ -54,7 +56,7 @@ export default function Prestasi() {
       <div className="container mx-auto px-6 relative z-10 flex flex-col items-center">
         
         <h2 className={`text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-10 md:mb-14 text-center ${notoSerif.className}`}>
-          Beyond the Horizons: Our Legacy of Excellence
+          Jejak Langkah Prestasi
         </h2>
 
         <div className="bg-white rounded-[32px] shadow-2xl p-6 md:p-12 w-full max-w-6xl flex flex-col">
@@ -149,7 +151,7 @@ export default function Prestasi() {
               href="/prestasi"
               className={`inline-block bg-[#a8f070] text-[#2a411b] font-bold text-[16px] md:text-[17px] px-8 py-3.5 rounded-xl shadow-lg hover:scale-105 transition-transform ${poppins.className}`}
             >
-              Read More
+              Lihat Detail
             </Link>
           </div>
 

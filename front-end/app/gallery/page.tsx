@@ -5,9 +5,9 @@ import GalleryHero from '@/components/gallery/GalleryHero';
 import GalleryContent from '@/components/gallery/GalleryContent';
 
 export const metadata = {
-  title: 'Gallery — The Soul of Renjana Cita | CSSMoRA ITS',
+  title: 'Galeri — Jiwa dari Renjana Cita | CSSMoRA ITS',
   description:
-    'Dokumentasi proker dan agenda Kabinet Renjana Cita CSSMoRA ITS — dari Proker BPH hingga Personalia.',
+    'Dokumentasi proker dan agenda Kabinet Renjana Cita CSSMoRA ITS — dari BPH hingga Personalia.',
 };
 
 export default function GalleryPage() {

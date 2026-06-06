@@ -38,7 +38,7 @@ export default function About() {
             {/* 2. Floating Badge "Santri tidak hanya jago..." */}
             <div className={`absolute -bottom-8 -left-4 md:-bottom-12 md:-left-8 bg-[#a8f070] p-5 md:p-8 rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.1)] transform -rotate-3 z-10 max-w-[280px] md:max-w-[320px] ${poppins.className}`}>
               <p className="text-[#2a411b] font-semibold italic text-lg md:text-xl leading-snug">
-                “Santri tidak hanya jago ngaji, tapi juga harus jago teknologi”
+                “Kilas balik Mahasantri, <br></br>di Kampus Teknologi”
               </p>
             </div>
             
@@ -49,12 +49,12 @@ export default function About() {
             
             {/* Label About Us */}
             <div className={`bg-[#a8f070] text-[#2a411b] px-5 py-2 rounded-lg font-semibold text-sm md:text-base shadow-sm ${poppins.className}`}>
-              About Us
+              Tentang Kami
             </div>
 
             {/* Heading Biru */}
             <h2 className={`text-3xl md:text-4xl lg:text-[44px] font-bold text-[#0082c6] leading-[1.2] ${notoSerif.className}`}>
-              Santri Adalah Orang yang dulu dipukul sekarang memikul
+              Awardee PBSB
             </h2>
 
             {/* Paragraf Penjelasan */}

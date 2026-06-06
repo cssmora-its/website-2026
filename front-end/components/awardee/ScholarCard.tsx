@@ -58,7 +58,7 @@ export default function ScholarCard({ scholar, onClick }: Props) {
         </h3>
         <p className="text-xs md:text-sm text-[#0082c6] line-clamp-1">{scholar.department}</p>
         <span className="mt-2 inline-block text-xs font-semibold text-gray-500 border border-gray-200 rounded-full px-3 py-1 group-hover:border-[#0082c6] group-hover:text-[#0082c6] transition-colors">
-          View Profile
+          Lihat Profil
         </span>
       </div>
     </button>

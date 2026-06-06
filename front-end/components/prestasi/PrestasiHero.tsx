@@ -37,22 +37,19 @@ export default function PrestasiHero() {
           {/* Badge Prestasi */}
           <div className="inline-flex items-center justify-center gap-2 bg-[#a8f070] px-6 py-2.5 rounded-full mb-6 shadow-lg">
             {/* Ikon Bintang/Medali */}
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-[#2a411b]">
-              <path fillRule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.007 5.404.433c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.433 2.082-5.006z" clipRule="evenodd" />
-            </svg>
-            <span className="text-[#2a411b] font-bold text-sm tracking-wide italic">
+            <span className="text-[#2a411b] font-bold text-sm tracking-wide uppercase">
               Prestasi Mahasantri
             </span>
           </div>
 
           {/* Judul Utama */}
           <h1 className={`text-4xl md:text-5xl lg:text-[68px] font-bold leading-[1.15] tracking-tight mb-8 drop-shadow-lg ${notoSerif.className}`}>
-            Driven by <span className="text-[#a8f070]">Passion</span>, <br className="hidden md:block" /> Defined by Impact
+            Digerakkan oleh <span className="text-[#a8f070]">Semangat</span>, <br className="hidden md:block" /> Diarahkan oleh Tujuan
           </h1>
 
           {/* Deskripsi */}
-          <p className="text-base md:text-lg lg:text-xl text-white/90 leading-relaxed max-w-3xl mb-12 drop-shadow">
-            Setiap cita yang diusahakan bersama, selalu ditenagai gairah tulus Renjana. Jelajahi kumpulan karya, inovasi, dan prestasi membanggakan yang kami persembahkan untuk almamater, pesantren, dan negeri.
+          <p className="text-base md:text-lg lg:text-xl text-white/90 leading-relaxed max-w-4xl mb-12 drop-shadow">
+            Setiap cita yang diusahakan bersama, selalu ditenagai gairah tulus Renjana.<br /> Jelajahi kumpulan karya, inovasi, dan prestasi membanggakan yang kami persembahkan untuk almamater, pesantren, dan negeri.
           </p>
 
           {/* Tombol Scroll */}
@@ -60,7 +57,7 @@ export default function PrestasiHero() {
             href="#prestasi-list"
             className="group inline-flex items-center bg-[#a8f070] hover:bg-[#9be85f] text-[#2a411b] font-bold px-8 py-4 rounded-full shadow-lg transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0082c6]"
           >
-            Explore Achievements
+            Jelajahi Prestasi
             <ArrowDown />
           </a>
         </div>
