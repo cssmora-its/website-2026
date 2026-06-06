@@ -39,6 +39,7 @@ CSSMoRA ITS adalah wadah pengembangan dan pengabdian bagi mahasantri penerima be
               <li><Link href="/prestasi" className="hover:text-[#0082c6] transition-colors">Prestasi</Link></li>
               <li><Link href="/gallery" className="hover:text-[#0082c6] transition-colors">Gallery</Link></li>
               <li><Link href="/awardee" className="hover:text-[#0082c6] transition-colors">Awardee</Link></li>
+              <li><Link href="/our-team" className="hover:text-[#0082c6] transition-colors">Our Team</Link></li>
             </ul>
           </div>
 
