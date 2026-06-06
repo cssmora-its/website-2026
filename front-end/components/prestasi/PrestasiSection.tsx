@@ -47,7 +47,7 @@ export default function PrestasiSection() {
             Prestasi Awardee
           </h2>
           <p className={`text-white text-base md:text-lg font-semibold ${poppins.className}`}>
-            Commemorating the Inauguration & Journey of CSSMoRA ITS
+            Mengenang inaugurasi & perjalanan pengabdian CSSMoRA ITS
           </p>
         </div>
 

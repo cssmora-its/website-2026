@@ -53,7 +53,7 @@ export default function Statistik() {
         <div className="relative z-10 flex flex-col items-center justify-center w-full px-10">
             <div className="flex flex-col items-center text-[#0082c6] mb-12 md:mb-16 mt-4">
               <span className="text-[100px] md:text-[130px] font-bold leading-none tracking-tighter">114</span>
-              <span className="text-xl md:text-2xl font-semibold mt-2">Active Student</span>
+              <span className="text-xl md:text-2xl font-semibold mt-2">Mahasiswa Aktif</span>
             </div>
 
             <div className="flex flex-col items-center text-[#0082c6] mb-4">
@@ -70,7 +70,7 @@ export default function Statistik() {
       <div className="w-full lg:w-[65%] bg-[#0082c6] py-16 md:py-20 px-4 md:px-16 lg:px-24 flex flex-col justify-center">
         
         <h2 className="text-3xl md:text-4xl lg:text-[46px] font-bold text-white mb-8 md:mb-16 text-center md:text-left leading-[1.2]">
-          Bridging Disciplines, Creating Impact
+          Lintas Disiplin,<br></br>Membawa Perubahan
         </h2>
 
         {/* BUNGKUS SCROLL HORIZONTAL KHUSUS HP

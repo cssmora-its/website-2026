@@ -1,90 +1,20 @@
 [
   {
     "id": 1,
-    "title": "Lomba Poster Hari Santri Nasional Tahun 2024",
-    "nama": "Muhammad Hilman Azhar",
-    "nrp": "5025241264",
-    "departemen": "Teknik Informatika",
-    "angkatan": "2024",
-    "juara": "Juara 2",
-    "tingkat": "Nasional",
-    "penyelenggara": "",
-    "description": "Lomba Poster dalam rangka memperingati Hari Santri Nasional Tahun 2024 yang diadakan oleh Departemen KOMINFO Nasional CSSMoRA Periode 2024-2025.",
-    "thumbnail": "/prestasi/Hilman Azhar.jpg",
-    "image": "/prestasi/Hilman Azhar.jpg"
+    "title": "Grand Final dan Penganugerahan Duta ITS 2024",
+    "nama": "Muhammad Fakhri Imamul Huda",
+    "nrp": "5049231117",
+    "departemen": "Teknologi Kedokteran",
+    "angkatan": "2023",
+    "juara": "Duta Sustainable Development Goals ITS 2024",
+    "tingkat": "Tingkat Institut",
+    "penyelenggara": "ITS",
+    "description": "Grand Final dan Penganugerahan Duta ITS 2024 merupakan ajang pemilihan Duta Kampus yang diselenggarakan oleh ITS. Para Duta terpilih akan menyandang gelar selama satu tahun.",
+    "thumbnail": "/prestasi/fakhri.jpeg",
+    "image": "/prestasi/fakhri.jpeg"
   },
   {
     "id": 2,
-    "title": "RISE ASEAN Leaders Summit Japan 2024",
-    "nama": "Kodrat Mustofa",
-    "nrp": "5003241209",
-    "departemen": "Statistika",
-    "angkatan": "2024",
-    "juara": "Juara 2",
-    "tingkat": "Nasional",
-    "penyelenggara": "",
-    "description": "Perlombaan esai tentang inovasi mitigasi bencana alam di Indonesia sebagai bentuk seleksi persyaratan untuk mengikuti Disaster Mitigation Learning Training di Jepang.",
-    "thumbnail": "/prestasi/Kodrat Mustofa.png",
-    "image": "/prestasi/Kodrat Mustofa.png"
-  },
-  {
-    "id": 3,
-    "title": "Mabacup",
-    "nama": "Mohamad Arkan Zahir Asyafiq",
-    "nrp": "5027241120",
-    "departemen": "Teknologi Informasi",
-    "angkatan": "2024",
-    "juara": "Juara 1",
-    "tingkat": "Institut",
-    "penyelenggara": "LMB ITS",
-    "description": "Lomba Mobile Legends yang diadakan oleh Mabacup.",
-    "thumbnail": "/prestasi/Arkan Zahir.jpeg",
-    "image": "/prestasi/Arkan Zahir.jpeg"
-  },
-  {
-    "id": 4,
-    "title": "Astro STT NF Nufian Creative League - Graphic Design",
-    "nama": "Muhammad Hilman Azhar",
-    "nrp": "5025241264",
-    "departemen": "Teknik Informatika",
-    "angkatan": "2024",
-    "juara": "Juara 1",
-    "tingkat": "Nasional",
-    "penyelenggara": "STT Nurul Fikri",
-    "description": "Lomba graphic design logo dan produk UMKM yang diadakan secara tim.",
-    "thumbnail": "/prestasi/Hilman Azhar.jpg",
-    "image": "/prestasi/Hilman Azhar.jpg"
-  },
-  {
-    "id": 5,
-    "title": "RE-Volve 2025 Infographic Competition",
-    "nama": "Muhamad Farchan Setyadi",
-    "nrp": "5003231211",
-    "departemen": "Statistika",
-    "angkatan": "2023",
-    "juara": "Juara 1",
-    "tingkat": "Institut",
-    "penyelenggara": "SRE ITS",
-    "description": "Lomba Infografis.",
-    "thumbnail": "/prestasi/Farchan The Alchemist.jpg",
-    "image": "/prestasi/Farchan The Alchemist.jpg"
-  },
-  {
-    "id": 6,
-    "title": "Infographic Competition Re-Volve 2025",
-    "nama": "Naufal Mahdy Nashrullah",
-    "nrp": "5003231209",
-    "departemen": "Statistika",
-    "angkatan": "2023",
-    "juara": "Juara 1",
-    "tingkat": "Institut",
-    "penyelenggara": "SRE ITS",
-    "description": "Lomba Infografis yang berfokus pada renewable energy.",
-    "thumbnail": "/prestasi/Naufal Mahdy2.JPG",
-    "image": "/prestasi/Naufal Mahdy2.JPG"
-  },
-  {
-    "id": 7,
     "title": "RoboBoat 2025",
     "nama": "Arundaya Pratama Nurhasan",
     "nrp": "5025221206",
@@ -98,7 +28,105 @@
     "image": "/prestasi/Arundaya Nurhasan.jpg"
   },
   {
+    "id": 3,
+    "title": "KRSRI 2024",
+    "nama": "Nabiel Nizar Anwari",
+    "nrp": "5027231087",
+    "departemen": "Teknologi Informasi",
+    "angkatan": "2023",
+    "juara": "Juara 1",
+    "tingkat": "Tingkat Nasional",
+    "penyelenggara": "Kemendikbudristek",
+    "description": "KRSRI (Kontes Robot SAR Indonesia) adalah salah satu divisi kompetisi dalam ajang Kontes Robot Indonesia (KRI) yang berfokus pada perancangan, pembuatan, dan pengujian robot untuk menjalankan misi pencarian dan penyelamatan (Search and Rescue)",
+    "thumbnail": "/prestasi/nabiel.jpeg",
+    "image": "/prestasi/nabiel.jpeg"
+  },
+  {
+    "id": 4,
+    "title": "Lomba Poster Hari Santri Nasional Tahun 2024",
+    "nama": "Muhammad Hilman Azhar",
+    "nrp": "5025241264",
+    "departemen": "Teknik Informatika",
+    "angkatan": "2024",
+    "juara": "Juara 2",
+    "tingkat": "Nasional",
+    "penyelenggara": "",
+    "description": "Lomba Poster dalam rangka memperingati Hari Santri Nasional Tahun 2024 yang diadakan oleh Departemen KOMINFO Nasional CSSMoRA Periode 2024-2025.",
+    "thumbnail": "/prestasi/Hilman Azhar.jpg",
+    "image": "/prestasi/Hilman Azhar.jpg"
+  },
+  {
+    "id": 5,
+    "title": "RISE ASEAN Leaders Summit Japan 2024",
+    "nama": "Kodrat Mustofa",
+    "nrp": "5003241209",
+    "departemen": "Statistika",
+    "angkatan": "2024",
+    "juara": "Juara 2",
+    "tingkat": "Nasional",
+    "penyelenggara": "",
+    "description": "Perlombaan esai tentang inovasi mitigasi bencana alam di Indonesia sebagai bentuk seleksi persyaratan untuk mengikuti Disaster Mitigation Learning Training di Jepang.",
+    "thumbnail": "/prestasi/Kodrat Mustofa.png",
+    "image": "/prestasi/Kodrat Mustofa.png"
+  },
+  {
+    "id": 6,
+    "title": "Mabacup",
+    "nama": "Mohamad Arkan Zahir Asyafiq",
+    "nrp": "5027241120",
+    "departemen": "Teknologi Informasi",
+    "angkatan": "2024",
+    "juara": "Juara 1",
+    "tingkat": "Institut",
+    "penyelenggara": "LMB ITS",
+    "description": "Lomba Mobile Legends yang diadakan oleh Mabacup.",
+    "thumbnail": "/prestasi/Arkan Zahir.jpeg",
+    "image": "/prestasi/Arkan Zahir.jpeg"
+  },
+  {
+    "id": 7,
+    "title": "Astro STT NF Nufian Creative League - Graphic Design",
+    "nama": "Muhammad Hilman Azhar",
+    "nrp": "5025241264",
+    "departemen": "Teknik Informatika",
+    "angkatan": "2024",
+    "juara": "Juara 1",
+    "tingkat": "Nasional",
+    "penyelenggara": "STT Nurul Fikri",
+    "description": "Lomba graphic design logo dan produk UMKM yang diadakan secara tim.",
+    "thumbnail": "/prestasi/Hilman Azhar.jpg",
+    "image": "/prestasi/Hilman Azhar.jpg"
+  },
+  {
     "id": 8,
+    "title": "RE-Volve 2025 Infographic Competition",
+    "nama": "Muhamad Farchan Setyadi",
+    "nrp": "5003231211",
+    "departemen": "Statistika",
+    "angkatan": "2023",
+    "juara": "Juara 1",
+    "tingkat": "Institut",
+    "penyelenggara": "SRE ITS",
+    "description": "Lomba Infografis.",
+    "thumbnail": "/prestasi/Farchan The Alchemist.jpg",
+    "image": "/prestasi/Farchan The Alchemist.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Infographic Competition Re-Volve 2025",
+    "nama": "Naufal Mahdy Nashrullah",
+    "nrp": "5003231209",
+    "departemen": "Statistika",
+    "angkatan": "2023",
+    "juara": "Juara 1",
+    "tingkat": "Institut",
+    "penyelenggara": "SRE ITS",
+    "description": "Lomba Infografis yang berfokus pada renewable energy.",
+    "thumbnail": "/prestasi/Naufal Mahdy2.JPG",
+    "image": "/prestasi/Naufal Mahdy2.JPG"
+  },
+  {
+    "id": 10,
     "title": "Business Case Competition Akara Aggregate 2025",
     "nama": "Mohammad Fathur Rizki Lubis",
     "nrp": "5010241234",
@@ -112,7 +140,7 @@
     "image": "/prestasi/fathur lubis.jpg"  
   },
   {
-    "id": 9,
+    "id": 11,
     "title": "HDE ITS X JOY Starlight Tournament",
     "nama": "Khalil Gibran Al Azhar",
     "nrp": "5024241100",
@@ -126,7 +154,7 @@
     "image": "/prestasi/Al Azhar.jpg"
   },
   {
-    "id": 10,
+    "id": 12,
     "title": "Putra Putri Batik Gresik 2025",
     "nama": "Naufal Mahdy Nashrullah",
     "nrp": "5003231209",
@@ -140,7 +168,7 @@
     "image": "/prestasi/Naufal Mahdy.jpg"
   },
   {
-    "id": 11,
+    "id": 13,
     "title": "RDK 47 ITS",
     "nama": "Bara Ardiwinata",
     "nrp": "5026231232",
@@ -154,7 +182,7 @@
     "image": "/prestasi/Bara Ardiwinata.jpg"
   },
   {
-    "id": 12,
+    "id": 14,
     "title": "Putri Hijab Jawa Timur 2025",
     "nama": "Anjar Kusumawati",
     "nrp": "5012231210",
@@ -168,7 +196,7 @@
     "image": "/prestasi/anjar kusumawati.jpg"
   },
   {
-    "id": 13,
+    "id": 15,
     "title": "Desain Poster Ilmiah National Economic Business Competition",
     "nama": "Kodrat Mustofa",
     "nrp": "5003241209",
@@ -182,7 +210,7 @@
     "image": "/prestasi/Kodrat Mustofa.png"
   },
   {
-    "id": 14,
+    "id": 16,
     "title": "Student Ambassador Aksi Nirwasita 6.0",
     "nama": "Hanifa Nabi'il Wining",
     "nrp": "5001251022",
@@ -196,7 +224,7 @@
     "image": "/prestasi/Hanifa Nabi'il Wining.jpg"
   },
   {
-    "id": 15,
+    "id": 17,
     "title": "Lomba Infografis dan Essay Maulid Nabi 1447 H",
     "nama": "Milla Adeliya",
     "nrp": "5003241208",

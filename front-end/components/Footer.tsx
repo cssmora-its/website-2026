@@ -26,13 +26,13 @@ export default function Footer() {
               />
             </div>
             <p className={`text-gray-600 text-[16px] md:text-[18px] leading-relaxed ${poppins.className}`}>
-              The advantage of hiring a workspace with us is that givees you comfortable service and all-around facilities.
+CSSMoRA ITS adalah wadah pengembangan dan pengabdian bagi mahasantri penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember.
             </p>
           </div>
 
           {/* Kolom 2: Menu Home Page */}
           <div className={`lg:col-span-3 ${poppins.className}`}>
-            <h4 className={`text-[#0082c6] font-bold text-lg mb-6 ${notoSerif.className}`}>Home Page</h4>
+            <h4 className={`text-[#0082c6] font-bold text-lg mb-6 ${notoSerif.className}`}>Beranda</h4>
             <ul className="flex flex-col space-y-4 text-gray-600 text-[15px]">
               <li><Link href="#about" className="hover:text-[#0082c6] transition-colors">About CSSMoRA</Link></li>
               <li><Link href="#visi-misi" className="hover:text-[#0082c6] transition-colors">Visi Misi</Link></li>
@@ -46,7 +46,7 @@ export default function Footer() {
 
           {/* Kolom 3: Social Media */}
           <div className={`lg:col-span-3 ${poppins.className}`}>
-            <h4 className={`text-[#0082c6] font-bold text-lg mb-6 ${notoSerif.className}`}>Follow Us</h4>
+            <h4 className={`text-[#0082c6] font-bold text-lg mb-6 ${notoSerif.className}`}>Ikuti Kami</h4>
             <ul className="flex flex-col space-y-5 text-gray-600 text-[15px]">
               <li>
                 <a href="https://www.instagram.com/cssmoraits/" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-[#0082c6] transition-colors">
@@ -81,8 +81,8 @@ export default function Footer() {
         <div className={`pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-[14px] ${notoSerif.className}`}>
           <p>Copyright © 2026 CSSMoRA ITS</p>
           <div className={`flex space-x-8 mt-4 md:mt-0 ${poppins.className}`}>
-            <a href="#" className="hover:text-gray-800 transition-colors">Terms & Conditions</a>
-            <a href="#" className="hover:text-gray-800 transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-gray-800 transition-colors">Syarat & Ketentuan</a>
+            <a href="#" className="hover:text-gray-800 transition-colors">Kebijakan Privasi</a>
           </div>
         </div>
 

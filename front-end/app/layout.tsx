@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="id">
       {/* Masukkan variabel font ke body agar bisa diakses Tailwind */}
       <body className={`${poppins.variable} ${notoSerif.variable} font-sans antialiased`}>
         {children}

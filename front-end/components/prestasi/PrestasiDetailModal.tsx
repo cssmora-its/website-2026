@@ -83,7 +83,7 @@ export default function PrestasiDetailModal({ prestasi, onClose }: Props) {
           type="button"
           onClick={onClose}
           aria-label="Tutup detail prestasi"
-          className="absolute top-3 right-3 z-30 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-gray-500 hover:text-gray-800 shadow-sm flex items-center justify-center transition-colors"
+          className="cursor-pointer absolute top-3 right-3 z-30 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-gray-500 hover:text-gray-800 shadow-sm flex items-center justify-center transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

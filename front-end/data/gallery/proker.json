@@ -82,7 +82,7 @@
   {
     "id": 9,
     "nama_proker": "Station",
-    "pelaksana": "Internal Affairs",
+    "pelaksana": "Dagri",
     "kategori": "Internalisasi",
     "waktu_pelaksanaan": "2025-05-18T16:00:00",
     "thumbnail": "/gallery/Dagri_Station.jpeg",
@@ -92,7 +92,7 @@
   {
     "id": 10,
     "nama_proker": "Iftar - Halbi",
-    "pelaksana": "Internal Affairs",
+    "pelaksana": "Dagri",
     "kategori": "Internalisasi",
     "waktu_pelaksanaan": "2025-03-28T17:00:00",
     "thumbnail": "/gallery/Dagri_Halbil.jpg",
@@ -102,7 +102,7 @@
   {
     "id": 11,
     "nama_proker": "Syuwid",
-    "pelaksana": "Internal Affairs",
+    "pelaksana": "Dagri",
     "kategori": "Internalisasi",
     "waktu_pelaksanaan": "2025-09-13T09:00:00",
     "thumbnail": "/gallery/Dagri_Syuwid.jpg",
@@ -112,7 +112,7 @@
   {
     "id": 12,
     "nama_proker": "CSS Community Life",
-    "pelaksana": "Internal Affairs",
+    "pelaksana": "Dagri",
     "kategori": "Internalisasi",
     "waktu_pelaksanaan": "2025-04-12T08:00:00",
     "thumbnail": "/gallery/Dagri_Comlife.jpg",
@@ -122,7 +122,7 @@
   {
     "id": 13,
     "nama_proker": "CSS Tabah",
-    "pelaksana": "Internal Affairs",
+    "pelaksana": "Dagri",
     "kategori": "Internalisasi",
     "waktu_pelaksanaan": "2025-06-08T10:00:00",
     "thumbnail": "/gallery/Dagri_CSS Tabah.jpeg",
@@ -132,7 +132,7 @@
   {
     "id": 14,
     "nama_proker": "Matrikulasi",
-    "pelaksana": "Mahasantri Welfare",
+    "pelaksana": "Kesma",
     "kategori": "Pengembangan",
     "waktu_pelaksanaan": "2025-08-25T08:00:00",
     "thumbnail": "/gallery/Kesma_Matrikulasi.jpg",
@@ -142,7 +142,7 @@
   {
     "id": 15,
     "nama_proker": "Ta’lim",
-    "pelaksana": "Mahasantri Welfare",
+    "pelaksana": "Kesma",
     "kategori": "Pengembangan",
     "waktu_pelaksanaan": "2025-04-05T19:30:00",
     "thumbnail": "/gallery/Kesma_Ta'lim.jpg",
@@ -152,7 +152,7 @@
   {
     "id": 16,
     "nama_proker": "Tadrib",
-    "pelaksana": "Mahasantri Welfare",
+    "pelaksana": "Kesma",
     "kategori": "Pengembangan",
     "waktu_pelaksanaan": "2025-05-22T18:30:00",
     "thumbnail": "/gallery/Kesma_Tadrib.png",
@@ -162,7 +162,7 @@
   {
     "id": 17,
     "nama_proker": "CSS Champion",
-    "pelaksana": "Mahasantri Welfare",
+    "pelaksana": "Kesma",
     "kategori": "Pengembangan",
     "waktu_pelaksanaan": "2025-10-08T08:00:00",
     "thumbnail": "/gallery/Kesma_Champion.jpg",
@@ -182,7 +182,7 @@
   {
     "id": 19,
     "nama_proker": "Abdi Pesantren",
-    "pelaksana": "Pesantren and Social Development",
+    "pelaksana": "P3M",
     "kategori": "Pengabdian",
     "waktu_pelaksanaan": "2025-06-25T08:00:00",
     "thumbnail": "/gallery/P3M_Absen.jpg",
@@ -192,7 +192,7 @@
   {
     "id": 20,
     "nama_proker": "Ngaji Mahasantri",
-    "pelaksana": "Pesantren and Social Development",
+    "pelaksana": "P3M",
     "kategori": "Internalisasi",
     "waktu_pelaksanaan": "2025-04-30T19:30:00",
     "thumbnail": "/gallery/P3M_Ngaji.jpeg",
@@ -202,7 +202,7 @@
   {
     "id": 21,
     "nama_proker": "CSS Visit",
-    "pelaksana": "Pesantren and Social Development",
+    "pelaksana": "P3M",
     "kategori": "Tata Kelola",
     "waktu_pelaksanaan": "2025-07-19T10:00:00",
     "thumbnail": "/gallery/P3M_CSS Visit.png",
@@ -212,7 +212,7 @@
   {
     "id": 22,
     "nama_proker": "Mahasantri Mengabdi",
-    "pelaksana": "Pesantren and Social Development",
+    "pelaksana": "P3M",
     "kategori": "Pengabdian",
     "waktu_pelaksanaan": "2025-08-30T07:00:00",
     "thumbnail": "/gallery/P3M_Mahasantri Mengabdi.png",
@@ -222,7 +222,7 @@
   {
     "id": 23,
     "nama_proker": "CSS Mubarak",
-    "pelaksana": "Media and Information",
+    "pelaksana": "Medfo",
     "kategori": "Internalisasi",
     "waktu_pelaksanaan": "2025-03-15T08:00:00",
     "thumbnail": "/gallery/Medfo_CSS Mubarak.png",
@@ -232,7 +232,7 @@
   {
     "id": 24,
     "nama_proker": "Media Hub",
-    "pelaksana": "Media and Information",
+    "pelaksana": "Medfo",
     "kategori": "Tata Kelola",
     "waktu_pelaksanaan": "2025-05-10T13:00:00",
     "thumbnail": "/gallery/Medfo_Media Hub.jpeg",
@@ -242,7 +242,7 @@
   {
     "id": 25,
     "nama_proker": "GDB",
-    "pelaksana": "Media and Information",
+    "pelaksana": "Medfo",
     "kategori": "Tata Kelola",
     "waktu_pelaksanaan": "2025-02-10T09:00:00",
     "thumbnail": "/gallery/Medfo_GSM.png",
@@ -252,7 +252,7 @@
   {
     "id": 26,
     "nama_proker": "Media Leveling",
-    "pelaksana": "Media and Information",
+    "pelaksana": "Medfo",
     "kategori": "Pengembangan",
     "waktu_pelaksanaan": "2025-04-18T15:00:00",
     "thumbnail": "/gallery/Medfo_Media Leveling.jpeg",
@@ -262,7 +262,7 @@
   {
     "id": 27,
     "nama_proker": "Request",
-    "pelaksana": "Media and Information",
+    "pelaksana": "Medfo",
     "kategori": "Tata Kelola",
     "waktu_pelaksanaan": "2025-06-01T09:00:00",
     "thumbnail": "/gallery/Medfo_Request.png",

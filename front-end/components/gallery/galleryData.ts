@@ -6,7 +6,7 @@
 //
 // Struktur penting:
 //   - `pelaksana` → menentukan SECTION (judul hijau) di halaman gallery,
-//     mis. "BPH", "Internal Affairs", dst.
+//     mis. "BPH", "Dagri", "Kesma", "PSDM", "P3M", "Medfo", "Personalia".
 //   - `kategori`  → kategori proker yang DITAMPILKAN di kartu & modal,
 //     yaitu "Tata Kelola" | "Internalisasi" | "Pengembangan" | "Pengabdian".
 //
@@ -22,11 +22,11 @@ import prokerJson from '@/data/gallery/proker.json';
 /** Pelaksana proker — dipakai sebagai pengelompokan section (judul hijau). */
 export type Pelaksana =
   | 'BPH'
-  | 'Internal Affairs'
-  | 'Mahasantri Welfare'
+  | 'Dagri'
+  | 'Kesma'
   | 'PSDM'
-  | 'Pesantren and Social Development'
-  | 'Media and Information'
+  | 'P3M'
+  | 'Medfo'
   | 'Personalia';
 
 /** Kategori proker — ditampilkan pada kartu & modal detail. */
@@ -52,11 +52,11 @@ export interface Proker {
 /** Urutan section (judul hijau) di halaman gallery. */
 export const PELAKSANA_ORDER: Pelaksana[] = [
   'BPH',
-  'Internal Affairs',
-  'Mahasantri Welfare',
+  'Dagri',
+  'Kesma',
   'PSDM',
-  'Pesantren and Social Development',
-  'Media and Information',
+  'P3M',
+  'Medfo',
   'Personalia',
 ];
 

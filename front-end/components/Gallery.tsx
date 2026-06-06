@@ -29,7 +29,7 @@ export default function Gallery() {
             HEADING "Gallery"
         ========================================= */}
         <h2 className={`text-4xl md:text-5xl font-bold text-[#0082c6] mb-12 text-center ${notoSerif.className}`}>
-          Capturing the Essence of Renjana
+          Mengabadikan Esensi Renjana
         </h2>
 
         {/* =========================================
@@ -71,7 +71,7 @@ export default function Gallery() {
               href="/gallery"
               className={`inline-block bg-[#a8f070] text-[#2a411b] font-bold text-[16px] md:text-[17px] px-8 py-3.5 rounded-xl shadow-lg hover:scale-105 transition-transform ${poppins.className}`}
             >
-              Read More
+              Lihat Detail
             </Link>
           </div>
 

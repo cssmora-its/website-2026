@@ -1,375 +1,18 @@
 [
   {
-    "slug": "internal-affairs",
-    "nama": "Internal Affairs",
-    "tagline": "Mengelola dan mengkoordinasikan urusan internal organisasi secara efektif dan efisien untuk mendukung tercapainya tujuan bersama CSSMoRA ITS.",
-    "leadership": [
-      {
-        "id": 101,
-        "nama": "Dwi Septia Rahmawati",
-        "jabatan": "Head of Department",
-        "nia": "C0423013",
-        "foto": "/renjana-cita/Septi.jpeg"
-      }
-    ],
-    "expertStaff": [
-      {
-        "id": 102,
-        "nama": "Moch Rafi Akbar Imida",
-        "jabatan": "Expert Staff",
-        "nia": "C0423028",
-        "foto": "/renjana-cita/Imida.jpeg"
-      },
-      {
-        "id": 103,
-        "nama": "M. Husni Thamrin",
-        "jabatan": "Expert Staff",
-        "nia": "C0423026",
-        "foto": "/renjana-cita/Husni.jpg"
-      }
-    ],
-    "staff": [
-      {
-        "id": 104,
-        "nama": "Muhammad Sayyidil Anam",
-        "jabatan": "Staff",
-        "nia": "C0424030",
-        "foto": "/renjana-cita/Sayyidil.jpg"
-      },
-      {
-        "id": 105,
-        "nama": "Rafi Mohammad Fathih Riyanda",
-        "jabatan": "Staff",
-        "nia": "C0424034",
-        "foto": "/renjana-cita/Rafi.jpg"
-      },
-      {
-        "id": 106,
-        "nama": "Ahmad Naufal Ramadhan Hariadi",
-        "jabatan": "Staff",
-        "nia": "C0425009",
-        "foto": "/renjana-cita/Naufal H.jpg"
-      },
-      {
-        "id": 107,
-        "nama": "Moh Alfaroq Jauharuddin",
-        "jabatan": "Staff",
-        "nia": "C0424025",
-        "foto": "/renjana-cita/Alfaroq.jpg"
-      },
-      {
-        "id": 108,
-        "nama": "M. Zidan Maulana Hakim",
-        "jabatan": "Staff",
-        "nia": "C0424031",
-        "foto": "/renjana-cita/Zidan.jpeg"
-      }
-    ]
-  },
-  {
-    "slug": "human-capital-development",
-    "nama": "Human Capital Development",
-    "tagline": "Mengembangkan kapasitas, kepemimpinan, dan kompetensi mahasantri melalui pembinaan berkelanjutan yang terarah.",
-    "leadership": [
-      {
-        "id": 201,
-        "nama": "Nadiarista Yustiaputri",
-        "jabatan": "Head of Department",
-        "nia": "C0423040",
-        "foto": "/renjana-cita/nadia.jpeg"
-      }
-    ],
-    "expertStaff": [
-      {
-        "id": 202,
-        "nama": "Izzudin Ali Akbari",
-        "jabatan": "Expert Staff",
-        "nia": "C0423020",
-        "foto": "/renjana-cita/izzud.jpeg"
-      },
-      {
-        "id": 203,
-        "nama": "Bara Ardiwinata",
-        "jabatan": "Expert Staff",
-        "nia": "C0423009",
-        "foto": "/renjana-cita/bara.jpeg"
-      },
-      {
-        "id": 204,
-        "nama": "Alfian Misbachul Munir",
-        "jabatan": "Expert Staff",
-        "nia": "C0423004",
-        "foto": "/renjana-cita/alfian.jpeg"
-      }
-    ],
-    "staff": [
-      {
-        "id": 205,
-        "nama": "Imam Baidhawi",
-        "jabatan": "Staff",
-        "nia": "C0424017",
-        "foto": "/renjana-cita/imam.jpeg"
-      },
-      {
-        "id": 206,
-        "nama": "Logica Fikru Al Farbi",
-        "jabatan": "Staff",
-        "nia": "C0424020",
-        "foto": "/renjana-cita/logica.jpeg"
-      },
-      {
-        "id": 207,
-        "nama": "Zalfaa Zahirah Brilliant",
-        "jabatan": "Staff",
-        "nia": "C0424040",
-        "foto": "/renjana-cita/zalfa.jpeg"
-      },
-      {
-        "id": 208,
-        "nama": "Aisyah Salma Alifia",
-        "jabatan": "Staff",
-        "nia": "C0424006",
-        "foto": "/renjana-cita/salma.jpeg"
-      }
-    ]
-  },
-  {
-    "slug": "mahasantri-welfare",
-    "nama": "Mahasantri Welfare",
-    "tagline": "Menjaga kesejahteraan spiritual dan keilmuan mahasantri melalui program pembinaan keagamaan dan akademik.",
-    "leadership": [
-      {
-        "id": 301,
-        "nama": "Lailatul Fitaliqoh",
-        "jabatan": "Head of Department",
-        "nia": "C0423024",
-        "foto": "/renjana-cita/Fika.JPG"
-      }
-    ],
-    "expertStaff": [
-      {
-        "id": 302,
-        "nama": "Annisa Nur Fauzi",
-        "jabatan": "Expert Staff",
-        "nia": "C0423008",
-        "foto": "/renjana-cita/Annisa.JPG"
-      },
-      {
-        "id": 303,
-        "nama": "Faiz Hazmi Maulana",
-        "jabatan": "Expert Staff",
-        "nia": "C0423015",
-        "foto": "/renjana-cita/Faiz.JPG"
-      },
-      {
-        "id": 304,
-        "nama": "Veri Rahman",
-        "jabatan": "Expert Staff",
-        "nia": "C0423047",
-        "foto": "/renjana-cita/Veri.JPG"
-      },
-      {
-        "id": 305,
-        "nama": "Abid Ubaidillah",
-        "jabatan": "Expert Staff",
-        "nia": "C0425009",
-        "foto": "/renjana-cita/Abid.png"
-      }
-    ],
-    "staff": [
-      {
-        "id": 306,
-        "nama": "Muhammad Ziddan Habibi",
-        "jabatan": "Staff",
-        "nia": "C0424032",
-        "foto": "/renjana-cita/Ziddan.JPG"
-      },
-      {
-        "id": 307,
-        "nama": "Yuliana Farhah",
-        "jabatan": "Staff",
-        "nia": "C0424038",
-        "foto": "/renjana-cita/Lina.JPG"
-      },
-      {
-        "id": 308,
-        "nama": "Khalil Gibran Al Azhar",
-        "jabatan": "Staff",
-        "nia": "C0424018",
-        "foto": "/renjana-cita/Gibran.png"
-      },
-      {
-        "id": 309,
-        "nama": "Muhammad Hilman Azhar",
-        "jabatan": "Staff",
-        "nia": "C0424029",
-        "foto": "/renjana-cita/Hilman.JPG"
-      }
-    ]
-  },
-  {
-    "slug": "pesantren-social-development",
-    "nama": "Pesantren and Social Development",
-    "tagline": "Menggerakkan pengabdian dan kolaborasi sosial bersama pesantren mitra untuk kemaslahatan masyarakat.",
-    "leadership": [
-      {
-        "id": 401,
-        "nama": "Muhammad Fakhri Imamul Huda",
-        "jabatan": "Head of Department",
-        "nia": "C0423033",
-        "foto": "/renjana-cita/fakhri.jpeg"
-      }
-    ],
-    "expertStaff": [
-      {
-        "id": 402,
-        "nama": "Alya Rachmatillah Machmud",
-        "jabatan": "Expert Staff",
-        "nia": "C0423005",
-        "foto": "/renjana-cita/alya.jpeg"
-      },
-      {
-        "id": 403,
-        "nama": "Cholipah Noer Amanah",
-        "jabatan": "Expert Staff",
-        "nia": "C0423011",
-        "foto": "/renjana-cita/lilip.JPG"
-      },
-      {
-        "id": 404,
-        "nama": "Ujang Ibadurrahman",
-        "jabatan": "Expert Staff",
-        "nia": "C0423046",
-        "foto": "/renjana-cita/ujang.jpeg"
-      }
-    ],
-    "staff": [
-      {
-        "id": 405,
-        "nama": "Husna Sabela",
-        "jabatan": "Staff",
-        "nia": "C0424015",
-        "foto": "/renjana-cita/husna.jpeg"
-      },
-      {
-        "id": 406,
-        "nama": "Elfa Setiana",
-        "jabatan": "Staff",
-        "nia": "C0424011",
-        "foto": "/renjana-cita/elfa.JPG"
-      },
-      {
-        "id": 407,
-        "nama": "Romy Ahsan Al-Hal",
-        "jabatan": "Staff",
-        "nia": "C0424037",
-        "foto": "/renjana-cita/romy.jpeg"
-      },
-      {
-        "id": 408,
-        "nama": "Kodrat Mustofa",
-        "jabatan": "Staff",
-        "nia": "C0424019",
-        "foto": "/renjana-cita/kodrat.jpeg"
-      },
-      {
-        "id": 409,
-        "nama": "Lutfan Ibnu Farisy",
-        "jabatan": "Staff",
-        "nia": "C0424021",
-        "foto": "/renjana-cita/lutfan.JPG"
-      }
-    ]
-  },
-  {
-    "slug": "media-information",
-    "nama": "Media and Information",
-    "tagline": "Membangun citra dan ekosistem media organisasi melalui konten kreatif yang informatif dan inspiratif.",
-    "leadership": [
-      {
-        "id": 501,
-        "nama": "Muhammad Farchan Setyadi",
-        "jabatan": "Head of Department",
-        "nia": "C0423030",
-        "foto": "/renjana-cita/Farchan.JPG"
-      }
-    ],
-    "expertStaff": [
-      {
-        "id": 502,
-        "nama": "Intan Nirwani",
-        "jabatan": "Expert Staff",
-        "nia": "C0423019",
-        "foto": "/renjana-cita/Intan.JPG"
-      },
-      {
-        "id": 503,
-        "nama": "Dhea Ary Sofyan",
-        "jabatan": "Expert Staff",
-        "nia": "C0423012",
-        "foto": ""
-      },
-      {
-        "id": 504,
-        "nama": "Muhammad Haykal Wafy Waliyuddin Assany",
-        "jabatan": "Expert Staff",
-        "nia": "C0423034",
-        "foto": "/renjana-cita/Haykal.JPG"
-      }
-    ],
-    "staff": [
-      {
-        "id": 505,
-        "nama": "Auliya Sholikhatun Nisa'",
-        "jabatan": "Staff",
-        "nia": "C0424010",
-        "foto": "/renjana-cita/Aul.JPG"
-      },
-      {
-        "id": 506,
-        "nama": "Muttamimul Ulum",
-        "jabatan": "Staff",
-        "nia": "C0424033",
-        "foto": "/renjana-cita/Ulum.JPG"
-      },
-      {
-        "id": 507,
-        "nama": "Rafiudin Muhammad Dzahir",
-        "jabatan": "Staff",
-        "nia": "C0424036",
-        "foto": "/renjana-cita/Rafiudin.JPG"
-      },
-      {
-        "id": 508,
-        "nama": "Ahmad Husein Fadlullah Rusyali",
-        "jabatan": "Staff",
-        "nia": "C0424003",
-        "foto": "/renjana-cita/Husein.JPG"
-      },
-      {
-        "id": 509,
-        "nama": "M. Faqih Ridho",
-        "jabatan": "Staff",
-        "nia": "C0424022",
-        "foto": "/renjana-cita/Faqih.JPG"
-      }
-    ]
-  },
-  {
     "slug": "personalia",
     "nama": "Personalia",
-    "tagline": "Memonitor kinerja, kedisiplinan, dan kesejahteraan pengurus demi tata kelola organisasi yang sehat.",
+    "tagline": "Menjadi wadah yang harmonis, suportif, dan berorientasi pada kesejahteraan anggota melalui pembinaan personal dan penyaluran aspirasi yang efektif.",
     "leadership": [
       {
         "id": 601,
         "nama": "Mochammad Alif Nasrullah",
-        "jabatan": "Head of Bureau",
+        "jabatan": "Kepala Biro",
         "nia": "C0423027",
         "foto": "/renjana-cita/alif.JPG"
       }
     ],
-    "expertStaff": [],
-    "staff": [
+    "expertStaff": [
       {
         "id": 602,
         "nama": "Muhammad Hazal Ma'aly Mahmud",
@@ -383,7 +26,9 @@
         "jabatan": "Asisten Biro",
         "nia": "C0423041",
         "foto": "/renjana-cita/naufal.JPG"
-      },
+      }
+    ],
+    "staff": [
       {
         "id": 604,
         "nama": "Andi Waldan Danish Savaraz Palinrungi",
@@ -404,6 +49,362 @@
         "jabatan": "Asisten Biro",
         "nia": "C0424024",
         "foto": "/renjana-cita/mila.JPG"
+      }
+    ]
+  },
+  {
+    "slug": "internal-affairs",
+    "nama": "Dalam Negeri",
+    "tagline": "Meningkatkan Keharmonisan dan menyeimbangkan koordinasi antar anggota pengurus dan non-pengurus CSSMoRA ITS.",
+    "leadership": [
+      {
+        "id": 101,
+        "nama": "Dwi Septia Rahmawati",
+        "jabatan": "Kepala Departemen",
+        "nia": "C0423013",
+        "foto": "/renjana-cita/Septi.jpeg"
+      }
+    ],
+    "expertStaff": [
+      {
+        "id": 102,
+        "nama": "Moch Rafi Akbar Imida",
+        "jabatan": "Staf Ahli",
+        "nia": "C0423028",
+        "foto": "/renjana-cita/Imida.jpeg"
+      },
+      {
+        "id": 103,
+        "nama": "M. Husni Thamrin",
+        "jabatan": "Staf Ahli",
+        "nia": "C0423026",
+        "foto": "/renjana-cita/Husni.jpg"
+      }
+    ],
+    "staff": [
+      {
+        "id": 104,
+        "nama": "Muhammad Sayyidil Anam",
+        "jabatan": "Staf",
+        "nia": "C0424030",
+        "foto": "/renjana-cita/Sayyidil.jpg"
+      },
+      {
+        "id": 105,
+        "nama": "Rafi Mohammad Fathih Riyanda",
+        "jabatan": "Staf",
+        "nia": "C0424034",
+        "foto": "/renjana-cita/Rafi.jpg"
+      },
+      {
+        "id": 106,
+        "nama": "Ahmad Naufal Ramadhan Hariadi",
+        "jabatan": "Staf",
+        "nia": "C0425009",
+        "foto": "/renjana-cita/Naufal H.jpg"
+      },
+      {
+        "id": 107,
+        "nama": "Moh Alfaroq Jauharuddin",
+        "jabatan": "Staf",
+        "nia": "C0424025",
+        "foto": "/renjana-cita/Alfaroq.jpg"
+      },
+      {
+        "id": 108,
+        "nama": "M. Zidan Maulana Hakim",
+        "jabatan": "Staf",
+        "nia": "C0424031",
+        "foto": "/renjana-cita/Zidan.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "human-capital-development",
+    "nama": "Pengembangan Sumber Daya Mahasantri",
+    "tagline": "Mendorong pengembangan soft skill dan regenerasi mahasantri CSSMoRA ITS untuk mendukung keberlanjutan organisasi.",
+    "leadership": [
+      {
+        "id": 201,
+        "nama": "Nadiarista Yustiaputri",
+        "jabatan": "Kepala Departemen",
+        "nia": "C0423040",
+        "foto": "/renjana-cita/nadia.jpeg"
+      }
+    ],
+    "expertStaff": [
+      {
+        "id": 202,
+        "nama": "Izzudin Ali Akbari",
+        "jabatan": "Staf Ahli",
+        "nia": "C0423020",
+        "foto": "/renjana-cita/izzud.jpeg"
+      },
+      {
+        "id": 203,
+        "nama": "Bara Ardiwinata",
+        "jabatan": "Staf Ahli",
+        "nia": "C0423009",
+        "foto": "/renjana-cita/bara.jpeg"
+      },
+      {
+        "id": 204,
+        "nama": "Alfian Misbachul Munir",
+        "jabatan": "Staf Ahli",
+        "nia": "C0423004",
+        "foto": "/renjana-cita/alfian.jpeg"
+      }
+    ],
+    "staff": [
+      {
+        "id": 205,
+        "nama": "Imam Baidhawi",
+        "jabatan": "Staf",
+        "nia": "C0424017",
+        "foto": "/renjana-cita/imam.jpeg"
+      },
+      {
+        "id": 206,
+        "nama": "Logica Fikru Al Farbi",
+        "jabatan": "Staf",
+        "nia": "C0424020",
+        "foto": "/renjana-cita/logica.jpeg"
+      },
+      {
+        "id": 207,
+        "nama": "Zalfaa Zahirah Brilliant",
+        "jabatan": "Staf",
+        "nia": "C0424040",
+        "foto": "/renjana-cita/zalfa.jpeg"
+      },
+      {
+        "id": 208,
+        "nama": "Aisyah Salma Alifia",
+        "jabatan": "Staf",
+        "nia": "C0424006",
+        "foto": "/renjana-cita/salma.jpeg"
+      }
+    ]
+  },
+  {
+    "slug": "mahasantri-welfare",
+    "nama": "Kesejahteraan Mahasantri",
+    "tagline": "Terwujudnya Anggota CSSMoRA ITS yang berdaya saing dan prestatif melalui penguatan kapasitas akademik maupun non-akademik.",
+    "leadership": [
+      {
+        "id": 301,
+        "nama": "Lailatul Fitaliqoh",
+        "jabatan": "Kepala Departemen",
+        "nia": "C0423024",
+        "foto": "/renjana-cita/Fika.JPG"
+      }
+    ],
+    "expertStaff": [
+      {
+        "id": 302,
+        "nama": "Annisa Nur Fauzi",
+        "jabatan": "Staf Ahli",
+        "nia": "C0423008",
+        "foto": "/renjana-cita/Annisa.JPG"
+      },
+      {
+        "id": 303,
+        "nama": "Faiz Hazmi Maulana",
+        "jabatan": "Staf Ahli",
+        "nia": "C0423015",
+        "foto": "/renjana-cita/Faiz.JPG"
+      },
+      {
+        "id": 304,
+        "nama": "Veri Rahman",
+        "jabatan": "Staf Ahli",
+        "nia": "C0423047",
+        "foto": "/renjana-cita/Veri.JPG"
+      },
+      {
+        "id": 305,
+        "nama": "Abid Ubaidillah",
+        "jabatan": "Staf Ahli",
+        "nia": "C0425009",
+        "foto": "/renjana-cita/Abid.png"
+      }
+    ],
+    "staff": [
+      {
+        "id": 306,
+        "nama": "Muhammad Ziddan Habibi",
+        "jabatan": "Staf",
+        "nia": "C0424032",
+        "foto": "/renjana-cita/Ziddan.JPG"
+      },
+      {
+        "id": 307,
+        "nama": "Yuliana Farhah",
+        "jabatan": "Staf",
+        "nia": "C0424038",
+        "foto": "/renjana-cita/Lina.JPG"
+      },
+      {
+        "id": 308,
+        "nama": "Khalil Gibran Al Azhar",
+        "jabatan": "Staf",
+        "nia": "C0424018",
+        "foto": "/renjana-cita/Gibran.png"
+      },
+      {
+        "id": 309,
+        "nama": "Muhammad Hilman Azhar",
+        "jabatan": "Staf",
+        "nia": "C0424029",
+        "foto": "/renjana-cita/Hilman.JPG"
+      }
+    ]
+  },
+  {
+    "slug": "pesantren-social-development",
+    "nama": "Pengembangan Pesantren dan Pengabdian Masyarakat",
+    "tagline": "Mempertahankan budaya kesantrian dan pengembangan relasi yang berorientasi dakwah, silaturahmi, serta pengabdian bagi anggota CSSMoRA ITS.",
+    "leadership": [
+      {
+        "id": 401,
+        "nama": "Muhammad Fakhri Imamul Huda",
+        "jabatan": "Kepala Departemen",
+        "nia": "C0423033",
+        "foto": "/renjana-cita/fakhri.jpeg"
+      }
+    ],
+    "expertStaff": [
+      {
+        "id": 402,
+        "nama": "Alya Rachmatillah Machmud",
+        "jabatan": "Staf Ahli",
+        "nia": "C0423005",
+        "foto": "/renjana-cita/alya.jpeg"
+      },
+      {
+        "id": 403,
+        "nama": "Cholipah Noer Amanah",
+        "jabatan": "Staf Ahli",
+        "nia": "C0423011",
+        "foto": "/renjana-cita/lilip.JPG"
+      },
+      {
+        "id": 404,
+        "nama": "Ujang Ibadurrahman",
+        "jabatan": "Staf Ahli",
+        "nia": "C0423046",
+        "foto": "/renjana-cita/ujang.jpeg"
+      }
+    ],
+    "staff": [
+      {
+        "id": 405,
+        "nama": "Husna Sabela",
+        "jabatan": "Staf",
+        "nia": "C0424015",
+        "foto": "/renjana-cita/husna.jpeg"
+      },
+      {
+        "id": 406,
+        "nama": "Elfa Setiana",
+        "jabatan": "Staf",
+        "nia": "C0424011",
+        "foto": "/renjana-cita/elfa.JPG"
+      },
+      {
+        "id": 407,
+        "nama": "Romy Ahsan Al-Hal",
+        "jabatan": "Staf",
+        "nia": "C0424037",
+        "foto": "/renjana-cita/romy.jpeg"
+      },
+      {
+        "id": 408,
+        "nama": "Kodrat Mustofa",
+        "jabatan": "Staf",
+        "nia": "C0424019",
+        "foto": "/renjana-cita/kodrat.jpeg"
+      },
+      {
+        "id": 409,
+        "nama": "Lutfan Ibnu Farisy",
+        "jabatan": "Staf",
+        "nia": "C0424021",
+        "foto": "/renjana-cita/lutfan.JPG"
+      }
+    ]
+  },
+  {
+    "slug": "media-information",
+    "nama": "Media Informasi",
+    "tagline": "Optimalisasi media production dan branding positif yang harmonis dan progresif di media massa untuk menghadirkan citra CSSMoRA ITS yang berdampak positif bagi anggota dan masyarakat.",
+    "leadership": [
+      {
+        "id": 501,
+        "nama": "Muhammad Farchan Setyadi",
+        "jabatan": "Kepala Departemen",
+        "nia": "C0423030",
+        "foto": "/renjana-cita/Farchan.JPG"
+      }
+    ],
+    "expertStaff": [
+      {
+        "id": 502,
+        "nama": "Intan Nirwani",
+        "jabatan": "Staf Ahli",
+        "nia": "C0423019",
+        "foto": "/renjana-cita/Intan.JPG"
+      },
+      {
+        "id": 503,
+        "nama": "Dhea Ary Sofyan",
+        "jabatan": "Staf Ahli",
+        "nia": "C0423012",
+        "foto": ""
+      },
+      {
+        "id": 504,
+        "nama": "Muhammad Haykal Wafy Waliyuddin Assany",
+        "jabatan": "Staf Ahli",
+        "nia": "C0423034",
+        "foto": "/renjana-cita/Haykal.JPG"
+      }
+    ],
+    "staff": [
+      {
+        "id": 505,
+        "nama": "Auliya Sholikhatun Nisa'",
+        "jabatan": "Staf",
+        "nia": "C0424010",
+        "foto": "/renjana-cita/Aul.JPG"
+      },
+      {
+        "id": 506,
+        "nama": "Muttamimul Ulum",
+        "jabatan": "Staf",
+        "nia": "C0424033",
+        "foto": "/renjana-cita/Ulum.JPG"
+      },
+      {
+        "id": 507,
+        "nama": "Rafiudin Muhammad Dzahir",
+        "jabatan": "Staf",
+        "nia": "C0424036",
+        "foto": "/renjana-cita/Rafiudin.JPG"
+      },
+      {
+        "id": 508,
+        "nama": "Ahmad Husein Fadlullah Rusyali",
+        "jabatan": "Staf",
+        "nia": "C0424003",
+        "foto": "/renjana-cita/Husein.JPG"
+      },
+      {
+        "id": 509,
+        "nama": "M. Faqih Ridho",
+        "jabatan": "Staf",
+        "nia": "C0424022",
+        "foto": "/renjana-cita/Faqih.JPG"
       }
     ]
   }
