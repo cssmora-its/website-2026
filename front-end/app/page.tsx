@@ -13,7 +13,7 @@ import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
   title: {
-    absolute: 'CSSMoRA ITS — Community of Santri Scholars of MoRA',
+    absolute: 'CSSMoRA ITS — Community of Santri Scholars of Ministry of Religious Affairs',
   },
   description:
     'CSSMoRA ITS adalah komunitas penerima beasiswa PBSB (Program Beasiswa Santri Berprestasi) di Institut Teknologi Sepuluh Nopember. Menghimpun santri berprestasi lintas disiplin sejak 2007.',
@@ -21,19 +21,19 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'CSSMoRA ITS — Community of Santri Scholars of MoRA',
+    title: 'CSSMoRA ITS — Community of Santri Scholars of Ministry of Religious Affairs',
     description:
       'CSSMoRA ITS adalah komunitas penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember. Menghimpun santri berprestasi lintas disiplin sejak 2007.',
     url: '/',
     images: [
       {
         url: '/og-image.png',
-        alt: 'CSSMoRA ITS',
+        alt: 'CSSMinistry of Religious Affairs ITS',
       },
     ],
   },
   twitter: {
-    title: 'CSSMoRA ITS — Community of Santri Scholars of MoRA',
+    title: 'CSSMinistry of Religious Affairs ITS — Community of Santri Scholars of Ministry of Religious Affairs',
     description:
       'CSSMoRA ITS adalah komunitas penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember.',
     images: ['/og-image.png'],
