@@ -18,7 +18,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://cssmoraits.com"),
   title: {
-    default: "CSSMoRA ITS — Community of Santri Scholars of MoRA",
+    default: "CSSMoRA ITS — Community of Santri Scholars of Ministry of Religious Affairs",
     template: "%s | CSSMoRA ITS",
   },
   description:
@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     "santri berprestasi",
     "Renjana Cita",
   ],
-  authors: [{ name: "CSSMoRA ITS" }],
-  creator: "CSSMoRA ITS",
-  publisher: "CSSMoRA ITS",
+  authors: [{ name: "CSSMinistry of Religious Affairs ITS" }],
+  creator: "CSSMinistry of Religious Affairs ITS",
+  publisher: "CSSMinistry of Religious Affairs ITS",
   robots: {
     index: true,
     follow: true,
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://cssmoraits.com",
-    siteName: "CSSMoRA ITS",
-    title: "CSSMoRA ITS — Community of Santri Scholars of MoRA",
+    url: "https://cssMinistry of Religious Affairsits.com",
+    siteName: "CSSMinistry of Religious Affairs ITS",
+    title: "CSSMoRA ITS — Community of Santri Scholars of Ministry of Religious Affairs",
     description:
       "CSSMoRA ITS adalah komunitas penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember. Menghimpun santri berprestasi lintas disiplin sejak 2007.",
     images: [
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CSSMoRA ITS — Community of Santri Scholars of MoRA",
+    title: "CSSMoRA ITS — Community of Santri Scholars of Ministry of Religious Affairs",
     description:
       "CSSMoRA ITS adalah komunitas penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember.",
     images: ["/og-image.png"],
