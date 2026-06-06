@@ -19,16 +19,58 @@
     }
   ],
   "topBoard": {
-    "chairman": { "id": 1, "nama": "Nabiel Nizar Anwari", "jabatan": "Chairman", "nia": "12345001", "foto": "" },
+    "chairman": {
+      "id": 1,
+      "nama": "Nabiel Nizar Anwari",
+      "jabatan": "Chairman",
+      "nia": "C0423039",
+      "foto": "/renjana-cita/Nabiel.JPG"
+    },
     "viceChairmen": [
-      { "id": 2, "nama": "Barrul", "jabatan": "Vice Chairman 1", "nia": "12345002", "foto": "" },
-      { "id": 3, "nama": "Lilis", "jabatan": "Vice Chairman 2", "nia": "12345003", "foto": "" }
+      {
+        "id": 2,
+        "nama": "Barrul Syamsa Al-Irsyad",
+        "jabatan": "Vice Chairman 1",
+        "nia": "C0423010",
+        "foto": "/renjana-cita/Barrul.JPG"
+      },
+      {
+        "id": 3,
+        "nama": "Lilis Rahmawati",
+        "jabatan": "Vice Chairman 2",
+        "nia": "C0423025",
+        "foto": "/renjana-cita/Lilis.jpeg"
+      }
     ]
   },
   "directors": [
-    { "id": 4, "nama": "Sinta", "jabatan": "General Secretary", "nia": "12345004", "foto": "" },
-    { "id": 5, "nama": "Rara", "jabatan": "Vice General Secretary", "nia": "12345005", "foto": "" },
-    { "id": 6, "nama": "Jacinda", "jabatan": "General Treasurer", "nia": "12345006", "foto": "" },
-    { "id": 7, "nama": "Khasna", "jabatan": "Vice General Treasurer", "nia": "12345007", "foto": "" }
+    {
+      "id": 4,
+      "nama": "Sinta Dewi Rahmawati",
+      "jabatan": "General Secretary",
+      "nia": "C0423043",
+      "foto": "/renjana-cita/Sinta.jpeg"
+    },
+    {
+      "id": 5,
+      "nama": "Zahra Hafizhah",
+      "jabatan": "Vice General Secretary",
+      "nia": "C0424039",
+      "foto": "/renjana-cita/Zahra.JPG"
+    },
+    {
+      "id": 6,
+      "nama": "Jacinda Safa Firjatillah",
+      "jabatan": "General Treasurer",
+      "nia": "C0423021",
+      "foto": "/renjana-cita/Jacinda.jpeg"
+    },
+    {
+      "id": 7,
+      "nama": "Asmaul Khasna",
+      "jabatan": "Vice General Treasurer",
+      "nia": "C0424009",
+      "foto": "/renjana-cita/Khasna.JPG"
+    }
   ]
 }
