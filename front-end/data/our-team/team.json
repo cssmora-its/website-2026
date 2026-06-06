@@ -1,0 +1,142 @@
+{
+  "teams": [
+    {
+      "id": "project-manager",
+      "name": "Project Manager",
+      "tagline": "Menjaga arah, ritme, dan kolaborasi seluruh tim.",
+      "members": [
+        {
+          "id": "pm-1",
+          "name": "Nabiel Nizar Anwari",
+          "role": "Project Manager",
+          "photo": "/our-team/foto.jpg",
+          "instagram": "",
+          "linkedin": ""
+        }
+      ]
+    },
+    {
+      "id": "ui-ux",
+      "name": "UI/UX",
+      "tagline": "Merancang rupa dan alur agar nyaman dipakai dan enak dipandang.",
+      "members": [
+        {
+          "id": "ux-1",
+          "name": "Zikrul Khalis",
+          "role": "UI/UX Designer",
+          "photo": "/our-team/foto.jpg",
+          "instagram": "",
+          "linkedin": ""
+        },
+        {
+          "id": "ux-2",
+          "name": "Muhammad Aisar",
+          "role": "UI/UX Designer",
+          "photo": "/our-team/foto.jpg",
+          "instagram": "",
+          "linkedin": ""
+        },
+        {
+          "id": "ux-3",
+          "name": "Baringga Aurico Dee Erwada",
+          "role": "UI/UX Designer",
+          "photo": "/our-team/foto.jpg",
+          "instagram": "",
+          "linkedin": ""
+        }
+      ]
+    },
+    {
+      "id": "frontend",
+      "name": "Frontend",
+      "tagline": "Merajut tampilan dan pengalaman yang kamu lihat sekarang.",
+      "members": [
+        {
+          "id": "fe-1",
+          "name": "Alya Rahmatillah Machmud",
+          "role": "Frontend Developer",
+          "photo": "/our-team/foto-2.jpg",
+          "instagram": "",
+          "linkedin": ""
+        },
+        {
+          "id": "fe-2",
+          "name": "Izzudin Ali Akbari",
+          "role": "Frontend Developer",
+          "photo": "/our-team/foto.jpg",
+          "instagram": "",
+          "linkedin": ""
+        },
+        {
+          "id": "fe-3",
+          "name": "Muhammad Ahdaf Amali",
+          "role": "Frontend Developer",
+          "photo": "/our-team/foto.jpg",
+          "instagram": "",
+          "linkedin": ""
+        }
+      ]
+    },
+    {
+      "id": "backend",
+      "name": "Backend",
+      "tagline": "Penjaga logika, data, dan API di balik layar.",
+      "members": [
+        {
+          "id": "be-1",
+          "name": "Mochammad Alif Nasrullah",
+          "role": "Backend Developer",
+          "photo": "/our-team/foto.jpg",
+          "instagram": "",
+          "linkedin": ""
+        },
+        {
+          "id": "be-2",
+          "name": "Muhammad Choirun Ni'am",
+          "role": "Backend Developer",
+          "photo": "/our-team/foto.jpg",
+          "instagram": "",
+          "linkedin": ""
+        }
+      ]
+    },
+    {
+      "id": "system-analyst",
+      "name": "System Analyst",
+      "tagline": "Merancang alur sistem dan menjembatani kebutuhan dengan solusi.",
+      "members": [
+        {
+          "id": "sa-1",
+          "name": "Indhira Ayu Puspita Ningrum",
+          "role": "System Analyst",
+          "photo": "/our-team/foto-2.jpg",
+          "instagram": "",
+          "linkedin": ""
+        },
+        {
+          "id": "sa-2",
+          "name": "Cholipah Noer Amanah",
+          "role": "System Analyst",
+          "photo": "/our-team/foto-2.jpg",
+          "instagram": "",
+          "linkedin": ""
+        }
+      ]
+    },
+    {
+      "id": "content-writer",
+      "name": "Content Writer",
+      "tagline": "Menghidupkan setiap kata dan cerita di dalam website.",
+      "members": [
+        {
+          "id": "cw-2",
+          "name": "Sinta Dewi Rahmawati",
+          "role": "Content Writer",
+          "photo": "/our-team/foto-2.jpg",
+          "instagram": "",
+          "linkedin": ""
+        }
+      ]
+    }
+  ]
+}
