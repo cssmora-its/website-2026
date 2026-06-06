@@ -3,7 +3,7 @@
 
 import { useEffect } from 'react';
 import { Noto_Serif, Poppins } from 'next/font/google';
-import { formatPrestasiDate, type Prestasi } from './prestasiData';
+import type { Prestasi } from './prestasiData';
 
 const notoSerif = Noto_Serif({ subsets: ['latin'], weight: ['400', '700'] });
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
@@ -25,6 +25,17 @@ function PlaceholderChecker() {
         backgroundPosition: '0 0, 0 12px, 12px -12px, -12px 0',
       }}
     />
+  );
+}
+
+/** Baris label biru : nilai — selaras pola modal scholar. */
+function InfoRow({ label, value }: { label: string; value: string }) {
+  if (!value) return null;
+  return (
+    <div className="flex flex-col sm:flex-row sm:items-baseline gap-0.5 sm:gap-2">
+      <span className="text-[#0082c6] font-semibold text-sm shrink-0 sm:w-32">{label}</span>
+      <span className="text-gray-800 text-sm">{value}</span>
+    </div>
   );
 }
 
@@ -88,7 +99,7 @@ export default function PrestasiDetailModal({ prestasi, onClose }: Props) {
 
         {/* Scrollable body */}
         <div className="overflow-y-auto">
-          {/* Header: title + date */}
+          {/* Header: title + juara · tingkat */}
           <div className="px-6 md:px-8 pt-6 pb-4 pr-14 md:pr-16">
             <h3
               id="prestasi-modal-title"
@@ -96,9 +107,12 @@ export default function PrestasiDetailModal({ prestasi, onClose }: Props) {
             >
               {prestasi.title}
             </h3>
-            <p className="italic text-gray-400 text-sm mt-1">
-              {formatPrestasiDate(prestasi.date)}
-            </p>
+            <div className="flex flex-wrap items-center gap-2 mt-2">
+              <span className="px-3 py-1 rounded-full bg-[#a8f070] text-[#2a411b] text-xs font-bold">
+                {prestasi.juara}
+              </span>
+              <span className="text-gray-400 text-sm">{prestasi.tingkat}</span>
+            </div>
           </div>
 
           {/* Image besar */}
@@ -117,9 +131,18 @@ export default function PrestasiDetailModal({ prestasi, onClose }: Props) {
             </div>
           </div>
 
+          {/* Identitas peraih */}
+          <div className="px-6 md:px-8 pb-4 flex flex-col gap-2.5">
+            <InfoRow label="Nama" value={prestasi.nama} />
+            <InfoRow label="NRP" value={prestasi.nrp} />
+            <InfoRow label="Departemen" value={prestasi.departemen} />
+            <InfoRow label="Angkatan" value={prestasi.angkatan} />
+            <InfoRow label="Penyelenggara" value={prestasi.penyelenggara} />
+          </div>
+
           {/* Deskripsi */}
-          <div className="px-6 md:px-8 pt-2 pb-7">
-            <p className="italic text-gray-700 text-[14px] md:text-[15px] leading-relaxed text-justify">
+          <div className="px-6 md:px-8 pt-2 pb-7 border-t border-gray-100 mt-1">
+            <p className="italic text-gray-700 text-[14px] md:text-[15px] leading-relaxed text-justify pt-4">
               {prestasi.description}
             </p>
           </div>

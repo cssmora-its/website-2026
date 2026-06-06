@@ -47,9 +47,14 @@ export default function PrestasiCard({ prestasi, onReadMore }: Props) {
       </div>
 
       {/* Title */}
-      <h3 className="text-white text-[15px] md:text-base font-medium leading-snug">
+      <h3 className="text-white text-[15px] md:text-base font-semibold leading-snug">
         {prestasi.title}
       </h3>
+
+      {/* Subjudul: peraih + capaian */}
+      <p className="text-white/70 text-[13px] leading-snug -mt-1">
+        {prestasi.nama} · {prestasi.juara}
+      </p>
 
       {/* Tombol Read More */}
       <button
