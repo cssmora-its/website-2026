@@ -16,8 +16,8 @@ const poppins = Poppins({
 export default function About() {
   return (
     // Tambahkan id="about" agar saat menu header diklik bisa scroll ke sini
-    <section id="about" className="py-24 bg-white overflow-hidden">
-      <div className="container mx-auto px-6 md:px-12 lg:px-20 max-w-7xl">
+    <section id="about" className="min-h-screen lg:min-h-[1080px] lg:max-h-[1080px] py-24 bg-white overflow-hidden flex items-center">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 max-w-7xl w-full">
         
         {/* Layout Grid: 1 Kolom di HP, 2 Kolom di Layar Besar (PC) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">

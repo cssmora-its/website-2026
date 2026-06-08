@@ -17,10 +17,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${BASE_URL}/renjana-cita`,
+      url: `${BASE_URL}/gallery`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/our-team`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
     },
     {
       url: `${BASE_URL}/prestasi`,
@@ -29,10 +35,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${BASE_URL}/gallery`,
+      url: `${BASE_URL}/renjana-cita`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.7,
+      priority: 0.8,
     },
   ];
 }

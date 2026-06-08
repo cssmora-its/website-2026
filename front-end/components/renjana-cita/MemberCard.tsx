@@ -29,7 +29,7 @@ export default function MemberCard({ member, compact = false }: Props) {
     >
       {/* Info block (atas) */}
       <div
-        className={`bg-white border-b border-gray-100 shrink-0 ${compact ? 'p-4' : 'p-5 md:p-6'}`}
+        className={`bg-white border-b border-gray-100 shrink-0 flex flex-col items-center text-center ${compact ? 'p-4' : 'p-5 md:p-6'}`}
       >
         <h4
           className={`font-bold text-[#0082c6] truncate ${notoSerif.className} ${

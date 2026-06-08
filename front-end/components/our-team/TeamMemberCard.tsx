@@ -51,7 +51,7 @@ export default function TeamMemberCard({ member }: Props) {
 
   return (
     <article
-      className={`group bg-white rounded-2xl shadow-sm hover:shadow-[0_12px_22px_-12px_rgba(0,130,198,0.55)] border border-gray-100 overflow-hidden transition-all duration-300 flex flex-col ${poppins.className}`}
+      className={`group bg-white rounded-2xl shadow-sm hover:shadow-[0_12px_22px_-12px_rgba(0,130,198,0.55)] border border-gray-100 overflow-hidden transition-all duration-300 flex flex-col hover:scale-105 ${poppins.className}`}
     >
       {/* Foto / inisial */}
       <div className="relative w-full aspect-[4/5] bg-gradient-to-br from-[#e6f3fb] to-[#cfe7f6] overflow-hidden">

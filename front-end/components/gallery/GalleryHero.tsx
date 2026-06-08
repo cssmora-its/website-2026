@@ -27,6 +27,16 @@ export default function GalleryHero() {
       className="relative w-full min-h-screen flex items-center overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: 'url(/hero5.jpg)' }}
     >
+      {/* Definisi Animasi Fade In Up */}
+      <style jsx>{`
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+          animation: fadeInUp 1s ease-out forwards;
+        }
+      `}</style>
       {/* Overlay gradient biru CSSMoRA — Sama persis dengan Awardee & Prestasi */}
       <div className="absolute inset-0 z-10 bg-gradient-to-br from-black/55 via-[#0082c6]/75 to-[#0082c6]" />
 
@@ -37,41 +47,40 @@ export default function GalleryHero() {
           <div className={`text-white ${poppins.className}`}>
             
             {/* Badge Filosofi */}
-            <div className="inline-flex items-center gap-2 bg-[#a8f070] px-5 py-2 rounded-full mb-6 shadow-lg">
+            <div className="inline-flex items-center gap-2 bg-[#a8f070] px-5 py-2 rounded-full mb-6 shadow-lg animate-fade-in-up" style={{ opacity: 0 }}>
 
               <span className="text-[#2a411b] font-bold text-sm tracking-wide uppercase">
-                Filosofi Kabinet Renjana Cita
+                Galeri Kegiatan & Karya
               </span>
             </div>
 
             {/* Judul Utama */}
             <h1
-              className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6 drop-shadow-lg ${notoSerif.className}`}
+              className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6 drop-shadow-lg animate-fade-in-up ${notoSerif.className}`}
+              style={{ animationDelay: '0.3s', opacity: 0 }}
             >
-              Jiwa dari <br className="hidden md:block" /> <span className="text-[#a8f070]">Renjana Cita</span>
+              Jejak Setiap <br className="hidden md:block" /> <span className="text-[#a8f070]">Aksi Nyata</span>
             </h1>
 
             {/* Deskripsi */}
-            <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-xl mb-8 drop-shadow">
-              <span className="font-semibold italic">Renjana Cita</span>, Janji setiap Cita yang
-              diusahakan bersama, selalu ditenagai gairah tulus Renjana. Kami bersatu dalam aksi,
-              merajut simpul kekeluargaan, dan menyatukan langkah untuk melukis jejak pengabdian
-              yang nyata.
+            <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-xl mb-8 drop-shadow animate-fade-in-up" style={{ animationDelay: '0.6s', opacity: 0 }}>
+              Koleksi momen berharga dari berbagai kegiatan, program, dan inisiatif yang kami lakukan. Setiap foto menceritakan kisah dedikasi dan kebersamaan dalam melayani.
             </p>
 
             {/* Tombol Scroll */}
             <a
               href="#gallery-list"
-              className="group inline-flex items-center bg-[#a8f070] hover:bg-[#9be85f] text-[#2a411b] font-bold px-7 py-3.5 rounded-full shadow-lg transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0082c6] w-fit"
+              className="group inline-flex items-center bg-[#a8f070] hover:bg-[#9be85f] text-[#2a411b] font-bold px-7 py-3.5 rounded-full shadow-lg transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0082c6] w-fit animate-fade-in-up"
+              style={{ animationDelay: '0.9s', opacity: 0 }}
             >
-              Lihat Detail
+              Jelajahi Galeri
               <ArrowDown />
             </a>
           </div>
 
           {/* Kanan: Frame Foto Kabinet Berbingkai (Sama dengan AwardeeHero tapi dengan foto gallery) */}
-          <div className="w-full max-w-lg mx-auto lg:ml-auto lg:mr-0 mt-4 md:mt-0">
-            <figure className="bg-white/10 p-2 md:p-3 rounded-2xl shadow-2xl transform rotate-2 hover:rotate-0 hover:scale-[1.02] transition-transform duration-500 backdrop-blur-sm border border-white/20">
+          <div className="w-full max-w-lg mx-auto lg:ml-auto lg:mr-0 mt-4 md:mt-0 animate-fade-in-up" style={{ animationDelay: '0.6s', opacity: 0 }}>
+            <figure className="bg-white/10 p-2 md:p-3 rounded-2xl shadow-2xl transform rotate-2 hover:rotate-0 hover:scale-[1.02] transition-all duration-500 backdrop-blur-sm border border-white/20 hover:shadow-2xl">
               <div className="relative aspect-[4/3] md:aspect-[5/4] w-full rounded-xl overflow-hidden bg-gray-100">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

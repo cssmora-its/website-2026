@@ -1,3 +1,5 @@
+'use client';
+
 // components/renjana-cita/RenjanaHero.tsx
 import Link from 'next/link';
 import { Noto_Serif, Poppins } from 'next/font/google';
@@ -26,6 +28,16 @@ export default function RenjanaHero() {
       className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: 'url(/hero5.jpg)' }}
     >
+      {/* Definisi Animasi Fade In Up */}
+      <style jsx>{`
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+          animation: fadeInUp 1s ease-out forwards;
+        }
+      `}</style>
       {/* Overlay gradient biru CSSMoRA */}
       <div className="absolute inset-0 z-10 bg-gradient-to-br from-black/55 via-[#0082c6]/75 to-[#0082c6]" />
 
@@ -35,14 +47,16 @@ export default function RenjanaHero() {
 
         {/* Judul Utama (Ukuran diperbesar: text-6xl md:text-8xl lg:text-[110px]) */}
         <h1
-          className={`text-6xl md:text-8xl lg:text-[110px] font-bold tracking-tighter mb-8 drop-shadow-lg leading-[0.95] ${notoSerif.className}`}
+          className={`text-6xl md:text-8xl lg:text-[110px] font-bold tracking-tighter mb-8 drop-shadow-lg leading-[0.95] animate-fade-in-up ${notoSerif.className}`}
+          style={{ opacity: 0 }}
         >
           Renjana Cita
         </h1>
 
         {/* Badge tagline kabinet */}
         <div
-          className={`inline-flex w-fit bg-[#a8f070] px-6 py-2.5 rounded-full mb-8 shadow-lg ${poppins.className}`}
+          className={`inline-flex w-fit bg-[#a8f070] px-6 py-2.5 rounded-full mb-8 shadow-lg animate-fade-in-up ${poppins.className}`}
+          style={{ animationDelay: '0.3s', opacity: 0 }}
         >
           <span className="text-[#2a411b] font-bold text-xs md:text-sm tracking-[0.12em] uppercase">
             Dedikasi Pengabdian 2025/2026
@@ -50,7 +64,7 @@ export default function RenjanaHero() {
         </div>
 
         {/* Deskripsi */}
-        <p className="text-base md:text-xl text-white/95 leading-relaxed drop-shadow-md max-w-2xl">
+        <p className="text-base md:text-xl text-white/95 leading-relaxed drop-shadow-md max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.6s', opacity: 0 }}>
           Mengenang inaugurasi &amp; perjalanan pengabdian <br />Kabinet{' '}
           <span className="whitespace-nowrap">
             <span className="font-semibold italic">Renjana Cita</span> CSSMoRA ITS.
