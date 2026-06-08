@@ -33,7 +33,7 @@ export default function RenjanaCita() {
     <section 
       id="renjana-cita" 
       // Di laptop: tinggi menyesuaikan layar (maks 1080px). Di HP: mengalir normal dengan padding
-      className="w-full bg-[#0082c6] py-16 lg:py-0 lg:h-screen lg:max-h-[1080px] lg:min-h-[850px] flex items-center overflow-hidden"
+      className="w-full min-h-screen lg:min-h-[1080px] lg:max-h-[1080px] bg-[#0082c6] py-16 lg:py-0 flex items-center overflow-hidden"
     >
       
       <div className="container mx-auto px-6 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-10 items-center">

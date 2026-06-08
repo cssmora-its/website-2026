@@ -64,7 +64,7 @@ export default function Sejarah() {
   }, []);
 
   return (
-    <section id="sejarah" className={`relative w-full flex flex-col bg-white ${poppins.className}`}>
+    <section id="sejarah" className={`relative w-full min-h-screen lg:min-h-auto flex flex-col bg-white ${poppins.className}`}>
 
       {/* =========================================
           BAGIAN 1: Where the Heart Belongs
@@ -104,15 +104,15 @@ export default function Sejarah() {
 
           {/* KONTEN TEKS (Ditambahkan relative z-20 agar PASTI di atas foto) */}
           <div className="relative z-20 flex flex-col items-center text-center max-w-4xl mx-auto bg-white/40 lg:bg-transparent p-4 lg:p-0 rounded-2xl backdrop-blur-sm lg:backdrop-blur-none">
-            <div className="relative w-[280px] h-[70px] md:w-[450px] md:h-[110px] mb-8">
+            <div className="relative w-[280px] h-[70px] md:w-[450px] md:h-[110px] mb-8 mt-10">
               <Image src="/logo-color-clean.png" alt="Logo CSSMoRA ITS" fill className="object-contain" />
             </div>
 
-            <h2 className="mb-6 text-3xl md:text-4xl lg:text-[44px] font-bold text-[#0082c6] leading-[1.2] ${notoSerif.className}">
+            <h2 className="mb-10 text-3xl md:text-4xl lg:text-[44px] font-bold text-[#0082c6] leading-[1.2] ${notoSerif.className}">
               Menapak Jejak, Mengukir Makna
             </h2>
 
-            <div className="text-gray-600 text-[15px] md:text-[16px] space-y-5 leading-relaxed text-justify ${poppins.className}">
+            <div className="mb-20 md:mb-10 text-gray-600 text-[16px] md:text-[16px] space-y-5 leading-relaxed text-justify ${poppins.className}">
               <p>
                 Jauh sebelum nama CSSMoRA menggema di kampus Ibu yang Luhur, harmoni mahasantri PBSB di ITS telah terpupuk sejak 19 Mei 2007 melalui komunitas HADITS (Himpunan Anak Depag ITS). Diprakarsai oleh Mas Gori (Sistem Informasi 2006), perkumpulan ini lahir sebagai rumah dan tempat berpulang yang hangat bagi para mahasantri di tengah dinamika akademis.
               </p>

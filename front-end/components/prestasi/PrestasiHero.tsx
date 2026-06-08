@@ -1,3 +1,5 @@
+'use client';
+
 // components/prestasi/PrestasiHero.tsx
 import { Noto_Serif, Poppins } from 'next/font/google';
 
@@ -26,6 +28,16 @@ export default function PrestasiHero() {
       className="relative w-full min-h-screen flex items-center overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: 'url(/hero5.jpg)' }}
     >
+      {/* Definisi Animasi Fade In Up */}
+      <style jsx>{`
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+          animation: fadeInUp 1s ease-out forwards;
+        }
+      `}</style>
       {/* Overlay gradient biru CSSMoRA — Tetap konsisten dengan Awardee & Gallery */}
       <div className="absolute inset-0 z-10 bg-gradient-to-br from-black/55 via-[#0082c6]/75 to-[#0082c6]" />
 
@@ -35,7 +47,7 @@ export default function PrestasiHero() {
         <div className={`text-white flex flex-col items-center ${poppins.className}`}>
           
           {/* Badge Prestasi */}
-          <div className="inline-flex items-center justify-center gap-2 bg-[#a8f070] px-6 py-2.5 rounded-full mb-6 shadow-lg">
+          <div className="inline-flex items-center justify-center gap-2 bg-[#a8f070] px-6 py-2.5 rounded-full mb-6 shadow-lg animate-fade-in-up" style={{ opacity: 0 }}>
             {/* Ikon Bintang/Medali */}
             <span className="text-[#2a411b] font-bold text-sm tracking-wide uppercase">
               Prestasi Mahasantri
@@ -43,19 +55,20 @@ export default function PrestasiHero() {
           </div>
 
           {/* Judul Utama */}
-          <h1 className={`text-4xl md:text-5xl lg:text-[68px] font-bold leading-[1.15] tracking-tight mb-8 drop-shadow-lg ${notoSerif.className}`}>
+          <h1 className={`text-4xl md:text-5xl lg:text-[68px] font-bold leading-[1.15] tracking-tight mb-8 drop-shadow-lg animate-fade-in-up ${notoSerif.className}`} style={{ animationDelay: '0.3s', opacity: 0 }}>
             Digerakkan oleh <span className="text-[#a8f070]">Semangat</span>, <br className="hidden md:block" /> Diarahkan oleh Tujuan
           </h1>
 
           {/* Deskripsi */}
-          <p className="text-base md:text-lg lg:text-xl text-white/90 leading-relaxed max-w-4xl mb-12 drop-shadow">
+          <p className="text-base md:text-lg lg:text-xl text-white/90 leading-relaxed max-w-4xl mb-12 drop-shadow animate-fade-in-up" style={{ animationDelay: '0.6s', opacity: 0 }}>
             Setiap cita yang diusahakan bersama, selalu ditenagai gairah tulus Renjana.<br /> Jelajahi kumpulan karya, inovasi, dan prestasi membanggakan yang kami persembahkan untuk almamater, pesantren, dan negeri.
           </p>
 
           {/* Tombol Scroll */}
           <a
             href="#prestasi-list"
-            className="group inline-flex items-center bg-[#a8f070] hover:bg-[#9be85f] text-[#2a411b] font-bold px-8 py-4 rounded-full shadow-lg transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0082c6]"
+            className="group inline-flex items-center bg-[#a8f070] hover:bg-[#9be85f] text-[#2a411b] font-bold px-8 py-4 rounded-full shadow-lg transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0082c6] animate-fade-in-up"
+            style={{ animationDelay: '0.9s', opacity: 0 }}
           >
             Jelajahi Prestasi
             <ArrowDown />

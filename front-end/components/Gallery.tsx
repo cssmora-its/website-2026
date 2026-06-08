@@ -8,7 +8,7 @@ const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="relative w-full py-20 lg:py-28 overflow-hidden bg-[#f8fafc]">
+    <section id="gallery" className="relative w-full min-h-screen lg:min-h-[1080px] lg:max-h-[1080px] py-20 lg:py-28 overflow-hidden bg-[#f8fafc] flex items-center">
       
       {/* =========================================
           BACKGROUND PATTERN (FULL WIDTH)

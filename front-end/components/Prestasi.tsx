@@ -41,7 +41,7 @@ export default function Prestasi() {
   };
 
   return (
-    <section id="prestasi" className="relative w-full bg-[#007ab8] py-20 lg:py-28 overflow-hidden shadow-[inset_0_15px_20px_-15px_rgba(0,0,0,0.1)]">
+    <section id="prestasi" className="relative w-full min-h-screen lg:min-h-[1080px] lg:max-h-[1080px] bg-[#007ab8] py-20 lg:py-28 overflow-hidden shadow-[inset_0_15px_20px_-15px_rgba(0,0,0,0.1)] flex items-center">
       
       {/* BACKGROUND PATTERN */}
       <div 

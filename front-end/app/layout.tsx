@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     "santri berprestasi",
     "Renjana Cita",
   ],
-  authors: [{ name: "CSSMinistry of Religious Affairs ITS" }],
-  creator: "CSSMinistry of Religious Affairs ITS",
-  publisher: "CSSMinistry of Religious Affairs ITS",
+  authors: [{ name: "CSSMoRA ITS" }],
+  creator: "CSSMoRA ITS",
+  publisher: "CSSMoRA ITS",
   robots: {
     index: true,
     follow: true,
@@ -47,24 +47,33 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "id_ID",
-    url: "https://cssMinistry of Religious Affairsits.com",
-    siteName: "CSSMinistry of Religious Affairs ITS",
+    url: "https://cssmoraits.com",
+    siteName: "CSSMoRA ITS",
     title: "CSSMoRA ITS — Community of Santri Scholars of Ministry of Religious Affairs",
     description:
       "CSSMoRA ITS adalah komunitas penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember. Menghimpun santri berprestasi lintas disiplin sejak 2007.",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://cssmoraits.com/og-image.png",
         alt: "CSSMoRA ITS",
+        width: 1200,
+        height: 630,
+        type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
+    site: "@cssmoraits",
     title: "CSSMoRA ITS — Community of Santri Scholars of Ministry of Religious Affairs",
     description:
       "CSSMoRA ITS adalah komunitas penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember.",
-    images: ["/og-image.png"],
+    images: ["https://cssmoraits.com/og-image.png"],
+    creator: "@cssmoraits",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 

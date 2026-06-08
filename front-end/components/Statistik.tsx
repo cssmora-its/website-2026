@@ -1,35 +1,91 @@
 // components/Statistik.tsx
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
 import { Poppins } from 'next/font/google';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'] });
 
 export default function Statistik() {
+  const [displayMahasiswa, setDisplayMahasiswa] = useState(0);
+  const [displayAlumni, setDisplayAlumni] = useState(0);
+  const [animateBars, setAnimateBars] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const animationDone = useRef(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !animationDone.current) {
+          animationDone.current = true;
+          
+          // Animate angka 116
+          let currentMahasiswa = 0;
+          const mahasiswaInterval = setInterval(() => {
+            currentMahasiswa += Math.ceil(116 / 50);
+            if (currentMahasiswa >= 116) {
+              setDisplayMahasiswa(116);
+              clearInterval(mahasiswaInterval);
+            } else {
+              setDisplayMahasiswa(currentMahasiswa);
+            }
+          }, 30);
+
+          // Animate angka 203
+          let currentAlumni = 0;
+          const alumniInterval = setInterval(() => {
+            currentAlumni += Math.ceil(203 / 50);
+            if (currentAlumni >= 203) {
+              setDisplayAlumni(203);
+              clearInterval(alumniInterval);
+            } else {
+              setDisplayAlumni(currentAlumni);
+            }
+          }, 30);
+
+          // Trigger bar animation
+          setTimeout(() => setAnimateBars(true), 200);
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
   
   // Data dipisah antara 'name' dan 'value' agar angka bisa diletakkan di sumbu Y
   const chartBars = [
-    { width: '42.5%', name: 'Arsitektur', value: 8 },
-    { width: '5.31%', name: 'Biologi', value: 1 },
-    { width: '5.31%', name: 'Fisika', value: 1 },
-    { width: '5.31%', name: 'Manajemen Bisnis', value: 1 },
-    { width: '5.31%', name: 'Matematika', value: 1 },
-    { width: '5.31%', name: 'Rekayasa Perangkat Lunak', value: 1 },
-    { width: '74.37%', name: 'Sistem Informasi', value: 14 },
-    { width: '69.06%', name: 'Statistika', value: 13 },
-    { width: '5.31%', name: 'Teknik Fisika', value: 1 },
-    { width: '85%', name: 'Teknik Informatika', value: 16 },
-    { width: '26.56%', name: 'Teknik Komputer', value: 5 },
-    { width: '5.31%', name: 'Teknik Lingkungan', value: 1 },
-    { width: '5.31%', name: 'Teknik Perkapalan', value: 1 },
-    { width: '47.81%', name: 'Teknik Sipil', value: 9 },
-    { width: '74.37%', name: 'Teknik Sistem dan Industri', value: 14 },
-    { width: '5.31%', name: 'Teknik Sistem Perkapalan', value: 1 },
-    { width: '42.5%', name: 'Teknik Telekomunikasi', value: 8 },
-    { width: '47.81%', name: 'Teknologi Informasi', value: 9 },
-    { width: '47.81%', name: 'Teknologi Kedokteran', value: 9 },
+    { width: '40%', name: 'Arsitektur', value: 8 },
+    { width: '5%', name: 'Biologi', value: 1 },
+    { width: '5%', name: 'Fisika', value: 1 },
+    { width: '5%', name: 'Manajemen Bisnis', value: 1 },
+    { width: '5%', name: 'Matematika', value: 1 },
+    { width: '5%', name: 'Rekayasa Perangkat Lunak', value: 1 },
+    { width: '70%', name: 'Sistem Informasi', value: 14 },
+    { width: '70%', name: 'Statistika', value: 14 },
+    { width: '5%', name: 'Teknik Fisika', value: 1 },
+    { width: '80%', name: 'Teknik Informatika', value: 16 },
+    { width: '30%', name: 'Teknik Komputer', value: 6 },
+    { width: '5%', name: 'Teknik Lingkungan', value: 1 },
+    { width: '5%', name: 'Teknik Perkapalan', value: 1 },
+    { width: '45%', name: 'Teknik Sipil', value: 9 },
+    { width: '70%', name: 'Teknik Sistem dan Industri', value: 14 },
+    { width: '5%', name: 'Teknik Sistem Perkapalan', value: 1 },
+    { width: '40%', name: 'Teknik Telekomunikasi', value: 8 },
+    { width: '45%', name: 'Teknologi Informasi', value: 9 },
+    { width: '45%', name: 'Teknologi Kedokteran', value: 9 },
   ];
 
   return (
-    <section id="statistik" className={`w-full flex flex-col lg:flex-row ${poppins.className}`}>
+    <section ref={sectionRef} id="statistik" className={`w-full min-h-screen lg:min-h-[1080px] lg:max-h-[1080px] flex flex-col lg:flex-row ${poppins.className}`}>
       
       {/* =========================================
           KOLOM KIRI: Angka Statistik Utama (Putih)
@@ -52,12 +108,16 @@ export default function Statistik() {
         {/* Container Angka */}
         <div className="relative z-10 flex flex-col items-center justify-center w-full px-10">
             <div className="flex flex-col items-center text-[#0082c6] mb-12 md:mb-16 mt-4">
-              <span className="text-[100px] md:text-[130px] font-bold leading-none tracking-tighter">114</span>
+              <span className="text-[100px] md:text-[130px] font-bold leading-none tracking-tighter">
+                {displayMahasiswa}
+              </span>
               <span className="text-xl md:text-2xl font-semibold mt-2">Mahasiswa Aktif</span>
             </div>
 
             <div className="flex flex-col items-center text-[#0082c6] mb-4">
-              <span className="text-[100px] md:text-[130px] font-bold leading-none tracking-tighter">203</span>
+              <span className="text-[100px] md:text-[130px] font-bold leading-none tracking-tighter">
+                {displayAlumni}
+              </span>
               <span className="text-xl md:text-2xl font-semibold mt-2">Alumni</span>
             </div>
         </div>
@@ -73,13 +133,11 @@ export default function Statistik() {
           Lintas Disiplin,<br></br>Membawa Perubahan
         </h2>
 
-        {/* BUNGKUS SCROLL HORIZONTAL KHUSUS HP
-            Ini adalah kunci utamanya agar grafik tidak hancur di layar kecil
-        */}
-        <div className="w-full overflow-x-auto pb-8 pt-2 custom-scrollbar">
+        {/* BUNGKUS GRAFIK TANPA SCROLL HORIZONTAL */}
+        <div className="w-full pb-8 pt-2">
           
-          {/* min-w-[550px] memastikan grafik memiliki lebar yang cukup dan tidak tergencet */}
-          <div className="relative min-w-[550px] md:min-w-full max-w-2xl border-l-[3px] border-b-[3px] border-white pb-3 md:pb-4 mt-2 ml-10 md:ml-12 pr-6">
+          {/* Lebar grafik dipaksa menyesuaikan ukuran layar tanpa min-width  */}
+          <div className="relative w-full max-w-2xl border-l-[3px] border-b-[3px] border-white pb-3 md:pb-4 mt-2 ml-10 md:ml-12 pr-2 md:pr-6">
             
             {/* Label Sumbu X (Bawah) */}
             <div className="absolute -bottom-10 md:-bottom-12 left-1/2 -translate-x-1/2 text-white text-sm md:text-base font-medium tracking-wide">
@@ -98,8 +156,10 @@ export default function Statistik() {
 
                   {/* Balok Hijau */}
                   <div 
-                    className="bg-[#a8f070] h-[10px] md:h-[14px] rounded-r-sm ml-2 md:ml-3 transition-all duration-500 hover:brightness-110" 
-                    style={{ width: bar.width }}
+                    className={`bg-[#a8f070] h-[10px] md:h-[12px] rounded-r-sm ml-2 md:ml-3 transition-all ${animateBars ? 'duration-1000' : 'duration-0'} hover:brightness-110`}
+                    style={{ 
+                      width: animateBars ? bar.width : '0%',
+                    }}
                   />
 
                   {/* Label Nama Departemen */}

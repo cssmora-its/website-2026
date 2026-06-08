@@ -43,6 +43,16 @@ export default function AwardeeHero() {
       className="relative w-full min-h-screen flex items-center overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: 'url(/hero5.jpg)' }}
     >
+      {/* Definisi Animasi Fade In Up */}
+      <style jsx>{`
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(30px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+          animation: fadeInUp 1s ease-out forwards;
+        }
+      `}</style>
       {/* Overlay gradient biru CSSMoRA — selaras dengan hero subpage lainnya */}
       <div className="absolute inset-0 z-10 bg-gradient-to-br from-black/55 via-[#0082c6]/75 to-[#0082c6]" />
 
@@ -53,7 +63,7 @@ export default function AwardeeHero() {
           {/* Kiri: konten teks */}
           <div className={`text-white ${poppins.className}`}>
             {/* Badge jumlah awardee */}
-            <div className="inline-flex items-center gap-2 bg-[#a8f070] px-5 py-2 rounded-full mb-6 shadow-lg">
+            <div className="inline-flex items-center gap-2 bg-[#a8f070] px-5 py-2 rounded-full mb-6 shadow-lg animate-fade-in-up" style={{ opacity: 0 }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -69,12 +79,13 @@ export default function AwardeeHero() {
             </div>
 
             <h1
-              className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6 drop-shadow-lg ${notoSerif.className}`}
+              className={`text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-6 drop-shadow-lg animate-fade-in-up ${notoSerif.className}`}
+              style={{ animationDelay: '0.3s', opacity: 0 }}
             >
               Tempat Setiap <span className="text-[#a8f070]"><br />Langkah</span> Bermula
             </h1>
 
-            <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-xl mb-8 drop-shadow">
+            <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-xl mb-8 drop-shadow animate-fade-in-up" style={{ animationDelay: '0.6s', opacity: 0 }}>
               Sejak berdiri pada 2007, CSSMoRA ITS telah membina lebih dari {totalScholarsLabel}{' '}
               mahasantri. Angka ini bukan sekadar jumlah, melainkan jejaring kecerdasan dan
               integritas yang menyebar ke seluruh penjuru negeri.
@@ -83,7 +94,8 @@ export default function AwardeeHero() {
             <button
               type="button"
               onClick={handleScrollToScholars}
-              className="group inline-flex items-center bg-[#a8f070] hover:bg-[#9be85f] text-[#2a411b] font-bold px-7 py-3.5 rounded-full shadow-lg transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0082c6]"
+              className="cursor-pointer group inline-flex items-center bg-[#a8f070] hover:bg-[#9be85f] text-[#2a411b] font-bold px-7 py-3.5 rounded-full shadow-lg transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#0082c6] animate-fade-in-up"
+              style={{ animationDelay: '0.9s', opacity: 0 }}
             >
               Lihat Semua Mahasantri
               <ArrowRight />
@@ -91,11 +103,11 @@ export default function AwardeeHero() {
           </div>
 
           {/* Kanan: collage 4 foto, tata letak 2x2 rapi dengan kemiringan halus */}
-          <div className="hidden sm:grid grid-cols-2 gap-4 md:gap-5 w-full max-w-md mx-auto lg:ml-auto lg:mr-0">
+          <div className="hidden sm:grid grid-cols-2 gap-4 md:gap-5 w-full max-w-md mx-auto lg:ml-auto lg:mr-0 animate-fade-in-up" style={{ animationDelay: '0.6s', opacity: 0 }}>
             {PHOTOS.map((item) => (
               <figure
                 key={item.src}
-                className={`bg-white p-2 rounded-xl shadow-2xl ${item.tilt} ${item.offset} hover:rotate-0 hover:scale-[1.04] hover:z-10 transition-transform duration-300`}
+                className={`bg-white p-2 rounded-xl shadow-2xl ${item.tilt} ${item.offset} hover:rotate-0 hover:scale-[1.04] hover:z-10 transition-all duration-300 hover:shadow-2xl`}
               >
                 <div className="relative aspect-[4/3] overflow-hidden rounded-lg bg-gray-100">
                   {/* eslint-disable-next-line @next/next/no-img-element */}

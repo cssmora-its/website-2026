@@ -56,7 +56,7 @@ export default function MemberCarousel({ members, groupLabel }: Props) {
           type="button"
           onClick={() => go(-1)}
           aria-label={`Sebelumnya — ${groupLabel}`}
-          className="z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white transition-colors"
+          className="z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white hover:shadow-lg transition-all duration-300"
         >
           <ArrowIcon dir="left" />
         </button>
@@ -65,7 +65,7 @@ export default function MemberCarousel({ members, groupLabel }: Props) {
         <div className="flex items-center justify-center gap-4 md:gap-6 grow min-w-0">
           {/* Kartu kiri (faded) — hanya desktop */}
           <div
-            className="hidden md:block w-[230px] h-[380px] opacity-50 scale-95 transition-all duration-300 cursor-pointer"
+            className="hidden md:block w-[230px] h-[380px] opacity-50 scale-95 transition-all duration-300 cursor-pointer hover:opacity-75 hover:scale-97"
             onClick={() => go(-1)}
             aria-hidden="true"
           >
@@ -79,7 +79,7 @@ export default function MemberCarousel({ members, groupLabel }: Props) {
 
           {/* Kartu kanan (faded) — hanya desktop */}
           <div
-            className="hidden md:block w-[230px] h-[380px] opacity-50 scale-95 transition-all duration-300 cursor-pointer"
+            className="hidden md:block w-[230px] h-[380px] opacity-50 scale-95 transition-all duration-300 cursor-pointer hover:opacity-75 hover:scale-97"
             onClick={() => go(1)}
             aria-hidden="true"
           >
@@ -92,7 +92,7 @@ export default function MemberCarousel({ members, groupLabel }: Props) {
           type="button"
           onClick={() => go(1)}
           aria-label={`Berikutnya — ${groupLabel}`}
-          className="z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white transition-colors"
+          className="z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white hover:shadow-lg transition-all duration-300"
         >
           <ArrowIcon dir="right" />
         </button>

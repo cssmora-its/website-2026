@@ -1,6 +1,7 @@
 // components/awardee/CaptainCard.tsx
 'use client';
 
+import Image from 'next/image';
 import { Noto_Serif, Poppins } from 'next/font/google';
 import type { Captain } from './awardeeData';
 
@@ -25,18 +26,19 @@ interface Props {
 export default function CaptainCard({ captain, active = false }: Props) {
   return (
     <article
-      className={`h-full w-full bg-white rounded-2xl overflow-hidden flex flex-col border border-gray-100 transition-all duration-300 ${
-        active ? 'shadow-[0_14px_28px_-12px_rgba(0,130,198,0.6)]' : 'shadow-sm'
+      className={`h-full w-full bg-white rounded-2xl overflow-hidden flex flex-col border border-gray-100 transition-all duration-300 hover:shadow-[0_14px_28px_-12px_rgba(0,130,198,0.6)] hover:scale-105 ${
+        active ? 'shadow-[0_14px_28px_-12px_rgba(0,130,198,0.6)]' : 'shadow-sm hover:shadow-lg'
       } ${poppins.className}`}
     >
       {/* Foto / inisial */}
       <div className="relative flex-grow bg-gradient-to-b from-gray-300 to-white overflow-hidden">
         {captain.photo ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
+          <Image
             src={captain.photo}
             alt={captain.name}
+            fill
             className="absolute inset-0 w-full h-full object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center">

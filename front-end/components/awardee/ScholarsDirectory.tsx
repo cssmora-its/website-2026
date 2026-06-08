@@ -156,7 +156,7 @@ export default function ScholarsDirectory() {
             <button
               type="button"
               onClick={() => setVisible((v) => v + PAGE_SIZE)}
-              className={`bg-white border border-[#0082c6] text-[#0082c6] hover:bg-[#0082c6] hover:text-white font-semibold px-8 py-3 rounded-full shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-[#0082c6] focus:ring-offset-2 ${poppins.className}`}
+              className={`cursor-pointer bg-white border border-[#0082c6] text-[#0082c6] hover:bg-[#0082c6] hover:text-white font-semibold px-8 py-3 rounded-full shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-[#0082c6] focus:ring-offset-2 ${poppins.className}`}
             >
               Lihat Lebih Banyak
             </button>

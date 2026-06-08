@@ -66,7 +66,7 @@ export default function CaptainsSection() {
               onClick={() => go(-1)}
               disabled={!canPrev}
               aria-label="Ketua angkatan sebelumnya"
-              className={`z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white transition-colors ${
+              className={`z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white hover:shadow-lg transition-all duration-300 ${
                 canPrev ? '' : 'invisible'
               }`}
             >
@@ -110,7 +110,7 @@ export default function CaptainsSection() {
               onClick={() => go(1)}
               disabled={!canNext}
               aria-label="Ketua angkatan berikutnya"
-              className={`z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white transition-colors ${
+              className={`z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white hover:shadow-lg transition-all duration-300 ${
                 canNext ? '' : 'invisible'
               }`}
             >
