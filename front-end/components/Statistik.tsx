@@ -85,7 +85,7 @@ export default function Statistik() {
   ];
 
   return (
-    <section ref={sectionRef} id="statistik" className={`w-full min-h-screen lg:min-h-[1080px] lg:max-h-[1080px] flex flex-col lg:flex-row ${poppins.className}`}>
+    <section ref={sectionRef} id="statistik" className={`w-full min-h-screen lg:min-h-[1080px] lg:max-h-[1080px] flex flex-col lg:flex-row overflow-hidden ${poppins.className}`}>
       
       {/* =========================================
           KOLOM KIRI: Angka Statistik Utama (Putih)
@@ -145,25 +145,26 @@ export default function Statistik() {
             </div>
 
             {/* Area Bar Chart */}
-            <div className="flex flex-col gap-[6px] md:gap-[8px] w-full pt-2">
+            {/* Lebar container balok dibatasi agar ada ruang untuk text label (menghindari offside/overflow di layar kecil) */}
+            <div className="flex flex-col gap-[6px] md:gap-[8px] w-[40%] sm:w-[50%] md:w-[65%] lg:w-[75%] pt-2">
               {chartBars.map((bar, index) => (
                 <div key={index} className="flex items-center w-full relative">
                   
                   {/* Angka (Value) ditarik ke kiri garis sumbu Y */}
-                  <div className="absolute right-full mr-3 md:mr-4 w-6 text-right text-white text-xs md:text-sm font-bold opacity-90">
+                  <div className="absolute right-full mr-2 md:mr-4 w-6 text-right text-white text-[10px] sm:text-xs md:text-sm font-bold opacity-90">
                     {bar.value}
                   </div>
 
                   {/* Balok Hijau */}
                   <div 
-                    className={`bg-[#a8f070] h-[10px] md:h-[12px] rounded-r-sm ml-2 md:ml-3 transition-all ${animateBars ? 'duration-1000' : 'duration-0'} hover:brightness-110`}
+                    className={`bg-[#a8f070] h-[10px] md:h-[12px] rounded-r-sm ml-2 md:ml-3 shrink-0 transition-all ${animateBars ? 'duration-1000' : 'duration-0'} hover:brightness-110`}
                     style={{ 
                       width: animateBars ? bar.width : '0%',
                     }}
                   />
 
                   {/* Label Nama Departemen */}
-                  <span className="text-white text-xs md:text-sm ml-3 whitespace-nowrap">
+                  <span className="text-white text-[10px] sm:text-xs md:text-sm ml-2 md:ml-3 whitespace-nowrap">
                     {bar.name}
                   </span>
                   
