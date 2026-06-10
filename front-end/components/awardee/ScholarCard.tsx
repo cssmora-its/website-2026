@@ -27,7 +27,7 @@ export default function ScholarCard({ scholar, onClick }: Props) {
       type="button"
       onClick={() => onClick(scholar)}
       aria-label={`Lihat profil ${scholar.name}`}
-      className={`group text-center items-center bg-white rounded-2xl shadow-sm hover:shadow-[0_10px_18px_-10px_rgba(0,130,198,0.55)] border border-gray-100 overflow-hidden transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#0082c6] focus:ring-offset-2 flex flex-col ${poppins.className}`}
+      className={`cursor-pointer group text-center items-center bg-white rounded-2xl shadow-sm hover:shadow-[0_10px_18px_-10px_rgba(0,130,198,0.55)] border border-gray-100 overflow-hidden transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#0082c6] focus:ring-offset-2 flex flex-col ${poppins.className}`}
     >
       {/* Foto + badge angkatan */}
       <div className="cursor-pointer relative w-full aspect-[4/3] bg-gradient-to-br from-[#e6f3fb] to-[#cfe7f6] overflow-hidden">

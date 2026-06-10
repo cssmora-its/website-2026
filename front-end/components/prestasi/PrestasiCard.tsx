@@ -31,9 +31,15 @@ export default function PrestasiCard({ prestasi, onReadMore }: Props) {
   const hasThumb = Boolean(prestasi.thumbnail);
 
   return (
-    <article className={`flex flex-col items-center text-center gap-3 w-full transition-all duration-300 hover:scale-105 ${poppins.className}`}>
+    <article className={`cursor-pointer flex flex-col items-center text-center gap-3 w-full transition-all duration-300 hover:scale-105 ${poppins.className}`}>
       {/* Thumbnail */}
       <div className="relative w-full aspect-[3/4] rounded-md overflow-hidden bg-white/10 shadow-md hover:shadow-lg transition-shadow duration-300">
+        {/* Badge Tingkat */}
+        {prestasi.tingkat && (
+          <div className="absolute top-2 right-2 px-2.5 py-1 text-[10px] md:text-xs font-bold rounded-sm shadow-sm z-10 bg-[#0082c6] text-white">
+            {prestasi.tingkat}
+          </div>
+        )}
         {hasThumb ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img

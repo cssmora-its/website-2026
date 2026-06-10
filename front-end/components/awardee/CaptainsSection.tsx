@@ -66,7 +66,7 @@ export default function CaptainsSection() {
               onClick={() => go(-1)}
               disabled={!canPrev}
               aria-label="Ketua angkatan sebelumnya"
-              className={`z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white hover:shadow-lg transition-all duration-300 ${
+              className={`cursor-pointer z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white hover:shadow-lg transition-all duration-300 ${
                 canPrev ? '' : 'invisible'
               }`}
             >
@@ -110,7 +110,7 @@ export default function CaptainsSection() {
               onClick={() => go(1)}
               disabled={!canNext}
               aria-label="Ketua angkatan berikutnya"
-              className={`z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white hover:shadow-lg transition-all duration-300 ${
+              className={`cursor-pointer z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white hover:shadow-lg transition-all duration-300 ${
                 canNext ? '' : 'invisible'
               }`}
             >
@@ -127,7 +127,7 @@ export default function CaptainsSection() {
                 onClick={() => setActive(i)}
                 aria-label={`Ke ketua angkatan ${c.generation}`}
                 aria-current={i === active}
-                className={`h-2 rounded-full transition-all ${
+                className={`cursor-pointer h-2 rounded-full transition-all ${
                   i === active ? 'w-6 bg-[#79ba4e]' : 'w-2 bg-gray-300 hover:bg-gray-400'
                 }`}
               />

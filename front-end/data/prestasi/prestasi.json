@@ -1,13 +1,14 @@
 [
   {
     "id": 1,
+    "bobot": "Tinggi",
     "title": "Grand Final dan Penganugerahan Duta ITS 2024",
     "nama": "Muhammad Fakhri Imamul Huda",
     "nrp": "5049231117",
     "departemen": "Teknologi Kedokteran",
     "angkatan": "2023",
     "juara": "Duta Sustainable Development Goals ITS 2024",
-    "tingkat": "Tingkat Institut",
+    "tingkat": "Institut",
     "penyelenggara": "ITS",
     "description": "Grand Final dan Penganugerahan Duta ITS 2024 merupakan ajang pemilihan Duta Kampus yang diselenggarakan oleh ITS. Para Duta terpilih akan menyandang gelar selama satu tahun.",
     "thumbnail": "/prestasi/fakhri.jpeg",
@@ -15,6 +16,7 @@
   },
   {
     "id": 2,
+    "bobot": "Tinggi",
     "title": "RoboBoat 2025",
     "nama": "Arundaya Pratama Nurhasan",
     "nrp": "5025221206",
@@ -29,13 +31,14 @@
   },
   {
     "id": 3,
+    "bobot": "Tinggi",
     "title": "KRSRI 2024",
     "nama": "Nabiel Nizar Anwari",
     "nrp": "5027231087",
     "departemen": "Teknologi Informasi",
     "angkatan": "2023",
     "juara": "Juara 1",
-    "tingkat": "Tingkat Nasional",
+    "tingkat": "Nasional",
     "penyelenggara": "Kemendikbudristek",
     "description": "KRSRI (Kontes Robot SAR Indonesia) adalah salah satu divisi kompetisi dalam ajang Kontes Robot Indonesia (KRI) yang berfokus pada perancangan, pembuatan, dan pengujian robot untuk menjalankan misi pencarian dan penyelamatan (Search and Rescue)",
     "thumbnail": "/prestasi/nabiel.jpeg",
@@ -43,6 +46,7 @@
   },
   {
     "id": 4,
+    "bobot": "Tinggi",
     "title": "Lomba Poster Hari Santri Nasional Tahun 2024",
     "nama": "Muhammad Hilman Azhar",
     "nrp": "5025241264",
@@ -57,6 +61,7 @@
   },
   {
     "id": 5,
+    "bobot": "Tinggi",
     "title": "RISE ASEAN Leaders Summit Japan 2024",
     "nama": "Kodrat Mustofa",
     "nrp": "5003241209",
@@ -71,6 +76,7 @@
   },
   {
     "id": 6,
+    "bobot": "Rendah",
     "title": "Mabacup",
     "nama": "Mohamad Arkan Zahir Asyafiq",
     "nrp": "5027241120",
@@ -85,6 +91,7 @@
   },
   {
     "id": 7,
+    "bobot": "Tinggi",
     "title": "Astro STT NF Nufian Creative League - Graphic Design",
     "nama": "Muhammad Hilman Azhar",
     "nrp": "5025241264",
@@ -99,6 +106,7 @@
   },
   {
     "id": 8,
+    "bobot": "Rendah",
     "title": "RE-Volve 2025 Infographic Competition",
     "nama": "Muhamad Farchan Setyadi",
     "nrp": "5003231211",
@@ -113,6 +121,7 @@
   },
   {
     "id": 9,
+    "bobot": "Rendah",
     "title": "Infographic Competition Re-Volve 2025",
     "nama": "Naufal Mahdy Nashrullah",
     "nrp": "5003231209",
@@ -127,13 +136,14 @@
   },
   {
     "id": 10,
+    "bobot": "Rendah",
     "title": "Business Case Competition Akara Aggregate 2025",
     "nama": "Mohammad Fathur Rizki Lubis",
     "nrp": "5010241234",
     "departemen": "Teknik Industri",
     "angkatan": "2024",
     "juara": "Juara 3",
-    "tingkat": "Departemen (MTSI 24 — Teknik Sistem dan Industri)",
+    "tingkat": "Departemen",
     "penyelenggara": "HMTI ITS x Raih Asa",
     "description": "Business Case Competition yang diselenggarakan oleh HMTI ITS x Raih Asa dalam acara AKARA AGGREGATE 2025 dari PSDM-D HMTI ITS, Departemen Teknik Sistem dan Industri. Lomba ini diadakan berkelompok yang terdiri dari 9 orang dan hanya untuk mahasiswa Departemen Teknik Sistem dan Industri angkatan 2024. Peserta ditugaskan menganalisis masalah yang terjadi dalam platform beasiswa sekaligus memberikan solusi terbaik.",
     "thumbnail": "/prestasi/fathur lubis.jpg",
@@ -141,6 +151,7 @@
   },
   {
     "id": 11,
+    "bobot": "Rendah",
     "title": "HDE ITS X JOY Starlight Tournament",
     "nama": "Khalil Gibran Al Azhar",
     "nrp": "5024241100",
@@ -155,6 +166,7 @@
   },
   {
     "id": 12,
+    "bobot": "Sedang",
     "title": "Putra Putri Batik Gresik 2025",
     "nama": "Naufal Mahdy Nashrullah",
     "nrp": "5003231209",
@@ -169,6 +181,7 @@
   },
   {
     "id": 13,
+    "bobot": "Sedang",
     "title": "RDK 47 ITS",
     "nama": "Bara Ardiwinata",
     "nrp": "5026231232",
@@ -183,6 +196,7 @@
   },
   {
     "id": 14,
+    "bobot": "Sedang",
     "title": "Putri Hijab Jawa Timur 2025",
     "nama": "Anjar Kusumawati",
     "nrp": "5012231210",
@@ -197,6 +211,7 @@
   },
   {
     "id": 15,
+    "bobot": "Tinggi",
     "title": "Desain Poster Ilmiah National Economic Business Competition",
     "nama": "Kodrat Mustofa",
     "nrp": "5003241209",
@@ -211,6 +226,7 @@
   },
   {
     "id": 16,
+    "bobot": "Rendah",
     "title": "Student Ambassador Aksi Nirwasita 6.0",
     "nama": "Hanifa Nabi'il Wining",
     "nrp": "5001251022",
@@ -225,6 +241,7 @@
   },
   {
     "id": 17,
+    "bobot": "Tinggi",
     "title": "Lomba Infografis dan Essay Maulid Nabi 1447 H",
     "nama": "Milla Adeliya",
     "nrp": "5003241208",

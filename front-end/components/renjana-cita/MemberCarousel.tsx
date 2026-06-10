@@ -56,7 +56,7 @@ export default function MemberCarousel({ members, groupLabel }: Props) {
           type="button"
           onClick={() => go(-1)}
           aria-label={`Sebelumnya — ${groupLabel}`}
-          className="z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white hover:shadow-lg transition-all duration-300"
+          className="cursor-pointer z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white hover:shadow-lg transition-all duration-300"
         >
           <ArrowIcon dir="left" />
         </button>
@@ -92,7 +92,7 @@ export default function MemberCarousel({ members, groupLabel }: Props) {
           type="button"
           onClick={() => go(1)}
           aria-label={`Berikutnya — ${groupLabel}`}
-          className="z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white hover:shadow-lg transition-all duration-300"
+          className="cursor-pointer z-20 shrink-0 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-white shadow-md text-[#0082c6] border border-gray-100 hover:bg-[#0082c6] hover:text-white hover:shadow-lg transition-all duration-300"
         >
           <ArrowIcon dir="right" />
         </button>
@@ -107,7 +107,7 @@ export default function MemberCarousel({ members, groupLabel }: Props) {
             onClick={() => setActive(i)}
             aria-label={`Ke kartu ${i + 1} dari ${total}`}
             aria-current={i === active}
-            className={`h-2 rounded-full transition-all ${
+            className={`cursor-pointer h-2 rounded-full transition-all ${
               i === active ? 'w-6 bg-[#79ba4e]' : 'w-2 bg-gray-300 hover:bg-gray-400'
             }`}
           />
