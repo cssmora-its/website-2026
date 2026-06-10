@@ -47,6 +47,25 @@ const nextConfig: NextConfig = {
       ],
     },
   ],
+  async redirects() {
+    return [
+      {
+        source: '/FiTrans', 
+        destination: 'https://docs.google.com/document/d/1wG5yI-zTIZrglICEGkV3b50aVoRQ2-xCESzlG_UjQzI/edit?usp=sharing', 
+        permanent: false, 
+      },
+      {
+        source: '/DataBayarKasNas',
+        destination: 'https://docs.google.com/spreadsheets/d/1aTMT53GjrU-jRUfkCiXvycOOKucqqUUJLCCCw_i_LE4/edit?usp=sharing',
+        permanent: false,
+      },
+      {
+        source: '/Lombapedia',
+        destination: 'https://docs.google.com/spreadsheets/d/1K4lkvW5RoQGKIqZmwO5xkGVQd5p1KzaiSQxGcamfrNw/edit?usp=sharing',
+        permanent: false,
+      }
+    ];
+  },
 };
 
 export default nextConfig;

@@ -22,6 +22,8 @@ import prestasiJson from '@/data/prestasi/prestasi.json';
 
 export interface Prestasi {
   id: number;
+  /** Prioritas bobot (Tinggi/Sedang/Rendah) untuk urutan dan badge. */
+  bobot?: string;
   /** Nama lomba/kompetisi. */
   title: string;
   /** Nama peraih prestasi. */
@@ -40,4 +42,14 @@ export interface Prestasi {
   image?: string;
 }
 
-export const prestasiData: Prestasi[] = prestasiJson as Prestasi[];
+const bobotWeight: Record<string, number> = {
+  Tinggi: 1,
+  Sedang: 2,
+  Rendah: 3,
+};
+
+export const prestasiData: Prestasi[] = (prestasiJson as Prestasi[]).sort((a, b) => {
+  const weightA = a.bobot ? bobotWeight[a.bobot] ?? 4 : 4;
+  const weightB = b.bobot ? bobotWeight[b.bobot] ?? 4 : 4;
+  return weightA - weightB;
+});
