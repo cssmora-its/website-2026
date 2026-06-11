@@ -31,6 +31,7 @@ export default function About() {
                 src="/us-1.png" 
                 alt="Foto CSSMoRA ITS" 
                 fill 
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
               />
             </div>

@@ -55,13 +55,33 @@ const nextConfig: NextConfig = {
         permanent: false, 
       },
       {
+        source: '/BayarKasNas',
+        destination: 'https://forms.gle/SzsAw83vmpA4yiMA7',
+        permanent: false,
+      },
+      {
         source: '/DataBayarKasNas',
         destination: 'https://docs.google.com/spreadsheets/d/1aTMT53GjrU-jRUfkCiXvycOOKucqqUUJLCCCw_i_LE4/edit?usp=sharing',
         permanent: false,
       },
       {
+          source: '/BayarKasPT',
+          destination: 'https://forms.gle/JFLCqU6gHRePnbgu7',
+          permanent: false,
+      },
+      {
+        source: '/DataBayarKasPT',
+        destination: 'https://its.id/m/DataPembayaranPT',
+        permanent: false,
+      },
+      {
         source: '/Lombapedia',
         destination: 'https://docs.google.com/spreadsheets/d/1K4lkvW5RoQGKIqZmwO5xkGVQd5p1KzaiSQxGcamfrNw/edit?usp=sharing',
+        permanent: false,
+      },
+      {
+        source: '/CSSChampion',
+        destination: 'https://forms.gle/hEhK2aQh57RL3pbk6',
         permanent: false,
       }
     ];
