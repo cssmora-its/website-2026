@@ -83,7 +83,7 @@ export default function PrestasiDetailModal({ prestasi, onClose }: Props) {
           type="button"
           onClick={onClose}
           aria-label="Tutup detail prestasi"
-          className="cursor-pointer absolute top-3 right-3 z-30 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-gray-500 hover:text-gray-800 shadow-sm flex items-center justify-center transition-colors"
+          className="cursor-pointer absolute top-3 right-6 z-30 w-8 h-8 rounded-full bg-white/90 hover:bg-white text-gray-500 hover:text-gray-800 shadow-sm flex items-center justify-center transition-colors"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@ export default function PrestasiDetailModal({ prestasi, onClose }: Props) {
 
           {/* Image besar */}
           <div className="px-6 md:px-8 pb-4">
-            <div className="relative w-full aspect-[16/9] rounded-[12px] overflow-hidden bg-gray-100 shadow-[0_18px_30px_-18px_rgba(0,130,198,0.4)]">
+            <div className="relative w-full aspect-[5/4] rounded-[12px] overflow-hidden bg-gray-100 shadow-[0_18px_30px_-18px_rgba(0,130,198,0.4)]">
               {hasImage ? (
                 // eslint-disable-next-line @next/next/no-img-element
                 <img

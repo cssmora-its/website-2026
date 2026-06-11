@@ -13,6 +13,13 @@ const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700
 export default function PrestasiSection() {
   const [selected, setSelected] = useState<Prestasi | null>(null);
 
+  // Urutkan data berdasarkan bobot descending (Level 5 -> Level 1)
+  const sortedPrestasi = [...prestasiData].sort((a, b) => {
+    const bobotA = a.bobot || '';
+    const bobotB = b.bobot || '';
+    return bobotB.localeCompare(bobotA);
+  });
+
   return (
     <section
       id="prestasi-list"
@@ -53,7 +60,7 @@ export default function PrestasiSection() {
 
         {/* Grid card: 3 / 2 / 1 kolom */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-          {prestasiData.map((item) => (
+          {sortedPrestasi.map((item) => (
             <PrestasiCard key={item.id} prestasi={item} onReadMore={setSelected} />
           ))}
         </div>
