@@ -51,7 +51,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/FiTrans', 
-        destination: 'https://docs.google.com/document/d/1wG5yI-zTIZrglICEGkV3b50aVoRQ2-xCESzlG_UjQzI/edit?usp=sharing', 
+        destination: 'https://bit.ly/FinancialTranparencyCSSMoRAITS', 
         permanent: false, 
       },
       {
