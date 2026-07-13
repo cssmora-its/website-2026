@@ -16,14 +16,29 @@ export const metadata: Metadata = {
     absolute: 'CSSMoRA ITS — Community of Santri Scholars of Ministry of Religious Affairs',
   },
   description:
-    'CSSMoRA ITS adalah komunitas penerima beasiswa PBSB (Program Beasiswa Santri Berprestasi) di Institut Teknologi Sepuluh Nopember. Menghimpun santri berprestasi lintas disiplin sejak 2007.',
+    'CSSMoRA ITS adalah organisasi penerima beasiswa PBSB (Program Beasiswa Santri Berprestasi) di Institut Teknologi Sepuluh Nopember. Menghimpun santri berprestasi lintas disiplin sejak 2007.',
+  keywords: [
+    "CSSMoRA",
+    "CSSMoRA ITS",
+    "PBSB",
+    "PBSB ITS",
+    "Beasiswa Santri",
+    "BIB Santri",
+    "Beasiswa Indonesia Bangkit",
+    "Program Beasiswa Santri Berprestasi",
+    "ITS",
+    "Santri Berprestasi",
+    "Renjana Cita",
+    "Mahasantri",
+    "Mahasantri ITS"
+  ],
   alternates: {
     canonical: 'https://cssmoraits.com',
   },
   openGraph: {
     title: 'CSSMoRA ITS — Community of Santri Scholars of Ministry of Religious Affairs',
     description:
-      'CSSMoRA ITS adalah komunitas penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember. Menghimpun santri berprestasi lintas disiplin sejak 2007.',
+      'CSSMoRA ITS adalah organisasi penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember. Menghimpun santri berprestasi lintas disiplin sejak 2007.',
     url: 'https://cssmoraits.com',
     images: [
       {
@@ -39,7 +54,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'CSSMoRA ITS — Community of Santri Scholars of Ministry of Religious Affairs',
     description:
-      'CSSMoRA ITS adalah komunitas penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember.',
+      'CSSMoRA ITS adalah organisasi penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember.',
     images: ['https://cssmoraits.com/og-image.png'],
   },
 };

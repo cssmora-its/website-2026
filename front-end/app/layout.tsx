@@ -22,16 +22,21 @@ export const metadata: Metadata = {
     template: "%s | CSSMoRA ITS",
   },
   description:
-    "CSSMoRA ITS adalah komunitas penerima beasiswa PBSB (Program Beasiswa Santri Berprestasi) di Institut Teknologi Sepuluh Nopember. Menghimpun santri berprestasi lintas disiplin sejak 2007.",
+    "CSSMoRA ITS adalah organisasi penerima beasiswa PBSB (Program Beasiswa Santri Berprestasi) di Institut Teknologi Sepuluh Nopember. Menghimpun santri berprestasi lintas disiplin sejak 2007.",
   keywords: [
+    "CSSMoRA",
     "CSSMoRA ITS",
     "PBSB",
-    "beasiswa santri",
+    "PBSB ITS",
+    "Beasiswa Santri",
+    "BIB Santri",
+    "Beasiswa Indonesia Bangkit",
     "Program Beasiswa Santri Berprestasi",
     "ITS",
-    "Institut Teknologi Sepuluh Nopember",
-    "santri berprestasi",
+    "Santri Berprestasi",
     "Renjana Cita",
+    "Mahasantri",
+    "Mahasantri ITS"
   ],
   authors: [{ name: "CSSMoRA ITS" }],
   creator: "CSSMoRA ITS",
@@ -51,7 +56,7 @@ export const metadata: Metadata = {
     siteName: "CSSMoRA ITS",
     title: "CSSMoRA ITS — Community of Santri Scholars of Ministry of Religious Affairs",
     description:
-      "CSSMoRA ITS adalah komunitas penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember. Menghimpun santri berprestasi lintas disiplin sejak 2007.",
+      "CSSMoRA ITS adalah organisasi penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember. Menghimpun santri berprestasi lintas disiplin sejak 2007.",
     images: [
       {
         url: "https://cssmoraits.com/og-image.png",
@@ -67,7 +72,7 @@ export const metadata: Metadata = {
     site: "@cssmoraits",
     title: "CSSMoRA ITS — Community of Santri Scholars of Ministry of Religious Affairs",
     description:
-      "CSSMoRA ITS adalah komunitas penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember.",
+      "CSSMoRA ITS adalah organisasi penerima beasiswa PBSB di Institut Teknologi Sepuluh Nopember.",
     images: ["https://cssmoraits.com/og-image.png"],
     creator: "@cssmoraits",
   },
@@ -85,7 +90,7 @@ const organizationSchema = {
   url: "https://cssmoraits.com",
   logo: "https://cssmoraits.com/logo-color-clean.png",
   description:
-    "CSSMoRA ITS adalah komunitas penerima beasiswa PBSB (Program Beasiswa Santri Berprestasi) di Institut Teknologi Sepuluh Nopember. Menghimpun santri berprestasi lintas disiplin sejak 2007.",
+    "CSSMoRA ITS adalah organisasi penerima beasiswa PBSB (Program Beasiswa Santri Berprestasi) di Institut Teknologi Sepuluh Nopember. Menghimpun santri berprestasi lintas disiplin sejak 2007.",
   foundingDate: "2007-05-19",
   parentOrganization: {
     "@type": "EducationalOrganization",
