@@ -83,6 +83,11 @@ const nextConfig: NextConfig = {
         source: '/CSSChampion',
         destination: 'https://forms.gle/hEhK2aQh57RL3pbk6',
         permanent: false,
+      },
+      {
+        source: '/VideoLagu',
+        destination: 'https://drive.google.com/drive/folders/1wYMo9_hvLf5VgE09PKNULSDZamlK_amg?usp=sharing',
+        permanent: false,
       }
     ];
   },
