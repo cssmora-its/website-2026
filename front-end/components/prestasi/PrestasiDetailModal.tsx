@@ -121,7 +121,7 @@ export default function PrestasiDetailModal({ prestasi, onClose }: Props) {
             <div className="relative w-full aspect-[5/4] rounded-[12px] overflow-hidden bg-gray-100 shadow-[0_18px_30px_-18px_rgba(0,130,198,0.4)]">
               {hasImage ? (
                 <Image
-                  src={prestasi.image}
+                  src={prestasi.image || ''}
                   alt={prestasi.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 800px"
