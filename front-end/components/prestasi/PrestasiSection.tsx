@@ -5,16 +5,20 @@ import { useState } from 'react';
 import { Noto_Serif, Poppins } from 'next/font/google';
 import PrestasiCard from './PrestasiCard';
 import PrestasiDetailModal from './PrestasiDetailModal';
-import { prestasiData, type Prestasi } from './prestasiData';
+import { type Prestasi } from './prestasiData';
 
 const notoSerif = Noto_Serif({ subsets: ['latin'], weight: ['400', '700'] });
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
 
-export default function PrestasiSection() {
+interface Props {
+  initialData?: Prestasi[];
+}
+
+export default function PrestasiSection({ initialData = [] }: Props) {
   const [selected, setSelected] = useState<Prestasi | null>(null);
 
   // Urutkan data berdasarkan bobot descending (Level 5 -> Level 1)
-  const sortedPrestasi = [...prestasiData].sort((a, b) => {
+  const sortedPrestasi = [...initialData].sort((a, b) => {
     const bobotA = a.bobot || '';
     const bobotB = b.bobot || '';
     return bobotB.localeCompare(bobotA);

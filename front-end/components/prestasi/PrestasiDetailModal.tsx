@@ -3,6 +3,7 @@
 
 import { useEffect } from 'react';
 import { Noto_Serif, Poppins } from 'next/font/google';
+import Image from 'next/image';
 import type { Prestasi } from './prestasiData';
 
 const notoSerif = Noto_Serif({ subsets: ['latin'], weight: ['400', '700'] });
@@ -119,11 +120,12 @@ export default function PrestasiDetailModal({ prestasi, onClose }: Props) {
           <div className="px-6 md:px-8 pb-4">
             <div className="relative w-full aspect-[5/4] rounded-[12px] overflow-hidden bg-gray-100 shadow-[0_18px_30px_-18px_rgba(0,130,198,0.4)]">
               {hasImage ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
+                <Image
                   src={prestasi.image}
                   alt={prestasi.title}
-                  className="w-full h-full object-cover"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="object-cover"
                 />
               ) : (
                 <PlaceholderChecker />

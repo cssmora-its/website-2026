@@ -10,6 +10,7 @@ import Prestasi from '@/components/Prestasi';
 import Gallery from '@/components/Gallery';
 import Statistik from '@/components/Statistik';
 import Footer from '@/components/Footer';
+import { getPrestasiData } from '@/lib/fetchPrestasi';
 
 export const metadata: Metadata = {
   title: {
@@ -59,7 +60,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function LandingPage() {
+export default async function LandingPage() {
+  const prestasiData = await getPrestasiData();
+  
+  // Ambil 7 gambar prestasi teratas (yang ada gambarnya)
+  const topPrestasiImages = prestasiData
+    .filter(p => p.image)
+    .slice(0, 7)
+    .map(p => p.image as string);
   return (
     <main className="min-h-screen relative flex flex-col">
       <Header />
@@ -68,7 +76,7 @@ export default function LandingPage() {
       <VisiMisi />
       <Sejarah />
       <RenjanaCita />
-      <Prestasi /> {/* 2. Letakkan di sini persis */}
+      <Prestasi images={topPrestasiImages} /> {/* 2. Letakkan di sini persis */}
       <Gallery />
       <Statistik />
       <Footer />

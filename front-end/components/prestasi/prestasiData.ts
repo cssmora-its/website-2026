@@ -18,7 +18,7 @@
 //
 // File TS ini hanya menyimpan TIPE + helper, lalu memetakan isi JSON ke tipe Prestasi.
 
-import prestasiJson from '@/data/prestasi/prestasi.json';
+
 
 export interface Prestasi {
   id: number;
@@ -42,14 +42,4 @@ export interface Prestasi {
   image?: string;
 }
 
-const bobotWeight: Record<string, number> = {
-  Tinggi: 1,
-  Sedang: 2,
-  Rendah: 3,
-};
 
-export const prestasiData: Prestasi[] = (prestasiJson as Prestasi[]).sort((a, b) => {
-  const weightA = a.bobot ? bobotWeight[a.bobot] ?? 4 : 4;
-  const weightB = b.bobot ? bobotWeight[b.bobot] ?? 4 : 4;
-  return weightA - weightB;
-});

@@ -8,9 +8,13 @@ import { Noto_Serif, Poppins } from 'next/font/google';
 const notoSerif = Noto_Serif({ subsets: ['latin'], weight: ['400', '700'] });
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600'] });
 
-export default function Prestasi() {
-  // Daftar 5 foto prestasi (tidak boleh lebih/kurang)
-  const prestasiImages = [
+interface Props {
+  images?: string[];
+}
+
+export default function Prestasi({ images = [] }: Props) {
+  // Jika tidak ada data gambar yang dilempar dari server, gunakan array kosong atau fallback
+  const prestasiImages = images.length > 0 ? images : [
     "/prestasi/Arundaya Nurhasan.jpg",
     "/prestasi/fakhri.jpeg",
     "/prestasi/nabiel.jpeg",
