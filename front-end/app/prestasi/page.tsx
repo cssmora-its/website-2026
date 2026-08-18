@@ -4,6 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PrestasiHero from '@/components/prestasi/PrestasiHero';
 import PrestasiSection from '@/components/prestasi/PrestasiSection';
+import { getPrestasiData } from '@/lib/fetchPrestasi';
 import { JsonLdScript } from '@/components/JsonLdScript';
 import { generateBreadcrumbSchema, generateWebPageSchema } from '@/lib/structuredData';
 
@@ -40,7 +41,8 @@ export const metadata: Metadata = {
   },
 };
 
-export default function PrestasiPage() {
+export default async function PrestasiPage() {
+  const prestasiData = await getPrestasiData();
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: 'https://cssmoraits.com' },
     { name: 'Prestasi', url: 'https://cssmoraits.com/prestasi' },
@@ -59,7 +61,7 @@ export default function PrestasiPage() {
       <JsonLdScript schema={webPageSchema} />
       <Header />
       <PrestasiHero />
-      <PrestasiSection />
+      <PrestasiSection initialData={prestasiData} />
       <Footer />
     </main>
   );

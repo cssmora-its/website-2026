@@ -14,6 +14,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "**",
       },
+      {
+        protocol: 'https',
+        hostname: 'drive.google.com',
+      },
     ],
   },
   headers: async () => [
@@ -87,6 +91,11 @@ const nextConfig: NextConfig = {
       {
         source: '/VideoLagu',
         destination: 'https://drive.google.com/drive/folders/1wYMo9_hvLf5VgE09PKNULSDZamlK_amg?usp=sharing',
+        permanent: false,
+      },
+      {
+        source: '/DataPrestasiWeb',
+        destination: 'https://docs.google.com/spreadsheets/d/13m70Hzjcg3J6_Z0t61RwgmHEizXbEttHTmU3Sq1Efgo/edit?usp=sharing',
         permanent: false,
       }
     ];

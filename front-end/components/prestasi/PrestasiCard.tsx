@@ -2,6 +2,7 @@
 'use client';
 
 import { Poppins } from 'next/font/google';
+import Image from 'next/image';
 import type { Prestasi } from './prestasiData';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['400', '500', '600', '700'] });
@@ -41,11 +42,12 @@ export default function PrestasiCard({ prestasi, onReadMore }: Props) {
           </div>
         )}
         {hasThumb ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img
-            src={prestasi.thumbnail}
+          <Image
+            src={prestasi.thumbnail || ''}
             alt={prestasi.title}
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover transition-transform duration-500 hover:scale-105"
           />
         ) : (
           <PlaceholderChecker />
