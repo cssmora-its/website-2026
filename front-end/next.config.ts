@@ -97,6 +97,11 @@ const nextConfig: NextConfig = {
         source: '/DataPrestasiWeb',
         destination: 'https://docs.google.com/spreadsheets/d/13m70Hzjcg3J6_Z0t61RwgmHEizXbEttHTmU3Sq1Efgo/edit?usp=sharing',
         permanent: false,
+      },
+      {
+        source: '/AboutHOME',
+        destination: 'http://its.id/m/AboutHOME',
+        permanent: false,
       }
     ];
   },
