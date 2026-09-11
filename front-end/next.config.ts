@@ -102,6 +102,11 @@ const nextConfig: NextConfig = {
         source: '/AboutHOME',
         destination: 'http://its.id/m/AboutHOME',
         permanent: false,
+      },
+      {
+        source: '/SumberHukum',
+        destination: 'https://drive.google.com/drive/folders/1Zf54CR9QFQcTtaPEqaG4u8mQoonBJO1P?usp=drive_link',
+        permanent: false,
       }
     ];
   },
